@@ -7,14 +7,13 @@ import { zones } from '../data/zones';
     <div class="footer__grid">
       <div class="footer__col footer__col--about">
         <div class="footer__logo">
-          <span class="footer__logo-icon">GB</span>
-          <span>
-            <strong>Gestoría Boadilla</strong><br />
-            <small>del Monte</small>
+          <span class="footer__logo-text">
+            <strong>Salander</strong>
+            <small>Soluciones | Gestoría</small>
           </span>
         </div>
         <p>
-          Somos tu gestoría de confianza en Boadilla del Monte. Asesoría fiscal, laboral y contable para autónomos, pymes y particulares.
+          Tu gestoría de confianza en Boadilla del Monte. Asesoría fiscal, laboral y contable para autónomos, pymes y particulares.
         </p>
         <div class="footer__contact-info">
           <p><strong>Dirección:</strong> Calle Geranio, 11. 28660 Boadilla del Monte (Madrid)</p>
@@ -39,7 +38,7 @@ import { zones } from '../data/zones';
           {zones.slice(0, 10).map(z => (
             <li><a href={`/zonas/${z.slug}/`}>{z.name}</a></li>
           ))}
-          <li><a href="/zonas/"><strong>Ver todas las zonas →</strong></a></li>
+          <li><a href="/zonas/"><strong>Ver todas las zonas &#8594;</strong></a></li>
         </ul>
       </div>
 
@@ -79,34 +78,31 @@ import { zones } from '../data/zones';
   }
 
   .footer__logo {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-    color: var(--color-white);
     margin-bottom: var(--space-lg);
   }
 
-  .footer__logo-icon {
+  .footer__logo-text {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    background-color: var(--color-secondary);
-    color: var(--color-white);
-    font-weight: 800;
-    font-size: 0.9rem;
-    border-radius: var(--radius-md);
-    flex-shrink: 0;
+    flex-direction: column;
+    line-height: 1.2;
   }
 
-  .footer__logo small {
-    font-size: 0.75rem;
-    opacity: 0.7;
+  .footer__logo-text strong {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-white);
+  }
+
+  .footer__logo-text small {
+    font-size: 0.68rem;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
   }
 
   .footer__col p {
-    color: rgba(255, 255, 255, 0.65);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 0.9rem;
     line-height: 1.7;
   }
@@ -121,7 +117,7 @@ import { zones } from '../data/zones';
   }
 
   .footer__contact-info a {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.75);
   }
 
   .footer__contact-info a:hover {
@@ -131,11 +127,11 @@ import { zones } from '../data/zones';
   .footer__col h4 {
     color: var(--color-white);
     font-family: var(--font-body);
-    font-size: 0.95rem;
+    font-size: 0.82rem;
     font-weight: 700;
     margin-bottom: var(--space-md);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
   }
 
   .footer__legal-title {
@@ -151,7 +147,7 @@ import { zones } from '../data/zones';
   }
 
   .footer__col ul li a {
-    color: rgba(255, 255, 255, 0.65);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 0.85rem;
     transition: color var(--transition);
   }
@@ -163,13 +159,13 @@ import { zones } from '../data/zones';
   .footer__bottom {
     margin-top: var(--space-3xl);
     padding-top: var(--space-xl);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
     text-align: center;
   }
 
   .footer__bottom p {
     font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.4);
   }
 
   @media (max-width: 992px) {

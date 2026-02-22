@@ -8,26 +8,26 @@
 }
 
 :root {
-  /* Color palette - professional, warm, trustworthy */
-  --color-primary: #1B3A5C;
-  --color-primary-light: #2A5580;
-  --color-primary-dark: #0F2540;
-  --color-secondary: #3D8B7A;
-  --color-secondary-light: #4DA693;
-  --color-accent: #C4915E;
-  --color-accent-light: #D4A876;
+  /* Color palette - elegant, warm, professional */
+  --color-primary: #1a3c34;
+  --color-primary-light: #2a5c4e;
+  --color-primary-dark: #0f2620;
+  --color-secondary: #c8a45c;
+  --color-secondary-light: #d4b574;
+  --color-secondary-dark: #b08e42;
+  --color-accent: #3d8b7a;
 
   --color-white: #FFFFFF;
-  --color-bg: #F8F7F4;
-  --color-bg-alt: #EFEDE8;
-  --color-text: #2D2D2D;
-  --color-text-light: #5A5A5A;
-  --color-text-muted: #8A8A8A;
-  --color-border: #E0DDD6;
+  --color-bg: #faf9f6;
+  --color-bg-alt: #f3f1ec;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-text-muted: #999999;
+  --color-border: #e8e5de;
 
   /* Typography */
-  --font-heading: 'Georgia', 'Times New Roman', serif;
-  --font-body: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-heading: 'Playfair Display', 'Georgia', serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
 
   /* Spacing */
   --space-xs: 0.25rem;
@@ -38,6 +38,7 @@
   --space-2xl: 3rem;
   --space-3xl: 4rem;
   --space-4xl: 6rem;
+  --space-5xl: 8rem;
 
   /* Layout */
   --max-width: 1200px;
@@ -47,15 +48,16 @@
   --transition: 0.3s ease;
 
   /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.1);
 
   /* Border radius */
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --radius-xl: 20px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 100px;
 }
 
 html {
@@ -85,29 +87,29 @@ a {
 }
 
 a:hover {
-  color: var(--color-secondary);
+  color: var(--color-accent);
 }
 
 /* ===== TYPOGRAPHY ===== */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   color: var(--color-primary-dark);
-  line-height: 1.3;
+  line-height: 1.25;
   font-weight: 700;
 }
 
 h1 {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
   margin-bottom: var(--space-lg);
 }
 
 h2 {
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
   margin-bottom: var(--space-lg);
 }
 
 h3 {
-  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
   margin-bottom: var(--space-md);
 }
 
@@ -125,7 +127,7 @@ p {
 }
 
 .section {
-  padding: var(--space-4xl) 0;
+  padding: var(--space-5xl) 0;
 }
 
 .section--alt {
@@ -134,18 +136,18 @@ p {
 
 .section__header {
   text-align: center;
-  max-width: 700px;
+  max-width: 680px;
   margin: 0 auto var(--space-3xl);
 }
 
 .section__subtitle {
   color: var(--color-secondary);
   font-family: var(--font-body);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: var(--space-sm);
+  letter-spacing: 3px;
+  margin-bottom: var(--space-md);
   display: block;
 }
 
@@ -183,12 +185,13 @@ p {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-sm);
-  padding: 0.85rem 2rem;
+  padding: 0.9rem 2.2rem;
   border: none;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-full);
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
   transition: all var(--transition);
@@ -214,7 +217,7 @@ p {
 }
 
 .btn--secondary:hover {
-  background-color: var(--color-secondary-light);
+  background-color: var(--color-secondary-dark);
   color: var(--color-white);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
@@ -233,8 +236,8 @@ p {
 }
 
 .btn--lg {
-  padding: 1.1rem 2.5rem;
-  font-size: 1.1rem;
+  padding: 1.1rem 2.8rem;
+  font-size: 1.05rem;
 }
 
 /* ===== CARDS ===== */
@@ -242,7 +245,6 @@ p {
   background-color: var(--color-white);
   border-radius: var(--radius-lg);
   padding: var(--space-2xl);
-  box-shadow: var(--shadow-sm);
   transition: all var(--transition);
   border: 1px solid var(--color-border);
 }
@@ -250,16 +252,17 @@ p {
 .card:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-4px);
+  border-color: transparent;
 }
 
 .card__icon {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: var(--space-lg);
   display: block;
 }
 
 .card__title {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   margin-bottom: var(--space-sm);
 }
 
@@ -276,25 +279,27 @@ p {
   display: inline-flex;
   align-items: center;
   gap: var(--space-xs);
+  transition: gap var(--transition);
 }
 
 .card__link:hover {
   gap: var(--space-sm);
+  color: var(--color-secondary-dark);
 }
 
 /* ===== BREADCRUMBS ===== */
 .breadcrumbs {
   padding: var(--space-md) 0;
   font-size: 0.85rem;
-  color: var(--color-text-muted);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .breadcrumbs a {
-  color: var(--color-text-muted);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .breadcrumbs a:hover {
-  color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .breadcrumbs span {
@@ -303,7 +308,7 @@ p {
 
 /* ===== PAGE HERO (internal pages) ===== */
 .page-hero {
-  background-color: var(--color-primary-dark);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   color: var(--color-white);
   padding: calc(var(--header-height) + var(--space-3xl)) 0 var(--space-3xl);
   text-align: center;
@@ -315,7 +320,7 @@ p {
 }
 
 .page-hero p {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.75);
   max-width: 600px;
   margin: 0 auto;
   font-size: 1.1rem;
@@ -331,6 +336,10 @@ p {
   margin-top: var(--space-2xl);
 }
 
+.content h3 {
+  margin-top: var(--space-xl);
+}
+
 .content ul, .content ol {
   margin: var(--space-md) 0;
   padding-left: var(--space-xl);
@@ -344,7 +353,7 @@ p {
 /* ===== ZONE LINKS GRID ===== */
 .zone-links {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: var(--space-md);
 }
 
@@ -375,8 +384,8 @@ p {
 }
 
 .faq-item summary {
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
   color: var(--color-primary-dark);
   cursor: pointer;
   font-weight: 600;
@@ -384,22 +393,39 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: var(--space-md);
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
 }
 
 .faq-item summary::after {
   content: "+";
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 300;
   color: var(--color-secondary);
   transition: transform var(--transition);
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
 }
 
 .faq-item[open] summary::after {
   transform: rotate(45deg);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
 }
 
 .faq-item p {
   margin-top: var(--space-md);
-  padding-right: var(--space-xl);
+  padding-right: var(--space-3xl);
 }
 
 /* ===== FORM ===== */
@@ -419,14 +445,14 @@ p {
 .form-group textarea,
 .form-group select {
   width: 100%;
-  padding: 0.85rem var(--space-md);
+  padding: 0.9rem var(--space-lg);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   font-family: var(--font-body);
   font-size: 1rem;
   color: var(--color-text);
   background-color: var(--color-white);
-  transition: border-color var(--transition);
+  transition: border-color var(--transition), box-shadow var(--transition);
 }
 
 .form-group input:focus,
@@ -434,7 +460,7 @@ p {
 .form-group select:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(27, 58, 92, 0.1);
+  box-shadow: 0 0 0 3px rgba(26, 60, 52, 0.08);
 }
 
 .form-group textarea {
@@ -445,7 +471,7 @@ p {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .container {
-    padding: 0 var(--space-md);
+    padding: 0 var(--space-lg);
   }
 
   .section {

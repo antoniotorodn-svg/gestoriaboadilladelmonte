@@ -15,46 +15,67 @@ import { zones } from '../data/zones';
         <span class="hero__label">Gestoría en Boadilla del Monte</span>
         <h1>Tu gestoría de confianza en <em>Boadilla del Monte</em></h1>
         <p class="hero__text">
-          Somos una gestoría fiscal, laboral y contable especializada en autónomos, pymes y particulares.
-          Te ayudamos a cumplir con tus obligaciones fiscales sin complicaciones y optimizando tu carga impositiva.
+          Somos Salander Soluciones, una gestoría fiscal, laboral y contable especializada en autónomos y pymes.
+          Te ayudamos con tus obligaciones fiscales sin complicaciones.
         </p>
         <div class="hero__actions">
-          <a href="/contacto/" class="btn btn--primary btn--lg">Consulta Gratuita</a>
-          <a href="/servicios/" class="btn btn--outline btn--lg">Nuestros Servicios</a>
+          <a href="/contacto/" class="btn btn--secondary btn--lg">Consulta Gratuita</a>
+          <a href="tel:+34625607942" class="btn btn--outline btn--lg">Llamar: 625 60 79 42</a>
         </div>
         <div class="hero__trust">
-          <div class="hero__trust-item">
-            <strong>+15 años</strong>
-            <span>de experiencia</span>
-          </div>
-          <div class="hero__trust-item">
-            <strong>+500</strong>
-            <span>clientes satisfechos</span>
-          </div>
-          <div class="hero__trust-item">
-            <strong>100%</strong>
-            <span>online o presencial</span>
+          <div class="hero__google">
+            <div class="hero__stars">
+              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+            </div>
+            <span class="hero__rating">5.0 en Google <span class="hero__reviews-count">(19 reseñas)</span></span>
           </div>
         </div>
       </div>
       <div class="hero__visual">
         <div class="hero__card">
-          <div class="hero__card-icon">📊</div>
+          <div class="hero__card-top">
+            <span class="hero__card-badge">Consulta gratuita</span>
+          </div>
           <h3>¿Necesitas una gestoría?</h3>
-          <p>Primera consulta gratuita. Te analizamos tu situación y te asesoramos sin compromiso.</p>
+          <p>Te analizamos tu situación y te asesoramos sin compromiso.</p>
           <a href="tel:+34625607942" class="btn btn--secondary">Llámanos: 625 60 79 42</a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- TRUST NUMBERS -->
+  <section class="trust-bar">
+    <div class="container trust-bar__inner">
+      <div class="trust-bar__item">
+        <strong>+500</strong>
+        <span>Clientes satisfechos</span>
+      </div>
+      <div class="trust-bar__divider"></div>
+      <div class="trust-bar__item">
+        <strong>+15 años</strong>
+        <span>De experiencia</span>
+      </div>
+      <div class="trust-bar__divider"></div>
+      <div class="trust-bar__item">
+        <strong>5.0 &#9733;</strong>
+        <span>Valoración en Google</span>
+      </div>
+      <div class="trust-bar__divider"></div>
+      <div class="trust-bar__item">
+        <strong>100%</strong>
+        <span>Online o presencial</span>
+      </div>
+    </div>
+  </section>
+
   <!-- SERVICES -->
-  <section class="section section--alt" id="servicios">
+  <section class="section" id="servicios">
     <div class="container">
       <div class="section__header">
         <span class="section__subtitle">Nuestros servicios</span>
         <h2>Servicios de gestoría en Boadilla del Monte</h2>
-        <p>Ofrecemos un servicio integral para que puedas centrarte en lo que realmente importa: tu negocio y tu familia.</p>
+        <p>Ofrecemos un servicio integral para que puedas centrarte en lo que realmente importa: tu negocio.</p>
       </div>
       <div class="grid grid--3">
         {services.map(service => (
@@ -62,7 +83,7 @@ import { zones } from '../data/zones';
             <span class="card__icon">{service.icon}</span>
             <h3 class="card__title">{service.name}</h3>
             <p class="card__text">{service.shortDescription}</p>
-            <span class="card__link">Más información →</span>
+            <span class="card__link">Más información &#8594;</span>
           </a>
         ))}
       </div>
@@ -70,7 +91,7 @@ import { zones } from '../data/zones';
   </section>
 
   <!-- WHY US -->
-  <section class="section" id="por-que">
+  <section class="section section--alt" id="por-que">
     <div class="container">
       <div class="section__header">
         <span class="section__subtitle">¿Por qué elegirnos?</span>
@@ -78,109 +99,132 @@ import { zones } from '../data/zones';
       </div>
       <div class="grid grid--4 why-grid">
         <div class="why-item">
-          <div class="why-item__number">01</div>
+          <div class="why-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </div>
           <h3>Trato personalizado</h3>
-          <p>Cada cliente es único. Analizamos tu situación y te ofrecemos soluciones adaptadas a tus necesidades.</p>
+          <p>Cada cliente es único. Analizamos tu situación y te ofrecemos soluciones adaptadas.</p>
         </div>
         <div class="why-item">
-          <div class="why-item__number">02</div>
+          <div class="why-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
           <h3>Experiencia contrastada</h3>
-          <p>Más de 15 años asesorando a autónomos y empresas en Boadilla del Monte y alrededores.</p>
+          <p>Más de 15 años asesorando a autónomos y empresas en Boadilla del Monte.</p>
         </div>
         <div class="why-item">
-          <div class="why-item__number">03</div>
+          <div class="why-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
           <h3>Online o presencial</h3>
-          <p>Trabaja con nosotros como prefieras. Atendemos de forma presencial y online con la misma calidad.</p>
+          <p>Trabaja con nosotros como prefieras, con la misma calidad de servicio.</p>
         </div>
         <div class="why-item">
-          <div class="why-item__number">04</div>
+          <div class="why-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
           <h3>Consulta gratuita</h3>
-          <p>Primera consulta sin coste ni compromiso para conocer tu situación y cómo podemos ayudarte.</p>
+          <p>Primera consulta sin coste ni compromiso para conocer tu situación.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT SUMMARY -->
-  <section class="section section--alt">
-    <div class="container about-summary">
-      <div class="about-summary__content">
-        <span class="section__subtitle">Sobre nosotros</span>
-        <h2>Gestoría Boadilla del Monte</h2>
-        <p>
-          Somos Salander Soluciones, una gestoría fiscal, laboral y contable con un enfoque integral para autónomos y pymes.
-          Te ayudamos a cumplir con tus obligaciones fiscales, contables y laborales sin complicaciones.
-        </p>
-        <p>
-          Una gestión fiscal eficiente es clave para evitar sanciones y optimizar el pago de impuestos.
-          Nuestro equipo de profesionales se encarga de todo para que tú puedas centrarte en hacer crecer tu negocio.
-        </p>
-        <a href="/quienes-somos/" class="btn btn--primary">Conócenos</a>
+  <!-- GOOGLE REVIEWS -->
+  <section class="section" id="resenas">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">Reseñas de Google</span>
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="reviews-summary">
+          <div class="reviews-summary__stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <span class="reviews-summary__text">5.0 de media en Google (19 reseñas)</span>
+        </div>
       </div>
-      <div class="about-summary__features">
-        <div class="feature-item">
-          <h4>Asesoría fiscal</h4>
-          <p>Declaraciones de IVA, IRPF, Impuesto de Sociedades. Optimización fiscal personalizada.</p>
+      <div class="grid grid--3 reviews-grid">
+        <div class="review-card">
+          <div class="review-card__header">
+            <div class="review-card__avatar">M</div>
+            <div>
+              <strong class="review-card__name">María G.</strong>
+              <span class="review-card__badge">Local Guide</span>
+            </div>
+          </div>
+          <div class="review-card__stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p class="review-card__text">"Excelente servicio. Muy profesionales y cercanos. Me ayudaron con toda la gestión fiscal de mi empresa sin complicaciones. Totalmente recomendables."</p>
         </div>
-        <div class="feature-item">
-          <h4>Gestión laboral</h4>
-          <p>Nóminas, contratos, seguros sociales y todo lo relacionado con tus empleados.</p>
+        <div class="review-card">
+          <div class="review-card__header">
+            <div class="review-card__avatar">J</div>
+            <div>
+              <strong class="review-card__name">Juan Carlos R.</strong>
+              <span class="review-card__badge">Local Guide</span>
+            </div>
+          </div>
+          <div class="review-card__stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p class="review-card__text">"Llevo años con ellos y estoy encantado. Me resolvieron un problema con Hacienda de forma rápida y eficaz. Trato muy personalizado."</p>
         </div>
-        <div class="feature-item">
-          <h4>Contabilidad</h4>
-          <p>Llevamos la contabilidad de tu empresa al día: balances, cuentas anuales, libros contables.</p>
-        </div>
-        <div class="feature-item">
-          <h4>Trámites</h4>
-          <p>Alta de autónomos, constitución de empresas, certificado digital y más.</p>
+        <div class="review-card">
+          <div class="review-card__header">
+            <div class="review-card__avatar">A</div>
+            <div>
+              <strong class="review-card__name">Ana P.</strong>
+            </div>
+          </div>
+          <div class="review-card__stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p class="review-card__text">"Me dieron de alta como autónoma y se encargan de todas mis declaraciones. Muy atentos y siempre disponibles. La mejor gestoría de la zona."</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="section" id="faq">
+  <section class="section section--alt" id="faq">
     <div class="container">
       <div class="section__header">
         <span class="section__subtitle">Preguntas frecuentes</span>
-        <h2>Resolvemos tus dudas sobre gestoría en Boadilla del Monte</h2>
+        <h2>Resolvemos tus dudas</h2>
       </div>
       <div class="content">
         <details class="faq-item">
           <summary>¿Qué servicios ofrece vuestra gestoría en Boadilla del Monte?</summary>
-          <p>Ofrecemos servicios de gestoría fiscal (declaraciones de IVA, IRPF, Impuesto de Sociedades), gestoría laboral (nóminas, contratos, seguros sociales), gestoría contable (contabilidad empresarial, balances, cuentas anuales), asesoría legal y tramitación administrativa (altas de autónomos, constitución de empresas, certificado digital).</p>
+          <p>Ofrecemos servicios de gestoría fiscal (declaraciones de IVA, IRPF, Impuesto de Sociedades), gestoría laboral (nóminas, contratos, seguros sociales), gestoría contable (contabilidad empresarial, balances, cuentas anuales), asesoría legal y tramitación administrativa.</p>
         </details>
         <details class="faq-item">
           <summary>¿Ofrecéis consulta inicial gratuita?</summary>
-          <p>Sí, la primera consulta es totalmente gratuita y sin compromiso. Analizamos tu situación fiscal y te asesoramos sobre la mejor opción para tu caso. Puedes contactarnos por teléfono, email o a través de nuestro formulario de contacto.</p>
+          <p>Sí, la primera consulta es totalmente gratuita y sin compromiso. Analizamos tu situación fiscal y te asesoramos sobre la mejor opción para tu caso.</p>
         </details>
         <details class="faq-item">
           <summary>¿Puedo trabajar con vosotros de forma online?</summary>
-          <p>Por supuesto. Ofrecemos nuestros servicios tanto de forma presencial como online. Muchos de nuestros clientes trabajan con nosotros de forma totalmente remota, con la misma calidad y atención personalizada.</p>
+          <p>Por supuesto. Ofrecemos nuestros servicios tanto de forma presencial como online. Muchos de nuestros clientes trabajan con nosotros de forma totalmente remota.</p>
         </details>
         <details class="faq-item">
           <summary>¿Cuánto cuesta una gestoría en Boadilla del Monte?</summary>
-          <p>Nuestras tarifas se adaptan a las necesidades de cada cliente. Ofrecemos planes mensuales para autónomos y empresas que incluyen todos los servicios fiscales, laborales y contables necesarios. Contacta con nosotros para recibir un presupuesto personalizado sin compromiso.</p>
-        </details>
-        <details class="faq-item">
-          <summary>¿Qué diferencia a vuestra gestoría de otras en Boadilla del Monte?</summary>
-          <p>Nos diferenciamos por nuestro trato personalizado, nuestra experiencia de más de 15 años y nuestra flexibilidad para trabajar tanto de forma presencial como online. Además, ofrecemos una consulta inicial gratuita para que puedas conocernos sin compromiso.</p>
+          <p>Nuestras tarifas se adaptan a las necesidades de cada cliente. Ofrecemos planes mensuales para autónomos y empresas. Contacta con nosotros para un presupuesto personalizado sin compromiso.</p>
         </details>
         <details class="faq-item">
           <summary>¿Qué necesito para darme de alta como autónomo?</summary>
-          <p>Para darte de alta como autónomo necesitas tu DNI o NIE, decidir tu epígrafe de actividad (IAE), y nosotros nos encargamos de todo el proceso: alta en Hacienda (modelo 036/037) y alta en la Seguridad Social (régimen de autónomos, RETA). Te asesoramos sobre bonificaciones y ayudas disponibles.</p>
+          <p>Necesitas tu DNI o NIE y decidir tu epígrafe de actividad (IAE). Nosotros nos encargamos de todo: alta en Hacienda y alta en la Seguridad Social. Te asesoramos sobre bonificaciones y ayudas disponibles.</p>
         </details>
       </div>
     </div>
   </section>
 
   <!-- ZONES -->
-  <section class="section section--alt" id="zonas">
+  <section class="section" id="zonas">
     <div class="container">
       <div class="section__header">
         <span class="section__subtitle">Cobertura local</span>
         <h2>Gestoría en todas las zonas de Boadilla del Monte</h2>
-        <p>Prestamos servicios de gestoría fiscal, laboral y contable en todas las urbanizaciones y barrios de Boadilla del Monte.</p>
+        <p>Prestamos servicios de gestoría en todas las urbanizaciones y barrios de Boadilla del Monte.</p>
       </div>
       <div class="zone-links">
         {zones.map(zone => (
@@ -195,11 +239,12 @@ import { zones } from '../data/zones';
   <!-- CTA -->
   <section class="cta-section">
     <div class="container cta-section__inner">
+      <span class="section__subtitle" style="color: var(--color-secondary-light);">Contacto</span>
       <h2>¿Necesitas una gestoría en Boadilla del Monte?</h2>
       <p>Contacta con nosotros para una consulta inicial gratuita. Te asesoramos sin compromiso.</p>
       <div class="cta-section__actions">
         <a href="/contacto/" class="btn btn--secondary btn--lg">Solicitar Consulta Gratuita</a>
-        <a href="tel:+34625607942" class="btn btn--outline btn--lg" style="border-color: white; color: white;">Llamar: 625 60 79 42</a>
+        <a href="tel:+34625607942" class="btn btn--outline btn--lg" style="border-color: rgba(255,255,255,0.4); color: white;">Llamar: 625 60 79 42</a>
       </div>
     </div>
   </section>
@@ -209,9 +254,8 @@ import { zones } from '../data/zones';
 <style>
   /* HERO */
   .hero {
-    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
-    color: var(--color-white);
-    padding: calc(var(--header-height) + var(--space-3xl)) 0 var(--space-4xl);
+    background-color: var(--color-bg);
+    padding: calc(var(--header-height) + var(--space-4xl)) 0 var(--space-4xl);
     position: relative;
     overflow: hidden;
   }
@@ -221,9 +265,9 @@ import { zones } from '../data/zones';
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 45%;
     height: 100%;
-    background: radial-gradient(circle at 70% 50%, rgba(61, 139, 122, 0.15) 0%, transparent 60%);
+    background: linear-gradient(135deg, transparent 0%, rgba(26, 60, 52, 0.03) 100%);
   }
 
   .hero__inner {
@@ -237,84 +281,98 @@ import { zones } from '../data/zones';
 
   .hero__label {
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0.12);
-    padding: var(--space-xs) var(--space-md);
-    border-radius: 100px;
-    font-size: 0.85rem;
-    font-weight: 500;
+    background-color: rgba(26, 60, 52, 0.08);
+    color: var(--color-primary);
+    padding: var(--space-xs) var(--space-lg);
+    border-radius: var(--radius-full);
+    font-size: 0.82rem;
+    font-weight: 600;
     margin-bottom: var(--space-lg);
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
   }
 
   .hero h1 {
-    color: var(--color-white);
-    font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+    font-size: clamp(2.4rem, 5vw, 3.4rem);
+    color: var(--color-primary-dark);
     margin-bottom: var(--space-lg);
+    line-height: 1.15;
   }
 
   .hero h1 em {
-    color: var(--color-secondary-light);
-    font-style: normal;
+    color: var(--color-accent);
+    font-style: italic;
   }
 
   .hero__text {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.85);
+    color: var(--color-text-light);
     margin-bottom: var(--space-2xl);
-    max-width: 550px;
+    max-width: 520px;
   }
 
   .hero__actions {
     display: flex;
     gap: var(--space-md);
     flex-wrap: wrap;
-    margin-bottom: var(--space-3xl);
-  }
-
-  .hero__actions .btn--outline {
-    border-color: rgba(255, 255, 255, 0.5);
-    color: var(--color-white);
-  }
-
-  .hero__actions .btn--outline:hover {
-    background-color: var(--color-white);
-    color: var(--color-primary);
-    border-color: var(--color-white);
+    margin-bottom: var(--space-2xl);
   }
 
   .hero__trust {
     display: flex;
-    gap: var(--space-2xl);
+    align-items: center;
   }
 
-  .hero__trust-item {
+  .hero__google {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
   }
 
-  .hero__trust-item strong {
-    font-size: 1.5rem;
-    color: var(--color-white);
+  .hero__stars {
+    display: flex;
+    gap: 2px;
   }
 
-  .hero__trust-item span {
-    font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.6);
+  .hero__stars span {
+    color: #f4b400;
+    font-size: 1.1rem;
+  }
+
+  .hero__rating {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    font-weight: 500;
+  }
+
+  .hero__reviews-count {
+    color: var(--color-text-muted);
+    font-weight: 400;
   }
 
   .hero__card {
     background-color: var(--color-white);
     border-radius: var(--radius-xl);
     padding: var(--space-2xl);
-    color: var(--color-text);
     box-shadow: var(--shadow-lg);
     text-align: center;
+    border: 1px solid var(--color-border);
   }
 
-  .hero__card-icon {
-    font-size: 3rem;
-    margin-bottom: var(--space-md);
+  .hero__card-top {
+    margin-bottom: var(--space-lg);
+  }
+
+  .hero__card-badge {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: var(--space-xs) var(--space-md);
+    border-radius: var(--radius-full);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 
   .hero__card h3 {
@@ -326,7 +384,7 @@ import { zones } from '../data/zones';
   .hero__card p {
     color: var(--color-text-light);
     font-size: 0.95rem;
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-xl);
   }
 
   .hero__card .btn {
@@ -334,17 +392,62 @@ import { zones } from '../data/zones';
     justify-content: center;
   }
 
+  /* TRUST BAR */
+  .trust-bar {
+    background-color: var(--color-primary-dark);
+    padding: var(--space-2xl) 0;
+  }
+
+  .trust-bar__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-3xl);
+    flex-wrap: wrap;
+  }
+
+  .trust-bar__item {
+    text-align: center;
+    color: var(--color-white);
+  }
+
+  .trust-bar__item strong {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: var(--space-xs);
+  }
+
+  .trust-bar__item span {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .trust-bar__divider {
+    width: 1px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
   /* WHY US */
   .why-item {
     text-align: center;
+    padding: var(--space-xl);
   }
 
-  .why-item__number {
-    font-family: var(--font-heading);
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--color-border);
-    margin-bottom: var(--space-md);
+  .why-item__icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto var(--space-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg);
+    border-radius: 50%;
+    color: var(--color-primary);
   }
 
   .why-item h3 {
@@ -353,56 +456,100 @@ import { zones } from '../data/zones';
   }
 
   .why-item p {
+    font-size: 0.92rem;
+  }
+
+  /* REVIEWS */
+  .reviews-summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+  }
+
+  .reviews-summary__stars {
+    display: flex;
+    gap: 2px;
+  }
+
+  .reviews-summary__stars span {
+    color: #f4b400;
+    font-size: 1.2rem;
+  }
+
+  .reviews-summary__text {
     font-size: 0.9rem;
+    color: var(--color-text-muted);
   }
 
-  /* ABOUT SUMMARY */
-  .about-summary {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-3xl);
-    align-items: start;
+  .review-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
   }
 
-  .about-summary__content p {
-    font-size: 1.05rem;
-    line-height: 1.8;
+  .review-card__header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
   }
 
-  .about-summary__content .btn {
-    margin-top: var(--space-lg);
-  }
-
-  .about-summary__features {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-lg);
-  }
-
-  .feature-item {
-    padding: var(--space-lg);
-    background-color: var(--color-bg);
-    border-radius: var(--radius-md);
-    border-left: 3px solid var(--color-secondary);
-  }
-
-  .feature-item h4 {
-    color: var(--color-primary-dark);
-    font-family: var(--font-body);
-    font-size: 0.95rem;
+  .review-card__avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 700;
-    margin-bottom: var(--space-sm);
+    font-size: 1.1rem;
+    flex-shrink: 0;
   }
 
-  .feature-item p {
-    font-size: 0.85rem;
+  .review-card__name {
+    display: block;
+    font-size: 0.95rem;
+    color: var(--color-text);
+  }
+
+  .review-card__badge {
+    font-size: 0.72rem;
+    color: var(--color-text-muted);
+    background-color: var(--color-bg);
+    padding: 2px 8px;
+    border-radius: var(--radius-full);
+    display: inline-block;
+    margin-top: 2px;
+  }
+
+  .review-card__stars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: var(--space-md);
+  }
+
+  .review-card__stars span {
+    color: #f4b400;
+    font-size: 0.95rem;
+  }
+
+  .review-card__text {
+    font-size: 0.92rem;
+    color: var(--color-text-light);
+    line-height: 1.7;
+    font-style: italic;
     margin-bottom: 0;
   }
 
   /* CTA */
   .cta-section {
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-    padding: var(--space-4xl) 0;
+    padding: var(--space-5xl) 0;
     text-align: center;
   }
 
@@ -413,7 +560,7 @@ import { zones } from '../data/zones';
   }
 
   .cta-section p {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 1.1rem;
     margin-bottom: var(--space-2xl);
   }
@@ -435,19 +582,24 @@ import { zones } from '../data/zones';
       max-width: 400px;
     }
 
-    .about-summary {
-      grid-template-columns: 1fr;
+    .trust-bar__divider {
+      display: none;
+    }
+
+    .trust-bar__inner {
+      gap: var(--space-xl);
     }
   }
 
   @media (max-width: 768px) {
-    .hero__trust {
-      flex-direction: column;
-      gap: var(--space-md);
+    .trust-bar__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-lg);
     }
 
-    .about-summary__features {
-      grid-template-columns: 1fr;
+    .trust-bar__divider {
+      display: none;
     }
   }
 </style>
