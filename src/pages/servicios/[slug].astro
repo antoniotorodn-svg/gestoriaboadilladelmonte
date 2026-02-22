@@ -1,0 +1,238 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { services } from '../../data/services';
+import { serviceContent } from '../../data/serviceContent';
+import { zones } from '../../data/zones';
+
+export function getStaticPaths() {
+  return serviceContent.map(sc => ({
+    params: { slug: sc.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const content = serviceContent.find(sc => sc.slug === slug)!;
+const service = services.find(s => s.slug === slug)!;
+const otherServices = services.filter(s => s.slug !== slug);
+---
+<Layout
+  title={service.metaTitle}
+  description={service.metaDescription}
+>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="/">Inicio</a> <span>›</span> <a href="/servicios/">Servicios</a> <span>›</span> {service.name}
+      </div>
+      <h1>{content.h1}</h1>
+      <p>{content.intro}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container service-layout">
+      <div class="service-layout__main">
+        {content.sections.map(section => (
+          <div class="service-section">
+            <h2>{section.title}</h2>
+            <p>{section.text}</p>
+          </div>
+        ))}
+
+        <div class="service-benefits">
+          <h2>¿Qué incluye nuestro servicio de {service.name.toLowerCase()}?</h2>
+          <ul class="benefits-list">
+            {content.benefits.map(benefit => (
+              <li>{benefit}</li>
+            ))}
+          </ul>
+        </div>
+
+        {content.faq.length > 0 && (
+          <div class="service-faq">
+            <h2>Preguntas frecuentes sobre {service.name.toLowerCase()}</h2>
+            {content.faq.map(item => (
+              <details class="faq-item">
+                <summary>{item.q}</summary>
+                <p>{item.a}</p>
+              </details>
+            ))}
+          </div>
+        )}
+      </div>
+
+      <aside class="service-layout__sidebar">
+        <div class="sidebar-card">
+          <h3>Consulta gratuita</h3>
+          <p>¿Necesitas nuestro servicio de {service.name.toLowerCase()}? Contacta con nosotros para una consulta sin compromiso.</p>
+          <a href="/contacto/" class="btn btn--primary" style="width:100%; justify-content:center;">Contactar</a>
+          <a href="tel:+34600000000" class="btn btn--outline" style="width:100%; justify-content:center; margin-top: 0.5rem;">Llamar: 600 000 000</a>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Otros servicios</h3>
+          <ul class="sidebar-links">
+            {otherServices.map(s => (
+              <li><a href={`/servicios/${s.slug}/`}>{s.icon} {s.name}</a></li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Zonas de servicio</h3>
+          <ul class="sidebar-links">
+            {zones.slice(0, 8).map(z => (
+              <li><a href={`/zonas/${z.slug}/`}>{z.name}</a></li>
+            ))}
+            <li><a href="/zonas/"><strong>Ver todas las zonas →</strong></a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>¿Necesitas {service.name.toLowerCase()} en Boadilla del Monte?</h2>
+      <p>Contacta con nosotros para una consulta inicial gratuita y sin compromiso.</p>
+      <a href="/contacto/" class="btn btn--secondary btn--lg">Solicitar Consulta Gratuita</a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .service-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: var(--space-3xl);
+    align-items: start;
+  }
+
+  .service-section {
+    margin-bottom: var(--space-2xl);
+  }
+
+  .service-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-md);
+  }
+
+  .service-section p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  .service-benefits {
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-2xl);
+  }
+
+  .service-benefits h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-lg);
+  }
+
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-sm);
+  }
+
+  .benefits-list li {
+    padding: var(--space-sm) 0;
+    padding-left: var(--space-lg);
+    position: relative;
+    color: var(--color-text-light);
+  }
+
+  .benefits-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-secondary);
+    font-weight: 700;
+  }
+
+  .service-faq {
+    margin-top: var(--space-2xl);
+  }
+
+  .service-faq h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-lg);
+  }
+
+  .sidebar-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    margin-bottom: var(--space-xl);
+  }
+
+  .sidebar-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--space-md);
+    color: var(--color-primary-dark);
+  }
+
+  .sidebar-card p {
+    font-size: 0.9rem;
+    margin-bottom: var(--space-lg);
+  }
+
+  .sidebar-links {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidebar-links li {
+    margin-bottom: var(--space-xs);
+  }
+
+  .sidebar-links li a {
+    display: block;
+    padding: var(--space-xs) 0;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    border-bottom: 1px solid var(--color-border);
+    transition: color var(--transition);
+  }
+
+  .sidebar-links li:last-child a {
+    border-bottom: none;
+  }
+
+  .sidebar-links li a:hover {
+    color: var(--color-primary);
+  }
+
+  .cta-section {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    padding: var(--space-4xl) 0;
+    text-align: center;
+  }
+
+  .cta-section h2 {
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+  }
+
+  .cta-section p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: var(--space-2xl);
+  }
+
+  @media (max-width: 992px) {
+    .service-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .benefits-list {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

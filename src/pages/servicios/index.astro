@@ -1,0 +1,115 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { services } from '../../data/services';
+---
+<Layout
+  title="Servicios de Gestoría en Boadilla del Monte | Fiscal, Laboral, Contable"
+  description="Todos nuestros servicios de gestoría en Boadilla del Monte: asesoría fiscal, laboral, contable, legal, alta de autónomos, constitución de empresas y más."
+>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="/">Inicio</a> <span>›</span> Servicios
+      </div>
+      <h1>Servicios de Gestoría en Boadilla del Monte</h1>
+      <p>Ofrecemos un servicio integral de asesoría fiscal, laboral y contable para autónomos, pymes y particulares.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid--3">
+        {services.map(service => (
+          <a href={`/servicios/${service.slug}/`} class="card">
+            <span class="card__icon">{service.icon}</span>
+            <h3 class="card__title">{service.name}</h3>
+            <p class="card__text">{service.shortDescription}</p>
+            <span class="card__link">Más información →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">¿Cómo trabajamos?</span>
+        <h2>Un proceso sencillo y transparente</h2>
+      </div>
+      <div class="grid grid--3">
+        <div class="process-step">
+          <div class="process-step__number">1</div>
+          <h3>Consulta inicial gratuita</h3>
+          <p>Contacta con nosotros y te realizamos una consulta gratuita para conocer tu situación y necesidades.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step__number">2</div>
+          <h3>Propuesta personalizada</h3>
+          <p>Preparamos un presupuesto a medida con los servicios que necesitas, sin letra pequeña ni sorpresas.</p>
+        </div>
+        <div class="process-step">
+          <div class="process-step__number">3</div>
+          <h3>Nos ponemos a trabajar</h3>
+          <p>Nos encargamos de toda tu gestión fiscal, laboral y contable para que tú te centres en tu negocio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>¿Necesitas alguno de nuestros servicios?</h2>
+      <p>Contacta con nosotros para una consulta inicial gratuita y sin compromiso.</p>
+      <a href="/contacto/" class="btn btn--secondary btn--lg">Solicitar Consulta Gratuita</a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .process-step {
+    text-align: center;
+    padding: var(--space-xl);
+  }
+
+  .process-step__number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--space-lg);
+  }
+
+  .process-step h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  .process-step p {
+    font-size: 0.95rem;
+  }
+
+  .cta-section {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    padding: var(--space-4xl) 0;
+    text-align: center;
+  }
+
+  .cta-section h2 {
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+  }
+
+  .cta-section p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: var(--space-2xl);
+  }
+</style>

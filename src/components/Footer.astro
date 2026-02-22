@@ -1,0 +1,186 @@
+---
+import { services } from '../data/services';
+import { zones } from '../data/zones';
+---
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col footer__col--about">
+        <div class="footer__logo">
+          <span class="footer__logo-icon">GB</span>
+          <span>
+            <strong>Gestoría Boadilla</strong><br />
+            <small>del Monte</small>
+          </span>
+        </div>
+        <p>
+          Somos tu gestoría de confianza en Boadilla del Monte. Asesoría fiscal, laboral y contable para autónomos, pymes y particulares.
+        </p>
+        <div class="footer__contact-info">
+          <p><strong>Teléfono:</strong> <a href="tel:+34600000000">600 000 000</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@gestoriaboadilladelmonte.com">info@gestoriaboadilladelmonte.com</a></p>
+          <p><strong>Horario:</strong> Lunes a Viernes, 9:00 - 19:00</p>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Servicios</h4>
+        <ul>
+          {services.slice(0, 7).map(s => (
+            <li><a href={`/servicios/${s.slug}/`}>{s.name}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Zonas</h4>
+        <ul>
+          {zones.slice(0, 10).map(z => (
+            <li><a href={`/zonas/${z.slug}/`}>{z.name}</a></li>
+          ))}
+          <li><a href="/zonas/"><strong>Ver todas las zonas →</strong></a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Información</h4>
+        <ul>
+          <li><a href="/quienes-somos/">Quiénes Somos</a></li>
+          <li><a href="/contacto/">Contacto</a></li>
+          <li><a href="/servicios/">Todos los Servicios</a></li>
+          <li><a href="/zonas/">Todas las Zonas</a></li>
+        </ul>
+        <h4 class="footer__legal-title">Legal</h4>
+        <ul>
+          <li><a href="/aviso-legal/">Aviso Legal</a></li>
+          <li><a href="/politica-privacidad/">Política de Privacidad</a></li>
+          <li><a href="/politica-cookies/">Política de Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; {new Date().getFullYear()} Gestoría Boadilla del Monte - Salander Soluciones. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: var(--color-primary-dark);
+    color: rgba(255, 255, 255, 0.8);
+    padding: var(--space-4xl) 0 var(--space-xl);
+  }
+
+  .footer__grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .footer__logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--color-white);
+    margin-bottom: var(--space-lg);
+  }
+
+  .footer__logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    font-weight: 800;
+    font-size: 0.9rem;
+    border-radius: var(--radius-md);
+    flex-shrink: 0;
+  }
+
+  .footer__logo small {
+    font-size: 0.75rem;
+    opacity: 0.7;
+  }
+
+  .footer__col p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .footer__contact-info {
+    margin-top: var(--space-lg);
+  }
+
+  .footer__contact-info p {
+    margin-bottom: var(--space-xs);
+    font-size: 0.85rem;
+  }
+
+  .footer__contact-info a {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .footer__contact-info a:hover {
+    color: var(--color-white);
+  }
+
+  .footer__col h4 {
+    color: var(--color-white);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .footer__legal-title {
+    margin-top: var(--space-lg);
+  }
+
+  .footer__col ul {
+    list-style: none;
+  }
+
+  .footer__col ul li {
+    margin-bottom: var(--space-xs);
+  }
+
+  .footer__col ul li a {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.85rem;
+    transition: color var(--transition);
+  }
+
+  .footer__col ul li a:hover {
+    color: var(--color-white);
+  }
+
+  .footer__bottom {
+    margin-top: var(--space-3xl);
+    padding-top: var(--space-xl);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+
+  .footer__bottom p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  @media (max-width: 992px) {
+    .footer__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .footer__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

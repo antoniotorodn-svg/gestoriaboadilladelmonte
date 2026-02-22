@@ -1,0 +1,76 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+}
+
+const { title, description, canonical } = Astro.props;
+const siteUrl = 'https://gestoriaboadilladelmonte.com';
+const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString();
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href={canonicalUrl} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="Gestoría Boadilla del Monte" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+
+  <!-- Geo -->
+  <meta name="geo.region" content="ES-MD" />
+  <meta name="geo.placename" content="Boadilla del Monte" />
+
+  <title>{title}</title>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "Gestoría Boadilla del Monte - Salander Soluciones",
+    "description": "Gestoría fiscal, laboral y contable en Boadilla del Monte. Servicios para autónomos, pymes y particulares.",
+    "url": siteUrl,
+    "telephone": "+34 600 000 000",
+    "email": "info@gestoriaboadilladelmonte.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Boadilla del Monte",
+      "addressRegion": "Madrid",
+      "addressCountry": "ES"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Boadilla del Monte"
+    },
+    "priceRange": "€€",
+    "openingHours": "Mo-Fr 09:00-19:00",
+    "sameAs": []
+  })} />
+</head>
+<body>
+  <Header />
+  <main>
+    <slot />
+  </main>
+  <Footer />
+</body>
+</html>

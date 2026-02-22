@@ -1,0 +1,453 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { services } from '../data/services';
+import { zones } from '../data/zones';
+---
+<Layout
+  title="Gestoría Boadilla del Monte | Asesoría Fiscal, Laboral y Contable"
+  description="Gestoría en Boadilla del Monte. Servicios de asesoría fiscal, laboral y contable para autónomos, pymes y particulares. Consulta inicial gratuita. ¡Llámanos!"
+>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="hero__label">Gestoría en Boadilla del Monte</span>
+        <h1>Tu gestoría de confianza en <em>Boadilla del Monte</em></h1>
+        <p class="hero__text">
+          Somos una gestoría fiscal, laboral y contable especializada en autónomos, pymes y particulares.
+          Te ayudamos a cumplir con tus obligaciones fiscales sin complicaciones y optimizando tu carga impositiva.
+        </p>
+        <div class="hero__actions">
+          <a href="/contacto/" class="btn btn--primary btn--lg">Consulta Gratuita</a>
+          <a href="/servicios/" class="btn btn--outline btn--lg">Nuestros Servicios</a>
+        </div>
+        <div class="hero__trust">
+          <div class="hero__trust-item">
+            <strong>+15 años</strong>
+            <span>de experiencia</span>
+          </div>
+          <div class="hero__trust-item">
+            <strong>+500</strong>
+            <span>clientes satisfechos</span>
+          </div>
+          <div class="hero__trust-item">
+            <strong>100%</strong>
+            <span>online o presencial</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__card">
+          <div class="hero__card-icon">📊</div>
+          <h3>¿Necesitas una gestoría?</h3>
+          <p>Primera consulta gratuita. Te analizamos tu situación y te asesoramos sin compromiso.</p>
+          <a href="tel:+34600000000" class="btn btn--secondary">Llámanos: 600 000 000</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section--alt" id="servicios">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">Nuestros servicios</span>
+        <h2>Servicios de gestoría en Boadilla del Monte</h2>
+        <p>Ofrecemos un servicio integral para que puedas centrarte en lo que realmente importa: tu negocio y tu familia.</p>
+      </div>
+      <div class="grid grid--3">
+        {services.map(service => (
+          <a href={`/servicios/${service.slug}/`} class="card">
+            <span class="card__icon">{service.icon}</span>
+            <h3 class="card__title">{service.name}</h3>
+            <p class="card__text">{service.shortDescription}</p>
+            <span class="card__link">Más información →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section" id="por-que">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">¿Por qué elegirnos?</span>
+        <h2>Una gestoría cercana, profesional y eficiente</h2>
+      </div>
+      <div class="grid grid--4 why-grid">
+        <div class="why-item">
+          <div class="why-item__number">01</div>
+          <h3>Trato personalizado</h3>
+          <p>Cada cliente es único. Analizamos tu situación y te ofrecemos soluciones adaptadas a tus necesidades.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-item__number">02</div>
+          <h3>Experiencia contrastada</h3>
+          <p>Más de 15 años asesorando a autónomos y empresas en Boadilla del Monte y alrededores.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-item__number">03</div>
+          <h3>Online o presencial</h3>
+          <p>Trabaja con nosotros como prefieras. Atendemos de forma presencial y online con la misma calidad.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-item__number">04</div>
+          <h3>Consulta gratuita</h3>
+          <p>Primera consulta sin coste ni compromiso para conocer tu situación y cómo podemos ayudarte.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SUMMARY -->
+  <section class="section section--alt">
+    <div class="container about-summary">
+      <div class="about-summary__content">
+        <span class="section__subtitle">Sobre nosotros</span>
+        <h2>Gestoría Boadilla del Monte</h2>
+        <p>
+          Somos Salander Soluciones, una gestoría fiscal, laboral y contable con un enfoque integral para autónomos y pymes.
+          Te ayudamos a cumplir con tus obligaciones fiscales, contables y laborales sin complicaciones.
+        </p>
+        <p>
+          Una gestión fiscal eficiente es clave para evitar sanciones y optimizar el pago de impuestos.
+          Nuestro equipo de profesionales se encarga de todo para que tú puedas centrarte en hacer crecer tu negocio.
+        </p>
+        <a href="/quienes-somos/" class="btn btn--primary">Conócenos</a>
+      </div>
+      <div class="about-summary__features">
+        <div class="feature-item">
+          <h4>Asesoría fiscal</h4>
+          <p>Declaraciones de IVA, IRPF, Impuesto de Sociedades. Optimización fiscal personalizada.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Gestión laboral</h4>
+          <p>Nóminas, contratos, seguros sociales y todo lo relacionado con tus empleados.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Contabilidad</h4>
+          <p>Llevamos la contabilidad de tu empresa al día: balances, cuentas anuales, libros contables.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Trámites</h4>
+          <p>Alta de autónomos, constitución de empresas, certificado digital y más.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">Preguntas frecuentes</span>
+        <h2>Resolvemos tus dudas sobre gestoría en Boadilla del Monte</h2>
+      </div>
+      <div class="content">
+        <details class="faq-item">
+          <summary>¿Qué servicios ofrece vuestra gestoría en Boadilla del Monte?</summary>
+          <p>Ofrecemos servicios de gestoría fiscal (declaraciones de IVA, IRPF, Impuesto de Sociedades), gestoría laboral (nóminas, contratos, seguros sociales), gestoría contable (contabilidad empresarial, balances, cuentas anuales), asesoría legal y tramitación administrativa (altas de autónomos, constitución de empresas, certificado digital).</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Ofrecéis consulta inicial gratuita?</summary>
+          <p>Sí, la primera consulta es totalmente gratuita y sin compromiso. Analizamos tu situación fiscal y te asesoramos sobre la mejor opción para tu caso. Puedes contactarnos por teléfono, email o a través de nuestro formulario de contacto.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Puedo trabajar con vosotros de forma online?</summary>
+          <p>Por supuesto. Ofrecemos nuestros servicios tanto de forma presencial como online. Muchos de nuestros clientes trabajan con nosotros de forma totalmente remota, con la misma calidad y atención personalizada.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cuánto cuesta una gestoría en Boadilla del Monte?</summary>
+          <p>Nuestras tarifas se adaptan a las necesidades de cada cliente. Ofrecemos planes mensuales para autónomos y empresas que incluyen todos los servicios fiscales, laborales y contables necesarios. Contacta con nosotros para recibir un presupuesto personalizado sin compromiso.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Qué diferencia a vuestra gestoría de otras en Boadilla del Monte?</summary>
+          <p>Nos diferenciamos por nuestro trato personalizado, nuestra experiencia de más de 15 años y nuestra flexibilidad para trabajar tanto de forma presencial como online. Además, ofrecemos una consulta inicial gratuita para que puedas conocernos sin compromiso.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Qué necesito para darme de alta como autónomo?</summary>
+          <p>Para darte de alta como autónomo necesitas tu DNI o NIE, decidir tu epígrafe de actividad (IAE), y nosotros nos encargamos de todo el proceso: alta en Hacienda (modelo 036/037) y alta en la Seguridad Social (régimen de autónomos, RETA). Te asesoramos sobre bonificaciones y ayudas disponibles.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZONES -->
+  <section class="section section--alt" id="zonas">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">Cobertura local</span>
+        <h2>Gestoría en todas las zonas de Boadilla del Monte</h2>
+        <p>Prestamos servicios de gestoría fiscal, laboral y contable en todas las urbanizaciones y barrios de Boadilla del Monte.</p>
+      </div>
+      <div class="zone-links">
+        {zones.map(zone => (
+          <a href={`/zonas/${zone.slug}/`} class="zone-link">
+            Gestoría en {zone.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container cta-section__inner">
+      <h2>¿Necesitas una gestoría en Boadilla del Monte?</h2>
+      <p>Contacta con nosotros para una consulta inicial gratuita. Te asesoramos sin compromiso.</p>
+      <div class="cta-section__actions">
+        <a href="/contacto/" class="btn btn--secondary btn--lg">Solicitar Consulta Gratuita</a>
+        <a href="tel:+34600000000" class="btn btn--outline btn--lg" style="border-color: white; color: white;">Llamar: 600 000 000</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+    color: var(--color-white);
+    padding: calc(var(--header-height) + var(--space-3xl)) 0 var(--space-4xl);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: radial-gradient(circle at 70% 50%, rgba(61, 139, 122, 0.15) 0%, transparent 60%);
+  }
+
+  .hero__inner {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: var(--space-3xl);
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero__label {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.12);
+    padding: var(--space-xs) var(--space-md);
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: var(--space-lg);
+    letter-spacing: 0.5px;
+  }
+
+  .hero h1 {
+    color: var(--color-white);
+    font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+    margin-bottom: var(--space-lg);
+  }
+
+  .hero h1 em {
+    color: var(--color-secondary-light);
+    font-style: normal;
+  }
+
+  .hero__text {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: var(--space-2xl);
+    max-width: 550px;
+  }
+
+  .hero__actions {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-3xl);
+  }
+
+  .hero__actions .btn--outline {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: var(--color-white);
+  }
+
+  .hero__actions .btn--outline:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border-color: var(--color-white);
+  }
+
+  .hero__trust {
+    display: flex;
+    gap: var(--space-2xl);
+  }
+
+  .hero__trust-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__trust-item strong {
+    font-size: 1.5rem;
+    color: var(--color-white);
+  }
+
+  .hero__trust-item span {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .hero__card {
+    background-color: var(--color-white);
+    border-radius: var(--radius-xl);
+    padding: var(--space-2xl);
+    color: var(--color-text);
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+  }
+
+  .hero__card-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-md);
+  }
+
+  .hero__card h3 {
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-sm);
+    font-size: 1.3rem;
+  }
+
+  .hero__card p {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    margin-bottom: var(--space-lg);
+  }
+
+  .hero__card .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* WHY US */
+  .why-item {
+    text-align: center;
+  }
+
+  .why-item__number {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-border);
+    margin-bottom: var(--space-md);
+  }
+
+  .why-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  .why-item p {
+    font-size: 0.9rem;
+  }
+
+  /* ABOUT SUMMARY */
+  .about-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: start;
+  }
+
+  .about-summary__content p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  .about-summary__content .btn {
+    margin-top: var(--space-lg);
+  }
+
+  .about-summary__features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+  }
+
+  .feature-item {
+    padding: var(--space-lg);
+    background-color: var(--color-bg);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--color-secondary);
+  }
+
+  .feature-item h4 {
+    color: var(--color-primary-dark);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+  }
+
+  .feature-item p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+  }
+
+  /* CTA */
+  .cta-section {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    padding: var(--space-4xl) 0;
+    text-align: center;
+  }
+
+  .cta-section h2 {
+    color: var(--color-white);
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    margin-bottom: var(--space-md);
+  }
+
+  .cta-section p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: var(--space-2xl);
+  }
+
+  .cta-section__actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 992px) {
+    .hero__inner {
+      grid-template-columns: 1fr;
+    }
+
+    .hero__visual {
+      max-width: 400px;
+    }
+
+    .about-summary {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero__trust {
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+
+    .about-summary__features {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

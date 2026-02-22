@@ -1,0 +1,257 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+  title="Contacto | Gestoría Boadilla del Monte - Consulta Gratuita"
+  description="Contacta con nuestra gestoría en Boadilla del Monte. Consulta inicial gratuita. Teléfono, email y formulario de contacto. Atención presencial y online."
+>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="/">Inicio</a> <span>›</span> Contacto
+      </div>
+      <h1>Contacto</h1>
+      <p>Contacta con nosotros para una consulta inicial gratuita y sin compromiso.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-layout">
+      <div class="contact-layout__form">
+        <h2>Envíanos un mensaje</h2>
+        <p>Rellena el formulario y nos pondremos en contacto contigo en menos de 24 horas.</p>
+
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre *</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+            </div>
+            <div class="form-group">
+              <label for="apellidos">Apellidos *</label>
+              <input type="text" id="apellidos" name="apellidos" required placeholder="Tus apellidos" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required placeholder="tu@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="600 000 000" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="servicio">¿En qué podemos ayudarte?</label>
+            <select id="servicio" name="servicio">
+              <option value="">Selecciona un servicio</option>
+              <option value="gestoria-fiscal">Gestoría Fiscal</option>
+              <option value="gestoria-laboral">Gestoría Laboral</option>
+              <option value="gestoria-contable">Gestoría Contable</option>
+              <option value="asesoria-legal">Asesoría Legal</option>
+              <option value="alta-autonomos">Alta de Autónomos</option>
+              <option value="constitucion-empresas">Constitución de Empresas</option>
+              <option value="certificado-digital">Certificado Digital</option>
+              <option value="declaracion-renta">Declaración de la Renta</option>
+              <option value="impuesto-sociedades">Impuesto de Sociedades</option>
+              <option value="tramites-administrativos">Trámites Administrativos</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos tu situación y cómo podemos ayudarte..."></textarea>
+          </div>
+
+          <div class="form-group form-group--checkbox">
+            <label>
+              <input type="checkbox" name="privacidad" required />
+              He leído y acepto la <a href="/politica-privacidad/">Política de Privacidad</a> *
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg">Enviar mensaje</button>
+        </form>
+      </div>
+
+      <aside class="contact-layout__info">
+        <div class="contact-card">
+          <h3>Datos de contacto</h3>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">📞</div>
+            <div>
+              <strong>Teléfono</strong>
+              <a href="tel:+34600000000">600 000 000</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">📧</div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:info@gestoriaboadilladelmonte.com">info@gestoriaboadilladelmonte.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">🕐</div>
+            <div>
+              <strong>Horario de atención</strong>
+              <span>Lunes a Viernes: 9:00 - 19:00</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">📍</div>
+            <div>
+              <strong>Ubicación</strong>
+              <span>Boadilla del Monte, Madrid</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card contact-card--highlight">
+          <h3>Consulta gratuita</h3>
+          <p>La primera consulta es completamente gratuita y sin compromiso. Analizamos tu situación y te asesoramos sobre la mejor solución para tu caso.</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>¿Prefieres llamar?</h3>
+          <p>Si prefieres hablar directamente con nosotros, llámanos al:</p>
+          <a href="tel:+34600000000" class="btn btn--secondary" style="width:100%; justify-content:center;">600 000 000</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: var(--space-3xl);
+    align-items: start;
+  }
+
+  .contact-layout__form h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  .contact-layout__form > p {
+    color: var(--color-text-light);
+    margin-bottom: var(--space-2xl);
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+  }
+
+  .form-group--checkbox label {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: 0.9rem;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .form-group--checkbox input[type="checkbox"] {
+    width: auto;
+  }
+
+  .form-group--checkbox a {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  .contact-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    margin-bottom: var(--space-xl);
+  }
+
+  .contact-card--highlight {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    color: var(--color-white);
+  }
+
+  .contact-card--highlight h3 {
+    color: var(--color-white);
+  }
+
+  .contact-card--highlight p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0;
+  }
+
+  .contact-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--space-lg);
+    color: var(--color-primary-dark);
+  }
+
+  .contact-card p {
+    font-size: 0.9rem;
+    margin-bottom: var(--space-lg);
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .contact-item:last-child {
+    border-bottom: none;
+  }
+
+  .contact-item__icon {
+    font-size: 1.3rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .contact-item strong {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .contact-item a,
+  .contact-item span {
+    font-size: 0.95rem;
+    color: var(--color-text);
+  }
+
+  .contact-item a:hover {
+    color: var(--color-primary);
+  }
+
+  @media (max-width: 992px) {
+    .contact-layout {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

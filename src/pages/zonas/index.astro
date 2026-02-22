@@ -1,0 +1,125 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { zones } from '../../data/zones';
+import { services } from '../../data/services';
+---
+<Layout
+  title="Gestoría en Todas las Zonas de Boadilla del Monte | Cobertura Local"
+  description="Gestoría fiscal, laboral y contable en todas las urbanizaciones y barrios de Boadilla del Monte: Las Lomas, Montepríncipe, Sector B, Olivar de Mirabal y más."
+>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="/">Inicio</a> <span>›</span> Zonas
+      </div>
+      <h1>Gestoría en Todas las Zonas de Boadilla del Monte</h1>
+      <p>Ofrecemos servicios de gestoría fiscal, laboral y contable en todas las urbanizaciones y barrios de Boadilla del Monte.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">Cobertura completa</span>
+        <h2>Encuentra tu gestoría en Boadilla del Monte</h2>
+        <p>Estamos cerca de ti, estés donde estés en Boadilla del Monte. Selecciona tu zona para conocer cómo podemos ayudarte.</p>
+      </div>
+
+      <div class="zones-grid">
+        {zones.map(zone => (
+          <a href={`/zonas/${zone.slug}/`} class="zone-card">
+            <h3>Gestoría en {zone.name}</h3>
+            <p>{zone.description}</p>
+            <span class="zone-card__link">Más información →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">Nuestros servicios</span>
+        <h2>Servicios disponibles en todas las zonas</h2>
+      </div>
+      <div class="grid grid--3">
+        {services.slice(0, 6).map(service => (
+          <a href={`/servicios/${service.slug}/`} class="card">
+            <span class="card__icon">{service.icon}</span>
+            <h3 class="card__title">{service.name}</h3>
+            <p class="card__text">{service.shortDescription}</p>
+            <span class="card__link">Más información →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>¿Necesitas una gestoría en Boadilla del Monte?</h2>
+      <p>No importa en qué zona de Boadilla del Monte estés. Contacta con nosotros para una consulta gratuita.</p>
+      <a href="/contacto/" class="btn btn--secondary btn--lg">Solicitar Consulta Gratuita</a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .zones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-lg);
+  }
+
+  .zone-card {
+    display: block;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    transition: all var(--transition);
+    text-decoration: none;
+  }
+
+  .zone-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+  }
+
+  .zone-card h3 {
+    font-size: 1.1rem;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-sm);
+  }
+
+  .zone-card p {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--space-md);
+  }
+
+  .zone-card__link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+  }
+
+  .cta-section {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    padding: var(--space-4xl) 0;
+    text-align: center;
+  }
+
+  .cta-section h2 {
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+  }
+
+  .cta-section p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: var(--space-2xl);
+  }
+</style>

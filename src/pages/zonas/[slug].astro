@@ -1,0 +1,294 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { zones } from '../../data/zones';
+import { services } from '../../data/services';
+
+export function getStaticPaths() {
+  return zones.map(zone => ({
+    params: { slug: zone.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const zone = zones.find(z => z.slug === slug)!;
+const otherZones = zones.filter(z => z.slug !== slug);
+---
+<Layout
+  title={`Gestoría en ${zone.name}, Boadilla del Monte | Asesoría Fiscal y Contable`}
+  description={zone.description}
+>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="/">Inicio</a> <span>›</span> <a href="/zonas/">Zonas</a> <span>›</span> {zone.name}
+      </div>
+      <h1>Gestoría en {zone.name}, Boadilla del Monte</h1>
+      <p>Servicios de asesoría fiscal, laboral y contable para residentes y empresas de {zone.name}.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container zone-layout">
+      <div class="zone-layout__main">
+        <h2>Tu gestoría de confianza en {zone.name}</h2>
+        <p class="zone-intro">{zone.longDescription}</p>
+
+        <p>En nuestra <strong>gestoría en Boadilla del Monte</strong>, ofrecemos un servicio integral de asesoría fiscal, laboral y contable a los residentes y negocios de <strong>{zone.name}</strong>. Nuestro equipo de profesionales te ayudará a gestionar todas tus obligaciones tributarias y administrativas de forma eficiente y personalizada.</p>
+
+        <h2>Servicios de gestoría en {zone.name}</h2>
+        <p>Estos son los principales servicios que ofrecemos a los residentes y empresas de {zone.name}, Boadilla del Monte:</p>
+
+        <div class="zone-services-grid">
+          {services.map(service => (
+            <a href={`/servicios/${service.slug}/`} class="zone-service-card">
+              <span class="zone-service-card__icon">{service.icon}</span>
+              <div>
+                <h3>{service.name}</h3>
+                <p>{service.shortDescription}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <h2>¿Por qué elegir nuestra gestoría en {zone.name}?</h2>
+        <ul class="zone-benefits">
+          <li><strong>Proximidad:</strong> Conocemos Boadilla del Monte y las necesidades de los residentes de {zone.name}.</li>
+          <li><strong>Experiencia:</strong> Más de 15 años asesorando a autónomos, empresas y particulares.</li>
+          <li><strong>Servicio integral:</strong> Fiscal, laboral, contable y legal en un solo lugar.</li>
+          <li><strong>Flexibilidad:</strong> Atención presencial y online, como prefieras.</li>
+          <li><strong>Consulta gratuita:</strong> Primera consulta sin coste ni compromiso.</li>
+        </ul>
+
+        <h2>Preguntas frecuentes sobre gestoría en {zone.name}</h2>
+        <details class="faq-item">
+          <summary>¿Ofrecéis servicio presencial en {zone.name}?</summary>
+          <p>Sí, ofrecemos atención tanto presencial como online. Puedes visitarnos en nuestra oficina o trabajar con nosotros de forma completamente remota, lo que te resulte más cómodo.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cuánto cuesta una gestoría en {zone.name}, Boadilla del Monte?</summary>
+          <p>Nuestras tarifas se adaptan a las necesidades de cada cliente. Ofrecemos planes mensuales para autónomos y empresas. Contacta con nosotros para un presupuesto personalizado sin compromiso.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Qué servicios ofrecéis a los autónomos de {zone.name}?</summary>
+          <p>Ofrecemos un servicio completo para autónomos: alta, declaraciones trimestrales de IVA e IRPF, declaración de la renta, asesoramiento fiscal, facturación y cualquier trámite administrativo que necesites.</p>
+        </details>
+      </div>
+
+      <aside class="zone-layout__sidebar">
+        <div class="sidebar-card">
+          <h3>Consulta gratuita</h3>
+          <p>¿Necesitas una gestoría en {zone.name}? Contacta con nosotros sin compromiso.</p>
+          <a href="/contacto/" class="btn btn--primary" style="width:100%; justify-content:center;">Contactar</a>
+          <a href="tel:+34600000000" class="btn btn--outline" style="width:100%; justify-content:center; margin-top: 0.5rem;">Llamar: 600 000 000</a>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Nuestros servicios</h3>
+          <ul class="sidebar-links">
+            {services.map(s => (
+              <li><a href={`/servicios/${s.slug}/`}>{s.icon} {s.name}</a></li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Otras zonas de Boadilla</h3>
+          <ul class="sidebar-links">
+            {otherZones.slice(0, 10).map(z => (
+              <li><a href={`/zonas/${z.slug}/`}>{z.name}</a></li>
+            ))}
+            <li><a href="/zonas/"><strong>Ver todas las zonas →</strong></a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Internal linking: other zones -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header">
+        <h2>Gestoría en otras zonas de Boadilla del Monte</h2>
+        <p>También prestamos servicio en el resto de urbanizaciones y barrios de Boadilla del Monte.</p>
+      </div>
+      <div class="zone-links">
+        {otherZones.map(z => (
+          <a href={`/zonas/${z.slug}/`} class="zone-link">
+            Gestoría en {z.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>¿Buscas una gestoría en {zone.name}?</h2>
+      <p>Contacta con nosotros para una consulta inicial gratuita y sin compromiso.</p>
+      <a href="/contacto/" class="btn btn--secondary btn--lg">Solicitar Consulta Gratuita</a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .zone-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: var(--space-3xl);
+    align-items: start;
+  }
+
+  .zone-intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-text);
+    margin-bottom: var(--space-xl);
+  }
+
+  .zone-layout__main h2 {
+    margin-top: var(--space-2xl);
+    font-size: 1.5rem;
+  }
+
+  .zone-layout__main h2:first-child {
+    margin-top: 0;
+  }
+
+  .zone-layout__main p {
+    font-size: 1.02rem;
+    line-height: 1.8;
+  }
+
+  .zone-services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+    margin: var(--space-xl) 0;
+  }
+
+  .zone-service-card {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    background-color: var(--color-bg);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    text-decoration: none;
+    transition: all var(--transition);
+  }
+
+  .zone-service-card:hover {
+    border-color: var(--color-primary);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .zone-service-card__icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+  }
+
+  .zone-service-card h3 {
+    font-size: 1rem;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-xs);
+  }
+
+  .zone-service-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    color: var(--color-text-light);
+  }
+
+  .zone-benefits {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-xl) 0;
+  }
+
+  .zone-benefits li {
+    padding: var(--space-sm) 0;
+    padding-left: var(--space-xl);
+    position: relative;
+    color: var(--color-text-light);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .zone-benefits li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-secondary);
+    font-weight: 700;
+  }
+
+  .sidebar-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    margin-bottom: var(--space-xl);
+  }
+
+  .sidebar-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--space-md);
+    color: var(--color-primary-dark);
+  }
+
+  .sidebar-card p {
+    font-size: 0.9rem;
+    margin-bottom: var(--space-lg);
+  }
+
+  .sidebar-links {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidebar-links li {
+    margin-bottom: var(--space-xs);
+  }
+
+  .sidebar-links li a {
+    display: block;
+    padding: var(--space-xs) 0;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    border-bottom: 1px solid var(--color-border);
+    transition: color var(--transition);
+  }
+
+  .sidebar-links li:last-child a {
+    border-bottom: none;
+  }
+
+  .sidebar-links li a:hover {
+    color: var(--color-primary);
+  }
+
+  .cta-section {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    padding: var(--space-4xl) 0;
+    text-align: center;
+  }
+
+  .cta-section h2 {
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+  }
+
+  .cta-section p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: var(--space-2xl);
+  }
+
+  @media (max-width: 992px) {
+    .zone-layout {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
