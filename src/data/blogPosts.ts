@@ -714,4 +714,191 @@ export const blogPosts: BlogPost[] = [
     category: "Trámites",
     readTime: "4 min",
   },
+  {
+    slug: "nueva-cuota-autonomos-2025-sistema-ingresos-reales",
+    title: "Nueva cuota de autónomos 2025: sistema por ingresos reales",
+    excerpt: "El nuevo sistema de cotización por ingresos reales ya está en vigor. Te explicamos los tramos, cuotas y cómo afecta a tu bolsillo.",
+    content: `<h2>El sistema de cotización por ingresos reales</h2>
+<p>Desde 2023, el sistema de cotización de los autónomos se basa en los <strong>rendimientos netos reales</strong> de la actividad. En 2025, los tramos y cuotas se han actualizado, y es fundamental que conozcas cómo te afecta este cambio.</p>
+<p>En nuestra <strong>gestoría en Boadilla del Monte</strong>, hemos asesorado a cientos de autónomos para adaptarse al nuevo sistema y optimizar su cuota.</p>
+
+<h2>Tramos de cotización en 2025</h2>
+<p>El sistema establece diferentes tramos según los rendimientos netos mensuales. Los tramos para 2025 son los siguientes:</p>
+<ul>
+<li><strong>Hasta 670 euros/mes:</strong> Cuota mínima reducida</li>
+<li><strong>De 670 a 900 euros/mes:</strong> Cuota progresiva intermedia</li>
+<li><strong>De 900 a 1.166,70 euros/mes:</strong> Cuota base general</li>
+<li><strong>De 1.166,70 a 1.700 euros/mes:</strong> Cuota media</li>
+<li><strong>De 1.700 a 2.333 euros/mes:</strong> Cuota media-alta</li>
+<li><strong>Más de 2.333 euros/mes:</strong> Cuota máxima, con tramos adicionales</li>
+</ul>
+
+<h2>¿Cómo calcular tus rendimientos netos?</h2>
+<p>Para determinar tu tramo de cotización, debes calcular tus rendimientos netos: <strong>ingresos menos gastos deducibles</strong>. A esa cifra puedes aplicar una deducción por gastos genéricos del 7% (3% para autónomos societarios).</p>
+
+<h2>Regularización anual</h2>
+<p>Al finalizar el ejercicio, la Seguridad Social comparará lo que has cotizado con tus ingresos reales declarados en la renta. Si has cotizado de más, te devolverán la diferencia. Si has cotizado de menos, tendrás que abonar la diferencia.</p>
+
+<h2>Cómo te ayudamos</h2>
+<p>Desde nuestra <strong>gestoría en Boadilla del Monte</strong>, te ayudamos a elegir el tramo correcto de cotización y a hacer las previsiones de ingresos necesarias. Así evitas sorpresas en la regularización. Todo 100% online.</p>`,
+    metaTitle: "Cuota Autónomos 2025 | Gestoría Boadilla del Monte",
+    metaDescription: "Nueva cuota de autónomos 2025 por ingresos reales. Tramos, cuotas y regularización. Gestoría en Boadilla del Monte con 30 años de experiencia.",
+    date: "2025-05-10",
+    category: "Autónomos",
+    readTime: "5 min",
+  },
+  {
+    slug: "novedades-fiscales-2025-autonomos-empresas",
+    title: "Novedades fiscales 2025: lo que deben saber autónomos y empresas",
+    excerpt: "Repaso de las principales novedades fiscales y tributarias para el ejercicio 2025 que afectan a autónomos y empresas en España.",
+    content: `<h2>Novedades fiscales para el ejercicio 2025</h2>
+<p>Cada año trae cambios en la normativa fiscal que pueden afectar a tu negocio. En nuestra <strong>gestoría en Boadilla del Monte</strong>, nos mantenemos al día de todas las novedades para que nuestros clientes estén siempre bien informados.</p>
+
+<h2>Impuesto de Sociedades: tipo reducido para microempresas</h2>
+<p>Las empresas con una cifra de negocios inferior a 1 millón de euros pueden beneficiarse de un <strong>tipo reducido del 23%</strong> en el Impuesto de Sociedades. Esta medida se ha consolidado para apoyar a las microempresas.</p>
+
+<h2>Nuevos límites en módulos (estimación objetiva)</h2>
+<p>Se mantienen los límites ampliados para tributar en el régimen de módulos (estimación objetiva) en IRPF y en el régimen simplificado de IVA. El límite de ingresos se mantiene en <strong>250.000 euros anuales</strong>.</p>
+
+<h2>Facturación electrónica: avances</h2>
+<p>La implantación de la factura electrónica obligatoria sigue su curso. Las empresas con mayor facturación deben estar ya preparadas, y el resto tendrán un plazo adicional para adaptarse.</p>
+
+<h2>Deducciones por eficiencia energética</h2>
+<p>Se mantienen las <strong>deducciones en IRPF por obras de mejora de la eficiencia energética</strong> en viviendas, con porcentajes de deducción del 20%, 40% o 60% según el tipo de obra.</p>
+
+<h2>Cambios en el IVA</h2>
+<p>Se han producido ajustes en los tipos de IVA aplicables a determinados productos de primera necesidad, como parte de las medidas para combatir la inflación.</p>
+
+<h2>Tu gestoría al día en Boadilla del Monte</h2>
+<p>En Salander Soluciones nos aseguramos de que nuestros clientes se beneficien de todas las ventajas fiscales disponibles. Con más de 30 años de experiencia y servicio 100% online, somos tu mejor aliado fiscal.</p>`,
+    metaTitle: "Novedades Fiscales 2025 | Gestoría Boadilla Monte",
+    metaDescription: "Principales novedades fiscales 2025 para autónomos y empresas. Cambios en Sociedades, IVA, módulos. Gestoría en Boadilla del Monte.",
+    date: "2025-06-20",
+    category: "Fiscal",
+    readTime: "6 min",
+  },
+  {
+    slug: "kit-digital-ayudas-digitalizacion-pymes-autonomos",
+    title: "Kit Digital: ayudas para la digitalización de pymes y autónomos",
+    excerpt: "El programa Kit Digital ofrece ayudas de hasta 12.000 euros para que pymes y autónomos se digitalicen. Te contamos cómo solicitarlo.",
+    content: `<h2>¿Qué es el Kit Digital?</h2>
+<p>El <strong>Kit Digital</strong> es un programa de ayudas del Gobierno de España, financiado con fondos europeos Next Generation, que ofrece subvenciones para la digitalización de pequeñas empresas, microempresas y autónomos.</p>
+
+<h2>Cuantía de las ayudas</h2>
+<p>La cuantía depende del tamaño de la empresa:</p>
+<ul>
+<li><strong>Segmento I (10 a 49 empleados):</strong> Hasta 12.000 euros</li>
+<li><strong>Segmento II (3 a 9 empleados):</strong> Hasta 6.000 euros</li>
+<li><strong>Segmento III (0 a 2 empleados y autónomos):</strong> Hasta 2.000 euros</li>
+</ul>
+
+<h2>¿Qué soluciones puedes contratar?</h2>
+<p>Las categorías de soluciones digitales subvencionables incluyen:</p>
+<ul>
+<li>Sitio web y presencia en internet</li>
+<li>Comercio electrónico</li>
+<li>Gestión de redes sociales</li>
+<li>Facturación electrónica</li>
+<li>Gestión de procesos (ERP)</li>
+<li>Gestión de clientes (CRM)</li>
+<li>Business Intelligence y analítica</li>
+<li>Ciberseguridad</li>
+<li>Comunicaciones seguras</li>
+</ul>
+
+<h2>Requisitos para solicitarlo</h2>
+<ul>
+<li>Ser una pequeña empresa, microempresa o autónomo</li>
+<li>Estar dado de alta y tener la antigüedad mínima requerida</li>
+<li>Estar al corriente de obligaciones tributarias y con la Seguridad Social</li>
+<li>No superar los límites de ayudas de minimis</li>
+</ul>
+
+<h2>Te ayudamos con la solicitud</h2>
+<p>Desde nuestra <strong>gestoría en Boadilla del Monte</strong>, te ayudamos a tramitar la solicitud del Kit Digital. Nos encargamos de verificar que cumples los requisitos y de gestionar toda la documentación necesaria.</p>`,
+    metaTitle: "Kit Digital Pymes y Autónomos | Gestoría Boadilla",
+    metaDescription: "Ayudas Kit Digital para pymes y autónomos. Hasta 12.000 euros para digitalización. Te ayudamos desde nuestra gestoría en Boadilla del Monte.",
+    date: "2025-07-05",
+    category: "Empresas",
+    readTime: "5 min",
+  },
+  {
+    slug: "registro-jornada-laboral-obligaciones-empresa",
+    title: "Registro de jornada laboral: obligaciones de la empresa en 2025",
+    excerpt: "El registro de jornada laboral es obligatorio para todas las empresas. Te explicamos la normativa, sanciones y cómo cumplir correctamente.",
+    content: `<h2>Obligación del registro de jornada</h2>
+<p>Desde 2019, todas las empresas en España están obligadas a registrar la jornada laboral de sus trabajadores. En 2025, el control sobre esta obligación se ha intensificado y se esperan novedades legislativas importantes.</p>
+
+<h2>¿Qué debe registrar la empresa?</h2>
+<p>El registro debe incluir:</p>
+<ul>
+<li><strong>Hora de inicio y fin de la jornada</strong> de cada trabajador</li>
+<li>La información debe conservarse durante <strong>4 años</strong></li>
+<li>El registro debe estar disponible para los trabajadores, sus representantes y la Inspección de Trabajo</li>
+</ul>
+
+<h2>¿Cómo se puede realizar el registro?</h2>
+<p>La ley no establece un sistema concreto, por lo que la empresa puede elegir:</p>
+<ul>
+<li>Sistemas digitales (aplicaciones, software de fichaje)</li>
+<li>Registro en papel con firma del trabajador</li>
+<li>Sistemas biométricos (huella dactilar, reconocimiento facial)</li>
+<li>Hojas de cálculo, siempre que sean fiables</li>
+</ul>
+
+<h2>Sanciones por incumplimiento</h2>
+<p>No llevar el registro de jornada es una <strong>infracción grave</strong> que puede conllevar sanciones de entre 751 y 7.500 euros por la Inspección de Trabajo. Además, en caso de conflicto con un trabajador, la ausencia de registro perjudica gravemente a la empresa.</p>
+
+<h2>Reducción de jornada laboral</h2>
+<p>Se está debatiendo una posible <strong>reducción de la jornada laboral máxima a 37,5 horas semanales</strong>. Si se aprueba, será aún más importante contar con un sistema de registro fiable.</p>
+
+<h2>Te asesoramos desde Boadilla del Monte</h2>
+<p>En nuestra <strong>gestoría laboral en Boadilla del Monte</strong>, te ayudamos a implantar un sistema de registro de jornada que cumpla con la normativa. También nos encargamos de las nóminas y la gestión laboral de tu empresa.</p>`,
+    metaTitle: "Registro Jornada Laboral 2025 | Gestoría Boadilla",
+    metaDescription: "Obligaciones del registro de jornada laboral en 2025. Normativa, sanciones y sistemas. Gestoría laboral en Boadilla del Monte.",
+    date: "2025-08-12",
+    category: "Laboral",
+    readTime: "5 min",
+  },
+  {
+    slug: "declaracion-renta-2025-novedades-campana",
+    title: "Declaración de la renta 2025: novedades de la campaña",
+    excerpt: "La campaña de la renta 2025 trae novedades importantes. Te contamos los cambios, plazos y consejos para optimizar tu declaración.",
+    content: `<h2>Campaña de la renta 2025</h2>
+<p>La campaña para la declaración del IRPF del ejercicio 2024 se desarrolla entre abril y junio de 2025. En nuestra <strong>gestoría en Boadilla del Monte</strong>, preparamos tu declaración para que pagues lo justo y aproveches todas las deducciones disponibles.</p>
+
+<h2>Principales novedades</h2>
+<ul>
+<li><strong>Obligación de declarar para autónomos:</strong> Todos los autónomos deben presentar la declaración de la renta, independientemente de sus ingresos.</li>
+<li><strong>Nuevos tramos de IRPF:</strong> Se mantiene el tipo marginal máximo del 47% para rentas superiores a 300.000 euros.</li>
+<li><strong>Deducción por vehículo eléctrico:</strong> Se mantiene la deducción del 15% por la compra de vehículos eléctricos nuevos, con una base máxima de 20.000 euros.</li>
+<li><strong>Aportaciones a planes de pensiones:</strong> El límite de aportación a planes individuales se mantiene en 1.500 euros anuales, con límites ampliados para planes de empleo.</li>
+</ul>
+
+<h2>Plazos de la campaña</h2>
+<ul>
+<li><strong>Inicio presentación por internet:</strong> 2 de abril de 2025</li>
+<li><strong>Inicio atención telefónica:</strong> 6 de mayo de 2025</li>
+<li><strong>Inicio atención presencial:</strong> 2 de junio de 2025</li>
+<li><strong>Fin de campaña:</strong> 30 de junio de 2025</li>
+<li><strong>Domiciliación bancaria:</strong> Hasta el 25 de junio de 2025</li>
+</ul>
+
+<h2>Deducciones autonómicas de Madrid</h2>
+<p>Los residentes en la Comunidad de Madrid pueden aplicar deducciones autonómicas adicionales:</p>
+<ul>
+<li>Deducción por nacimiento o adopción de hijos</li>
+<li>Deducción por acogimiento familiar de menores</li>
+<li>Deducción por gastos educativos (hasta 900 euros por hijo en enseñanza primaria y secundaria)</li>
+<li>Deducción por arrendamiento de vivienda habitual para menores de 35 años</li>
+</ul>
+
+<h2>Confía en tu gestoría</h2>
+<p>En nuestra <strong>gestoría en Boadilla del Monte</strong>, revisamos cada declaración a fondo. Con más de 30 años de experiencia, sabemos dónde encontrar el ahorro. Servicio 100% online, sin necesidad de desplazarte.</p>`,
+    metaTitle: "Declaración Renta 2025 | Gestoría Boadilla Monte",
+    metaDescription: "Novedades de la campaña de la renta 2025. Plazos, deducciones y consejos. Gestoría en Boadilla del Monte, 30 años de experiencia.",
+    date: "2025-04-15",
+    category: "Fiscal",
+    readTime: "6 min",
+  },
 ];
