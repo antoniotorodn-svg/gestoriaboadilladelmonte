@@ -1,0 +1,223 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { blogPosts } from '../../data/blogPosts';
+import { services } from '../../data/services';
+
+export function getStaticPaths() {
+  return blogPosts.map(post => ({
+    params: { slug: post.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const post = blogPosts.find(p => p.slug === slug)!;
+const otherPosts = blogPosts.filter(p => p.slug !== slug).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 5);
+---
+<Layout
+  title={post.metaTitle}
+  description={post.metaDescription}
+>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="/">Inicio</a> <span>›</span> <a href="/blog/">Blog</a> <span>›</span> {post.title}
+      </div>
+      <h1>{post.title}</h1>
+      <div class="post-hero-meta">
+        <span class="post-hero-meta__category">{post.category}</span>
+        <span class="post-hero-meta__date">{new Date(post.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+        <span class="post-hero-meta__read">{post.readTime} de lectura</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container post-layout">
+      <article class="post-layout__main">
+        <div class="post-content" set:html={post.content} />
+      </article>
+
+      <aside class="post-layout__sidebar">
+        <div class="sidebar-card">
+          <h3>¿Te ayudamos?</h3>
+          <p>¿Necesitas asesoramiento profesional? Contáctanos sin compromiso. Servicio 100% online.</p>
+          <a href="/contacto/" class="btn btn--primary" style="width:100%; justify-content:center;">Contactar</a>
+          <a href="tel:+34916324013" class="btn btn--outline" style="width:100%; justify-content:center; margin-top: 0.5rem;">Llamar: 916 32 40 13</a>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Nuestros servicios</h3>
+          <ul class="sidebar-links">
+            {services.slice(0, 6).map(s => (
+              <li><a href={`/servicios/${s.slug}/`}>{s.icon} {s.name}</a></li>
+            ))}
+            <li><a href="/servicios/"><strong>Ver todos los servicios &#8594;</strong></a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Otros artículos</h3>
+          <ul class="sidebar-links">
+            {otherPosts.map(p => (
+              <li><a href={`/blog/${p.slug}/`}>{p.title}</a></li>
+            ))}
+            <li><a href="/blog/"><strong>Ver todos los artículos &#8594;</strong></a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>¿Necesitas una gestoría en Boadilla del Monte?</h2>
+      <p>Contacta con nosotros y cuéntanos tu situación. 30 años de experiencia, servicio 100% online.</p>
+      <a href="/contacto/" class="btn btn--secondary btn--lg">Contactar Ahora</a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .post-hero-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    margin-top: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .post-hero-meta__category {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--color-white);
+    padding: 3px var(--space-md);
+    border-radius: var(--radius-full);
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .post-hero-meta__date,
+  .post-hero-meta__read {
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  .post-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: var(--space-3xl);
+    align-items: start;
+  }
+
+  .post-content {
+    max-width: none;
+  }
+
+  .post-content :global(h2) {
+    font-size: 1.5rem;
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-md);
+    color: var(--color-primary-dark);
+  }
+
+  .post-content :global(h3) {
+    font-size: 1.2rem;
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-md);
+    color: var(--color-primary-dark);
+  }
+
+  .post-content :global(p) {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: var(--space-md);
+  }
+
+  .post-content :global(ul),
+  .post-content :global(ol) {
+    margin: var(--space-md) 0;
+    padding-left: var(--space-xl);
+  }
+
+  .post-content :global(li) {
+    margin-bottom: var(--space-sm);
+    color: var(--color-text-light);
+    font-size: 1.02rem;
+    line-height: 1.7;
+  }
+
+  .post-content :global(strong) {
+    color: var(--color-text);
+  }
+
+  .sidebar-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    margin-bottom: var(--space-xl);
+  }
+
+  .sidebar-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--space-md);
+    color: var(--color-primary-dark);
+  }
+
+  .sidebar-card p {
+    font-size: 0.9rem;
+    margin-bottom: var(--space-lg);
+  }
+
+  .sidebar-links {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidebar-links li {
+    margin-bottom: var(--space-xs);
+  }
+
+  .sidebar-links li a {
+    display: block;
+    padding: var(--space-xs) 0;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    border-bottom: 1px solid var(--color-border);
+    transition: color var(--transition);
+  }
+
+  .sidebar-links li:last-child a {
+    border-bottom: none;
+  }
+
+  .sidebar-links li a:hover {
+    color: var(--color-primary);
+  }
+
+  .cta-section {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    padding: var(--space-4xl) 0;
+    text-align: center;
+  }
+
+  .cta-section h2 {
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+  }
+
+  .cta-section p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: var(--space-2xl);
+  }
+
+  @media (max-width: 992px) {
+    .post-layout {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

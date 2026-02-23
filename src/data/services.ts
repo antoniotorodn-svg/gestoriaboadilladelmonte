@@ -46,7 +46,7 @@ export const services: Service[] = [
     shortDescription: "Te gestionamos el alta en Hacienda y Seguridad Social para que empieces tu actividad sin complicaciones.",
     icon: "🚀",
     metaTitle: "Alta de Autónomos en Boadilla del Monte | Gestoría Especializada",
-    metaDescription: "Servicio de alta de autónomos en Boadilla del Monte. Gestionamos tu alta en Hacienda y Seguridad Social. Consulta inicial gratuita.",
+    metaDescription: "Servicio de alta de autónomos en Boadilla del Monte. Gestionamos tu alta en Hacienda y Seguridad Social. Servicio 100% online.",
   },
   {
     slug: "constitucion-empresas",
@@ -70,7 +70,7 @@ export const services: Service[] = [
     shortDescription: "Preparación y presentación de tu declaración de IRPF, maximizando deducciones y beneficios fiscales.",
     icon: "📝",
     metaTitle: "Declaración de la Renta en Boadilla del Monte | IRPF",
-    metaDescription: "Servicio de declaración de la renta en Boadilla del Monte. Preparamos y presentamos tu IRPF optimizando deducciones. Consulta gratuita.",
+    metaDescription: "Servicio de declaración de la renta en Boadilla del Monte. Preparamos y presentamos tu IRPF optimizando deducciones. Servicio 100% online.",
   },
   {
     slug: "impuesto-sociedades",
