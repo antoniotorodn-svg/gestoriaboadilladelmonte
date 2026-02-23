@@ -14,10 +14,16 @@ const { slug } = Astro.params;
 const content = serviceContent.find(sc => sc.slug === slug)!;
 const service = services.find(s => s.slug === slug)!;
 const otherServices = services.filter(s => s.slug !== slug);
+const siteUrl = 'https://gestoriaboadilladelmonte.com';
 ---
 <Layout
   title={service.metaTitle}
   description={service.metaDescription}
+  breadcrumbs={[
+    { name: "Inicio", url: siteUrl + "/" },
+    { name: "Servicios", url: siteUrl + "/servicios/" },
+    { name: service.name, url: siteUrl + "/servicios/" + service.slug + "/" }
+  ]}
 >
   <section class="page-hero">
     <div class="container">

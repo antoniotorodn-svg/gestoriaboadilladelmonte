@@ -2,10 +2,15 @@
 import Layout from '../../layouts/Layout.astro';
 import { zones } from '../../data/zones';
 import { services } from '../../data/services';
+const siteUrl = 'https://gestoriaboadilladelmonte.com';
 ---
 <Layout
   title="Gestoría en Todas las Zonas de Boadilla del Monte | Cobertura Local"
   description="Gestoría fiscal, laboral y contable en todas las urbanizaciones y barrios de Boadilla del Monte: Las Lomas, Montepríncipe, Sector B, Olivar de Mirabal y más."
+  breadcrumbs={[
+    { name: "Inicio", url: siteUrl + "/" },
+    { name: "Zonas", url: siteUrl + "/zonas/" }
+  ]}
 >
   <section class="page-hero">
     <div class="container">
