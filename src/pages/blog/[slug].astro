@@ -12,10 +12,21 @@ export function getStaticPaths() {
 const { slug } = Astro.params;
 const post = blogPosts.find(p => p.slug === slug)!;
 const otherPosts = blogPosts.filter(p => p.slug !== slug).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 5);
+const siteUrl = 'https://gestoriaboadilladelmonte.com';
 ---
 <Layout
   title={post.metaTitle}
   description={post.metaDescription}
+  articleSchema={{
+    headline: post.title,
+    datePublished: post.date,
+    category: post.category
+  }}
+  breadcrumbs={[
+    { name: "Inicio", url: siteUrl + "/" },
+    { name: "Blog", url: siteUrl + "/blog/" },
+    { name: post.title, url: siteUrl + "/blog/" + post.slug + "/" }
+  ]}
 >
   <section class="page-hero">
     <div class="container">
