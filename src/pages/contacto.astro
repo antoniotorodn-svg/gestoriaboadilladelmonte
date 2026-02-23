@@ -21,7 +21,12 @@ import Layout from '../layouts/Layout.astro';
         <h2>Envíanos un mensaje</h2>
         <p>Rellena el formulario y nos pondremos en contacto contigo en menos de 24 horas.</p>
 
-        <form class="contact-form" action="#" method="POST">
+        <form class="contact-form" id="contact-form">
+          <input type="hidden" name="access_key" value="TU_ACCESS_KEY_AQUI" />
+          <input type="hidden" name="subject" value="Nuevo mensaje desde gestoriaboadilladelmonte.com" />
+          <input type="hidden" name="from_name" value="Gestoría Boadilla - Web" />
+          <input type="checkbox" name="botcheck" style="display: none;" />
+
           <div class="form-row">
             <div class="form-group">
               <label for="nombre">Nombre *</label>
@@ -74,7 +79,14 @@ import Layout from '../layouts/Layout.astro';
             </label>
           </div>
 
-          <button type="submit" class="btn btn--primary btn--lg">Enviar mensaje</button>
+          <button type="submit" class="btn btn--primary btn--lg" id="submit-btn">Enviar mensaje</button>
+
+          <div id="form-success" class="form-message form-message--success" style="display:none;">
+            Mensaje enviado correctamente. Nos pondremos en contacto contigo en menos de 24 horas.
+          </div>
+          <div id="form-error" class="form-message form-message--error" style="display:none;">
+            Ha ocurrido un error al enviar el mensaje. Por favor, inténtalo de nuevo o llámanos al 916 32 40 13.
+          </div>
         </form>
       </div>
 
@@ -254,4 +266,64 @@ import Layout from '../layouts/Layout.astro';
       grid-template-columns: 1fr;
     }
   }
+
+  .form-message {
+    margin-top: var(--space-lg);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .form-message--success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+  }
+
+  .form-message--error {
+    background-color: #fce4ec;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+  }
+
+  .btn--loading {
+    opacity: 0.7;
+    pointer-events: none;
+  }
 </style>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const submitBtn = document.getElementById('submit-btn');
+  const successMsg = document.getElementById('form-success');
+  const errorMsg = document.getElementById('form-error');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    submitBtn.textContent = 'Enviando...';
+    submitBtn.classList.add('btn--loading');
+    successMsg.style.display = 'none';
+    errorMsg.style.display = 'none';
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: new FormData(form),
+      });
+      const data = await response.json();
+
+      if (data.success) {
+        successMsg.style.display = 'block';
+        form.reset();
+      } else {
+        errorMsg.style.display = 'block';
+      }
+    } catch {
+      errorMsg.style.display = 'block';
+    } finally {
+      submitBtn.textContent = 'Enviar mensaje';
+      submitBtn.classList.remove('btn--loading');
+    }
+  });
+</script>
