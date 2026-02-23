@@ -2,6 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 import { services } from '../data/services';
 import { zones } from '../data/zones';
+import { blogPosts } from '../data/blogPosts';
+
+const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 3);
 ---
 <Layout
   title="Gestoría Boadilla del Monte | Asesoría Fiscal, Laboral y Contable"
@@ -235,6 +238,30 @@ import { zones } from '../data/zones';
           <summary>¿Cómo empiezo a trabajar con vosotros?</summary>
           <p>Es muy fácil. Contáctanos por teléfono, email o a través de nuestro formulario y te explicaremos cómo trabajamos. A partir de ahí, nos encargamos de todo para que empieces a beneficiarte de nuestros servicios sin complicaciones.</p>
         </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="section" id="blog">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">Nuestro blog</span>
+        <h2>Artículos y consejos de tu gestoría</h2>
+        <p>Publicamos guías y artículos sobre fiscalidad, laboral y gestión empresarial para ayudarte a tomar mejores decisiones.</p>
+      </div>
+      <div class="grid grid--3">
+        {latestPosts.map(post => (
+          <a href={`/blog/${post.slug}/`} class="card home-blog-card">
+            <span class="home-blog-card__category">{post.category}</span>
+            <h3 class="card__title">{post.title}</h3>
+            <p class="card__text">{post.excerpt}</p>
+            <span class="card__link">Leer artículo &#8594;</span>
+          </a>
+        ))}
+      </div>
+      <div class="home-blog-cta">
+        <a href="/blog/" class="btn btn--outline">Ver todos los artículos</a>
       </div>
     </div>
   </section>
@@ -591,6 +618,25 @@ import { zones } from '../data/zones';
     justify-content: center;
     gap: var(--space-md);
     flex-wrap: wrap;
+  }
+
+  /* BLOG */
+  .home-blog-card__category {
+    display: inline-block;
+    background-color: rgba(26, 60, 52, 0.08);
+    color: var(--color-primary);
+    padding: 2px var(--space-sm);
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--space-md);
+  }
+
+  .home-blog-cta {
+    text-align: center;
+    margin-top: var(--space-2xl);
   }
 
   /* RESPONSIVE */

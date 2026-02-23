@@ -4,13 +4,24 @@ import Footer from '../components/Footer.astro';
 import CookieBanner from '../components/CookieBanner.astro';
 import '../styles/global.css';
 
+interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+
 interface Props {
   title: string;
   description: string;
   canonical?: string;
+  articleSchema?: {
+    headline: string;
+    datePublished: string;
+    category: string;
+  };
+  breadcrumbs?: BreadcrumbItem[];
 }
 
-const { title, description, canonical } = Astro.props;
+const { title, description, canonical, articleSchema, breadcrumbs } = Astro.props;
 const siteUrl = 'https://gestoriaboadilladelmonte.com';
 const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString();
 ---
@@ -86,6 +97,45 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString(
     },
     "sameAs": []
   })} />
+
+  {articleSchema && (
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": articleSchema.headline,
+      "datePublished": articleSchema.datePublished,
+      "dateModified": articleSchema.datePublished,
+      "author": {
+        "@type": "Organization",
+        "name": "Gestoría Boadilla del Monte - Salander Soluciones",
+        "url": siteUrl
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Gestoría Boadilla del Monte - Salander Soluciones",
+        "url": siteUrl
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": canonicalUrl
+      },
+      "articleSection": articleSchema.category,
+      "description": description
+    })} />
+  )}
+
+  {breadcrumbs && breadcrumbs.length > 0 && (
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": breadcrumbs.map((item, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": item.name,
+        "item": item.url
+      }))
+    })} />
+  )}
 </head>
 <body>
   <Header />

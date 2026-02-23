@@ -3,10 +3,15 @@ import Layout from '../../layouts/Layout.astro';
 import { blogPosts } from '../../data/blogPosts';
 
 const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+const siteUrl = 'https://gestoriaboadilladelmonte.com';
 ---
 <Layout
   title="Blog | Gestoría Boadilla del Monte - Consejos Fiscales y Laborales"
   description="Blog de gestoría en Boadilla del Monte. Artículos sobre fiscalidad, impuestos, autónomos, empresas y trámites administrativos. Consejos de tu gestoría de confianza."
+  breadcrumbs={[
+    { name: "Inicio", url: siteUrl + "/" },
+    { name: "Blog", url: siteUrl + "/blog/" }
+  ]}
 >
   <section class="page-hero">
     <div class="container">
