@@ -1,0 +1,135 @@
+---
+---
+<div class="cookie-banner" id="cookie-banner" style="display: none;">
+  <div class="cookie-banner__inner">
+    <div class="cookie-banner__text">
+      <p>Utilizamos cookies propias para mejorar tu experiencia de navegación. Al continuar navegando, aceptas el uso de cookies conforme a nuestra <a href="/politica-de-cookies/">Política de Cookies</a> y <a href="/proteccion-de-datos/">Política de Privacidad</a>.</p>
+    </div>
+    <div class="cookie-banner__actions">
+      <button class="cookie-banner__btn cookie-banner__btn--accept" id="cookie-accept">Aceptar</button>
+      <a href="/politica-de-cookies/" class="cookie-banner__btn cookie-banner__btn--info">Más información</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+    z-index: 9999;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+    padding: var(--space-lg) 0;
+  }
+
+  .cookie-banner__inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-xl);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-xl);
+  }
+
+  .cookie-banner__text p {
+    margin: 0;
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+  }
+
+  .cookie-banner__text a {
+    color: var(--color-secondary-light);
+    text-decoration: underline;
+  }
+
+  .cookie-banner__text a:hover {
+    color: var(--color-secondary);
+  }
+
+  .cookie-banner__actions {
+    display: flex;
+    gap: var(--space-md);
+    flex-shrink: 0;
+  }
+
+  .cookie-banner__btn {
+    padding: 0.65rem 1.5rem;
+    border-radius: var(--radius-full);
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition);
+    border: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-body);
+  }
+
+  .cookie-banner__btn--accept {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+  }
+
+  .cookie-banner__btn--accept:hover {
+    background-color: var(--color-secondary-dark);
+    transform: translateY(-1px);
+  }
+
+  .cookie-banner__btn--info {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .cookie-banner__btn--info:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-white);
+  }
+
+  @media (max-width: 768px) {
+    .cookie-banner__inner {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .cookie-banner__actions {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .cookie-banner {
+      bottom: 56px; /* Above the sticky call button on mobile */
+    }
+  }
+</style>
+
+<script>
+  function initCookieBanner() {
+    const banner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('cookie-accept');
+
+    if (!banner || !acceptBtn) return;
+
+    // Check if cookies were already accepted
+    if (!localStorage.getItem('cookies_accepted')) {
+      banner.style.display = 'block';
+    }
+
+    acceptBtn.addEventListener('click', () => {
+      localStorage.setItem('cookies_accepted', 'true');
+      banner.style.display = 'none';
+    });
+  }
+
+  // Run on page load
+  initCookieBanner();
+
+  // Also run on Astro page transitions
+  document.addEventListener('astro:page-load', initCookieBanner);
+</script>

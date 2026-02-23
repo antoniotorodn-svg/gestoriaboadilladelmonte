@@ -179,7 +179,7 @@ export const serviceContent: ServiceContent[] = [
       },
       {
         title: "Asesoramiento inicial",
-        text: "Antes de darte de alta, analizamos tu situación personal y la actividad que vas a desarrollar para asesorarte sobre la forma jurídica más conveniente (autónomo persona física o sociedad), el régimen fiscal aplicable y las obligaciones que tendrás. Esta consulta inicial es gratuita."
+        text: "Antes de darte de alta, analizamos tu situación personal y la actividad que vas a desarrollar para asesorarte sobre la forma jurídica más conveniente (autónomo persona física o sociedad), el régimen fiscal aplicable y las obligaciones que tendrás. Todo el proceso es 100% online y muy sencillo."
       }
     ],
     benefits: [

@@ -1,0 +1,156 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { blogPosts } from '../../data/blogPosts';
+
+const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+---
+<Layout
+  title="Blog | Gestoría Boadilla del Monte - Consejos Fiscales y Laborales"
+  description="Blog de gestoría en Boadilla del Monte. Artículos sobre fiscalidad, impuestos, autónomos, empresas y trámites administrativos. Consejos de tu gestoría de confianza."
+>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="/">Inicio</a> <span>›</span> Blog
+      </div>
+      <h1>Blog de Gestoría en Boadilla del Monte</h1>
+      <p>Artículos, guías y consejos sobre fiscalidad, laboral y gestión empresarial para autónomos, pymes y particulares.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="blog-grid">
+        {sortedPosts.map(post => (
+          <a href={`/blog/${post.slug}/`} class="blog-card">
+            <div class="blog-card__meta">
+              <span class="blog-card__category">{post.category}</span>
+              <span class="blog-card__date">{new Date(post.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+            </div>
+            <h2 class="blog-card__title">{post.title}</h2>
+            <p class="blog-card__excerpt">{post.excerpt}</p>
+            <div class="blog-card__footer">
+              <span class="blog-card__read-time">{post.readTime} de lectura</span>
+              <span class="blog-card__link">Leer artículo &#8594;</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>¿Necesitas una gestoría en Boadilla del Monte?</h2>
+      <p>Contacta con nosotros y cuéntanos tu situación. 30 años de experiencia nos avalan. Servicio 100% online.</p>
+      <a href="/contacto/" class="btn btn--secondary btn--lg">Contactar Ahora</a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: var(--space-xl);
+  }
+
+  .blog-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    transition: all var(--transition);
+    text-decoration: none;
+  }
+
+  .blog-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+  }
+
+  .blog-card__meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+  }
+
+  .blog-card__category {
+    display: inline-block;
+    background-color: rgba(26, 60, 52, 0.08);
+    color: var(--color-primary);
+    padding: 2px var(--space-sm);
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .blog-card__date {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+  }
+
+  .blog-card__title {
+    font-size: 1.15rem;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-sm);
+    line-height: 1.4;
+    font-family: var(--font-heading);
+  }
+
+  .blog-card__excerpt {
+    font-size: 0.92rem;
+    color: var(--color-text-light);
+    line-height: 1.7;
+    flex-grow: 1;
+  }
+
+  .blog-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .blog-card__read-time {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+  }
+
+  .blog-card__link {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+  }
+
+  .cta-section {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    padding: var(--space-4xl) 0;
+    text-align: center;
+  }
+
+  .cta-section h2 {
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+  }
+
+  .cta-section p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: var(--space-2xl);
+  }
+
+  @media (max-width: 768px) {
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
