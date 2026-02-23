@@ -82,13 +82,24 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString(
       "latitude": "40.4058",
       "longitude": "-3.8769"
     },
-    "areaServed": {
-      "@type": "City",
-      "name": "Boadilla del Monte"
-    },
+    "areaServed": [
+      { "@type": "City", "name": "Boadilla del Monte", "sameAs": "https://es.wikipedia.org/wiki/Boadilla_del_Monte" },
+      { "@type": "City", "name": "Pozuelo de Alarcón" },
+      { "@type": "City", "name": "Majadahonda" },
+      { "@type": "City", "name": "Villaviciosa de Odón" },
+      { "@type": "City", "name": "Alcorcón" },
+      { "@type": "AdministrativeArea", "name": "Madrid" }
+    ],
     "priceRange": "€€",
-    "openingHours": "Mo-Fr 09:00-19:00",
+    "openingHours": "Mo-Fr 10:00-20:00",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "10:00",
+      "closes": "20:00"
+    },
     "foundingDate": "1996",
+    "hasMap": "https://maps.google.com/?q=Calle+Geranio+11+28660+Boadilla+del+Monte+Madrid",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",

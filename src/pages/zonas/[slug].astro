@@ -12,10 +12,16 @@ export function getStaticPaths() {
 const { slug } = Astro.params;
 const zone = zones.find(z => z.slug === slug)!;
 const otherZones = zones.filter(z => z.slug !== slug);
+const siteUrl = 'https://gestoriaboadilladelmonte.com';
 ---
 <Layout
   title={`Gestoría en ${zone.name}, Boadilla del Monte | Asesoría Fiscal y Contable`}
   description={zone.description}
+  breadcrumbs={[
+    { name: "Inicio", url: siteUrl + "/" },
+    { name: "Zonas", url: siteUrl + "/zonas/" },
+    { name: zone.name, url: siteUrl + "/zonas/" + zone.slug + "/" }
+  ]}
 >
   <section class="page-hero">
     <div class="container">

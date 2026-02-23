@@ -1,10 +1,15 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { services } from '../../data/services';
+const siteUrl = 'https://gestoriaboadilladelmonte.com';
 ---
 <Layout
   title="Servicios de Gestoría en Boadilla del Monte | Fiscal, Laboral, Contable"
   description="Todos nuestros servicios de gestoría en Boadilla del Monte: asesoría fiscal, laboral, contable, legal, alta de autónomos, constitución de empresas y más."
+  breadcrumbs={[
+    { name: "Inicio", url: siteUrl + "/" },
+    { name: "Servicios", url: siteUrl + "/servicios/" }
+  ]}
 >
   <section class="page-hero">
     <div class="container">

@@ -1,10 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { services } from '../data/services';
+const siteUrl = 'https://gestoriaboadilladelmonte.com';
 ---
 <Layout
-  title="Quiénes Somos | Gestoría Boadilla del Monte - Salander Soluciones"
+  title="Quiénes Somos | Gestoría en Boadilla del Monte - Salander Soluciones"
   description="Conoce a Salander Soluciones, tu gestoría de confianza en Boadilla del Monte. Más de 30 años de experiencia en asesoría fiscal, laboral y contable para autónomos y empresas. Servicio 100% online."
+  breadcrumbs={[
+    { name: "Inicio", url: siteUrl + "/" },
+    { name: "Quiénes Somos", url: siteUrl + "/quienes-somos/" }
+  ]}
 >
   <section class="page-hero">
     <div class="container">
@@ -83,7 +88,7 @@ import { services } from '../data/services';
             <p><strong>Teléfono:</strong><br /><a href="tel:+34916324013">916 32 40 13</a></p>
             <p><strong>Email:</strong><br /><a href="mailto:clientes@salandersoluciones.es">clientes@salandersoluciones.es</a></p>
             <p><strong>Dirección:</strong><br />Calle Geranio, 11<br />28660 Boadilla del Monte</p>
-            <p><strong>Horario:</strong><br />Lunes a Viernes<br />9:00 - 19:00</p>
+            <p><strong>Horario:</strong><br />Lunes a Viernes<br />10:00 - 20:00</p>
           </div>
         </div>
       </aside>
