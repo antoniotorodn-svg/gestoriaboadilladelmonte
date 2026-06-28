@@ -73,6 +73,66 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
     </div>
   </section>
 
+  <!-- PAIN POINTS -->
+  <section class="section section--alt" id="te-ayudamos">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">¿Te suena alguna de estas situaciones?</span>
+        <h2>Si tienes un problema con Hacienda o con tus impuestos, lo resolvemos</h2>
+        <p>No tienes que pasarlo solo ni perder noches de sueño. Llevamos más de 30 años solucionando justo esto. Una llamada y empezamos a quitártelo de encima.</p>
+      </div>
+      <div class="grid grid--3 pain-grid">
+        <div class="pain-card">
+          <span class="pain-card__icon">📩</span>
+          <h3>Te ha llegado una carta de Hacienda</h3>
+          <p>Una notificación, un requerimiento o una "paralela" y no sabes qué significa ni qué plazo tienes para contestar. La revisamos contigo y respondemos por ti antes de que se complique.</p>
+          <a href="tel:+34916324013" class="pain-card__cta">Llámanos y lo vemos →</a>
+        </div>
+        <div class="pain-card">
+          <span class="pain-card__icon">⚠️</span>
+          <h3>Temes una sanción o una inspección</h3>
+          <p>Crees que algo no se presentó bien y te da miedo la multa. Analizamos tu caso, regularizamos tu situación y minimizamos el daño. Cuanto antes lo veamos, mejor.</p>
+          <a href="tel:+34916324013" class="pain-card__cta">Cuéntanoslo ahora →</a>
+        </div>
+        <div class="pain-card">
+          <span class="pain-card__icon">⏰</span>
+          <h3>Vas tarde con tus impuestos</h3>
+          <p>IVA, IRPF o modelos sin presentar y los plazos encima. Nos ponemos al día contigo, presentamos lo pendiente y te organizamos para que no vuelva a pasar.</p>
+          <a href="tel:+34916324013" class="pain-card__cta">Ponte al día con nosotros →</a>
+        </div>
+        <div class="pain-card">
+          <span class="pain-card__icon">💸</span>
+          <h3>Sospechas que pagas de más</h3>
+          <p>No sabes si te estás deduciendo todo lo que podrías y cada trimestre te llevas un susto. Revisamos tu fiscalidad y optimizamos lo que pagas, dentro de la ley.</p>
+          <a href="tel:+34916324013" class="pain-card__cta">Pide que revisemos tu caso →</a>
+        </div>
+        <div class="pain-card">
+          <span class="pain-card__icon">🚀</span>
+          <h3>Quieres empezar como autónomo</h3>
+          <p>El papeleo del alta, la cuota, los modelos… te abruma y no sabes por dónde empezar. Te damos de alta, te explicamos todo en cristiano y te acompañamos paso a paso.</p>
+          <a href="tel:+34916324013" class="pain-card__cta">Empieza con buen pie →</a>
+        </div>
+        <div class="pain-card">
+          <span class="pain-card__icon">😤</span>
+          <h3>Tu gestor no te responde</h3>
+          <p>No te coge el teléfono, no te explica nada y nunca sabes cómo va lo tuyo. Con nosotros hablas con personas, respondemos rápido y siempre sabes en qué punto estás.</p>
+          <a href="tel:+34916324013" class="pain-card__cta">Cámbiate sin líos →</a>
+        </div>
+      </div>
+
+      <div class="pain-banner">
+        <div>
+          <h3>Cuéntanos qué te preocupa. La primera llamada es sin compromiso.</h3>
+          <p>Te decimos qué tienes que hacer y cómo te podemos ayudar. Todo online, sin que tengas que desplazarte.</p>
+        </div>
+        <div class="pain-banner__actions">
+          <a href="tel:+34916324013" class="btn btn--secondary btn--lg">Llamar: 916 32 40 13</a>
+          <a href="/contacto/" class="btn btn--outline btn--lg">Escríbenos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- SERVICES -->
   <section class="section" id="servicios">
     <div class="container">
@@ -293,8 +353,8 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
   <section class="cta-section">
     <div class="container cta-section__inner">
       <span class="section__subtitle" style="color: var(--color-secondary-light);">Contacto</span>
-      <h2>¿Necesitas una asesoría en Villaviciosa de Odón?</h2>
-      <p>Contacta con nosotros y cuéntanos tu situación. 30 años de experiencia nos avalan.</p>
+      <h2>¿Tienes un lío con Hacienda o con tus impuestos?</h2>
+      <p>No esperes a que se complique. Llámanos, cuéntanos tu situación y te decimos cómo lo solucionamos. La primera llamada es sin compromiso y todo es online.</p>
       <div class="cta-section__actions">
         <a href="/contacto/" class="btn btn--secondary btn--lg">Contactar Ahora</a>
         <a href="tel:+34916324013" class="btn btn--outline btn--lg" style="border-color: rgba(255,255,255,0.4); color: white;">Llamar: 916 32 40 13</a>
@@ -305,6 +365,102 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
 </Layout>
 
 <style>
+  /* PAIN POINTS */
+  .pain-grid {
+    margin-bottom: var(--space-2xl);
+  }
+
+  .pain-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-secondary);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    transition: all var(--transition);
+  }
+
+  .pain-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+  }
+
+  .pain-card__icon {
+    font-size: 1.8rem;
+    line-height: 1;
+    margin-bottom: var(--space-md);
+  }
+
+  .pain-card h3 {
+    font-size: 1.12rem;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-sm);
+    line-height: 1.35;
+  }
+
+  .pain-card p {
+    font-size: 0.94rem;
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin-bottom: var(--space-lg);
+    flex-grow: 1;
+  }
+
+  .pain-card__cta {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-top: auto;
+  }
+
+  .pain-card__cta:hover {
+    color: var(--color-secondary-dark);
+  }
+
+  .pain-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-xl);
+    flex-wrap: wrap;
+    background-color: var(--color-primary-dark);
+    border-radius: var(--radius-xl);
+    padding: var(--space-2xl);
+  }
+
+  .pain-banner h3 {
+    color: var(--color-white);
+    font-size: 1.25rem;
+    margin-bottom: var(--space-xs);
+    line-height: 1.35;
+  }
+
+  .pain-banner p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.98rem;
+    margin-bottom: 0;
+  }
+
+  .pain-banner__actions {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
+
+  .pain-banner__actions .btn--outline {
+    border-color: rgba(255, 255, 255, 0.4);
+    color: var(--color-white);
+  }
+
+  @media (max-width: 768px) {
+    .pain-banner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
   /* HERO */
   .hero {
     background-color: var(--color-bg);
