@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gestoriaboadilladelmonte.com/sitemap-index.xml
+Sitemap: https://asesoriaboadilladelmonte.com/sitemap-index.xml

@@ -13,10 +13,10 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     slug: "guia-darse-alta-autonomo-boadilla-del-monte",
-    title: "Guía para darse de alta como autónomo en Villaviciosa de Odón",
+    title: "Guía para darse de alta como autónomo en Boadilla del Monte",
     excerpt: "Todo lo que necesitas saber para darte de alta como autónomo: trámites en Hacienda, Seguridad Social, tarifa plana y bonificaciones disponibles.",
-    content: `<h2>¿Quieres ser autónomo en Villaviciosa de Odón?</h2>
-<p>Darse de alta como autónomo es uno de los trámites más habituales que gestionamos en nuestra <strong>asesoría en Villaviciosa de Odón</strong>. Aunque el proceso puede parecer complicado, con el asesoramiento adecuado es bastante sencillo y se puede hacer completamente online.</p>
+    content: `<h2>¿Quieres ser autónomo en Boadilla del Monte?</h2>
+<p>Darse de alta como autónomo es uno de los trámites más habituales que gestionamos en nuestra <strong>asesoría en Boadilla del Monte</strong>. Aunque el proceso puede parecer complicado, con el asesoramiento adecuado es bastante sencillo y se puede hacer completamente online.</p>
 
 <h2>Pasos para darse de alta como autónomo</h2>
 <p>El proceso de alta como trabajador autónomo requiere realizar dos trámites principales:</p>
@@ -27,7 +27,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Tarifa plana para nuevos autónomos</h2>
 <p>Si es la primera vez que te das de alta como autónomo (o han pasado más de dos años desde tu última baja), puedes beneficiarte de la <strong>tarifa plana de autónomos</strong>, que supone una cuota reducida durante los primeros meses de actividad.</p>
-<p>Las condiciones de la tarifa plana pueden variar, por lo que es fundamental contar con el asesoramiento de una <strong>asesoría en Villaviciosa de Odón</strong> que esté al día de la normativa vigente.</p>
+<p>Las condiciones de la tarifa plana pueden variar, por lo que es fundamental contar con el asesoramiento de una <strong>asesoría en Boadilla del Monte</strong> que esté al día de la normativa vigente.</p>
 
 <h2>Obligaciones fiscales del autónomo</h2>
 <p>Una vez dado de alta, tendrás las siguientes obligaciones periódicas:</p>
@@ -40,9 +40,9 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>¿Por qué contar con una asesoría?</h2>
-<p>Nuestra <strong>asesoría en Villaviciosa de Odón</strong> lleva más de 30 años ayudando a autónomos a dar sus primeros pasos. Nos encargamos de todo el papeleo para que tú puedas centrarte en lo que realmente importa: tu negocio. Además, nuestro servicio es 100% online, así que no necesitas desplazarte.</p>`,
-    metaTitle: "Alta de Autónomo en Villaviciosa de Odón | Guía",
-    metaDescription: "Guía completa para darse de alta como autónomo en Villaviciosa de Odón. Trámites, tarifa plana y bonificaciones. Asesoría con 30 años de experiencia.",
+<p>Nuestra <strong>asesoría en Boadilla del Monte</strong> lleva más de 30 años ayudando a autónomos a dar sus primeros pasos. Nos encargamos de todo el papeleo para que tú puedas centrarte en lo que realmente importa: tu negocio. Además, nuestro servicio es 100% online, así que no necesitas desplazarte.</p>`,
+    metaTitle: "Alta de Autónomo en Boadilla del Monte | Guía",
+    metaDescription: "Guía completa para darse de alta como autónomo en Boadilla del Monte. Trámites, tarifa plana y bonificaciones. Asesoría con 30 años de experiencia.",
     date: "2025-01-15",
     category: "Autónomos",
     readTime: "6 min",
@@ -53,7 +53,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Aprende todo sobre el modelo 303, plazos de presentación, tipos de IVA y cómo calcular correctamente tu declaración trimestral.",
     content: `<h2>¿Qué es la declaración trimestral de IVA?</h2>
 <p>La declaración trimestral de IVA (modelo 303) es una de las obligaciones fiscales más importantes para cualquier autónomo o empresa. Consiste en liquidar la diferencia entre el IVA que has repercutido a tus clientes (IVA cobrado) y el IVA que has soportado en tus compras y gastos (IVA pagado).</p>
-<p>En nuestra <strong>asesoría en Villaviciosa de Odón</strong>, preparamos y presentamos esta declaración para cientos de autónomos cada trimestre.</p>
+<p>En nuestra <strong>asesoría en Boadilla del Monte</strong>, preparamos y presentamos esta declaración para cientos de autónomos cada trimestre.</p>
 
 <h2>Plazos de presentación del modelo 303</h2>
 <p>Los plazos para presentar la declaración trimestral de IVA son los siguientes:</p>
@@ -76,7 +76,7 @@ export const blogPosts: BlogPost[] = [
 <p>La fórmula es sencilla: <strong>IVA repercutido - IVA soportado = IVA a pagar (o a devolver)</strong>. Si el resultado es positivo, deberás ingresar esa cantidad en Hacienda. Si es negativo, puedes compensarlo en los siguientes trimestres o solicitar la devolución en el cuarto trimestre.</p>
 
 <h2>Errores comunes en la declaración de IVA</h2>
-<p>Los errores más frecuentes que vemos en nuestra <strong>asesoría en Villaviciosa de Odón</strong> incluyen:</p>
+<p>Los errores más frecuentes que vemos en nuestra <strong>asesoría en Boadilla del Monte</strong> incluyen:</p>
 <ul>
 <li>No incluir todas las facturas del trimestre</li>
 <li>Deducir IVA de gastos no relacionados con la actividad</li>
@@ -84,19 +84,19 @@ export const blogPosts: BlogPost[] = [
 <li>Presentar la declaración fuera de plazo</li>
 </ul>
 <p>Contar con una asesoría profesional te evita estos problemas y posibles sanciones.</p>`,
-    metaTitle: "Declaración IVA Trimestral | Asesoría Villaviciosa de Odón",
-    metaDescription: "Guía práctica sobre la declaración trimestral de IVA para autónomos. Plazos, cálculo y errores comunes. Asesoría en Villaviciosa de Odón.",
+    metaTitle: "Declaración IVA Trimestral | Asesoría Boadilla del Monte",
+    metaDescription: "Guía práctica sobre la declaración trimestral de IVA para autónomos. Plazos, cálculo y errores comunes. Asesoría en Boadilla del Monte.",
     date: "2025-02-10",
     category: "Fiscal",
     readTime: "5 min",
   },
   {
     slug: "impuesto-sociedades-guia-empresas-boadilla",
-    title: "Impuesto de Sociedades: guía esencial para empresas en Villaviciosa de Odón",
+    title: "Impuesto de Sociedades: guía esencial para empresas en Boadilla del Monte",
     excerpt: "Todo lo que tu empresa necesita saber sobre el Impuesto de Sociedades: tipos impositivos, deducciones, plazos y cómo optimizar tu carga fiscal.",
     content: `<h2>¿Qué es el Impuesto de Sociedades?</h2>
 <p>El Impuesto de Sociedades es un tributo que grava la renta de las sociedades y otras entidades jurídicas residentes en España. Es el equivalente al IRPF pero para empresas, y se presenta anualmente a través del modelo 200.</p>
-<p>En nuestra <strong>asesoría en Villaviciosa de Odón</strong> asesoramos a empresas de todos los tamaños para optimizar este impuesto dentro del marco legal.</p>
+<p>En nuestra <strong>asesoría en Boadilla del Monte</strong> asesoramos a empresas de todos los tamaños para optimizar este impuesto dentro del marco legal.</p>
 
 <h2>Tipo impositivo del Impuesto de Sociedades</h2>
 <p>El tipo general del Impuesto de Sociedades es del <strong>25%</strong>. Sin embargo, existen tipos reducidos para ciertos casos:</p>
@@ -120,9 +120,9 @@ export const blogPosts: BlogPost[] = [
 <p>Además, hay que presentar los pagos fraccionados (modelo 202) en abril, octubre y diciembre.</p>
 
 <h2>Planificación fiscal: la clave del ahorro</h2>
-<p>Una buena planificación fiscal a lo largo del ejercicio permite anticipar el resultado del impuesto y tomar decisiones que optimicen la carga tributaria. Nuestra <strong>asesoría en Villaviciosa de Odón</strong> te acompaña durante todo el año, no solo en el momento de la presentación.</p>`,
-    metaTitle: "Impuesto de Sociedades | Asesoría Villaviciosa de Odón Monte",
-    metaDescription: "Guía sobre el Impuesto de Sociedades para empresas en Villaviciosa de Odón. Tipos, deducciones y plazos. Asesoría con 30 años de experiencia.",
+<p>Una buena planificación fiscal a lo largo del ejercicio permite anticipar el resultado del impuesto y tomar decisiones que optimicen la carga tributaria. Nuestra <strong>asesoría en Boadilla del Monte</strong> te acompaña durante todo el año, no solo en el momento de la presentación.</p>`,
+    metaTitle: "Impuesto de Sociedades | Asesoría Boadilla del Monte",
+    metaDescription: "Guía sobre el Impuesto de Sociedades para empresas en Boadilla del Monte. Tipos, deducciones y plazos. Asesoría con 30 años de experiencia.",
     date: "2025-03-05",
     category: "Fiscal",
     readTime: "6 min",
@@ -132,7 +132,7 @@ export const blogPosts: BlogPost[] = [
     title: "Nóminas y contratos laborales: todo lo que necesitas saber como empresario",
     excerpt: "Guía sobre la gestión de nóminas, tipos de contratos laborales, seguros sociales y obligaciones del empresario con sus trabajadores.",
     content: `<h2>La gestión laboral en tu empresa</h2>
-<p>Si tienes empleados, la gestión laboral es una de las áreas más complejas y que más responsabilidad conlleva. Errores en las nóminas o en los contratos pueden dar lugar a sanciones importantes. Por eso, cada vez más empresarios en Villaviciosa de Odón confían en una <strong>asesoría laboral</strong> profesional.</p>
+<p>Si tienes empleados, la gestión laboral es una de las áreas más complejas y que más responsabilidad conlleva. Errores en las nóminas o en los contratos pueden dar lugar a sanciones importantes. Por eso, cada vez más empresarios en Boadilla del Monte confían en una <strong>asesoría laboral</strong> profesional.</p>
 
 <h2>Tipos de contratos laborales</h2>
 <p>La reforma laboral ha simplificado los tipos de contrato, pero sigue habiendo varias modalidades:</p>
@@ -157,20 +157,20 @@ export const blogPosts: BlogPost[] = [
 <h2>Seguros sociales</h2>
 <p>Cada mes, la empresa debe presentar y abonar las cotizaciones a la Seguridad Social, tanto la parte del trabajador (que se deduce de la nómina) como la parte empresarial. El incumplimiento de esta obligación conlleva recargos e intereses de demora.</p>
 
-<h2>Nuestra asesoría laboral en Villaviciosa de Odón</h2>
+<h2>Nuestra asesoría laboral en Boadilla del Monte</h2>
 <p>En Salander Soluciones nos encargamos de toda la gestión laboral de tu empresa: confección de nóminas, elaboración de contratos, presentación de seguros sociales y asesoramiento continuo. Todo de forma <strong>100% online</strong> y con más de <strong>30 años de experiencia</strong>.</p>`,
-    metaTitle: "Nóminas y Contratos | Asesoría Villaviciosa de Odón Monte",
-    metaDescription: "Todo sobre nóminas, contratos laborales y seguros sociales para empresas. Asesoría laboral en Villaviciosa de Odón. Servicio 100% online.",
+    metaTitle: "Nóminas y Contratos | Asesoría Boadilla del Monte",
+    metaDescription: "Todo sobre nóminas, contratos laborales y seguros sociales para empresas. Asesoría laboral en Boadilla del Monte. Servicio 100% online.",
     date: "2025-01-28",
     category: "Laboral",
     readTime: "6 min",
   },
   {
     slug: "declaracion-renta-boadilla-del-monte-consejos",
-    title: "Declaración de la Renta en Villaviciosa de Odón: consejos para pagar menos",
+    title: "Declaración de la Renta en Boadilla del Monte: consejos para pagar menos",
     excerpt: "Descubre las deducciones y beneficios fiscales que puedes aplicar en tu declaración de IRPF. Consejos prácticos de nuestra asesoría.",
     content: `<h2>La campaña de la Renta</h2>
-<p>Cada año, entre abril y junio, se abre la campaña para presentar la declaración de la renta (IRPF). Es un trámite que afecta a millones de contribuyentes, y en nuestra <strong>asesoría en Villaviciosa de Odón</strong> ayudamos a particulares y autónomos a optimizar su declaración.</p>
+<p>Cada año, entre abril y junio, se abre la campaña para presentar la declaración de la renta (IRPF). Es un trámite que afecta a millones de contribuyentes, y en nuestra <strong>asesoría en Boadilla del Monte</strong> ayudamos a particulares y autónomos a optimizar su declaración.</p>
 
 <h2>¿Estás obligado a declarar?</h2>
 <p>En general, están obligados a presentar la declaración quienes hayan obtenido:</p>
@@ -196,19 +196,19 @@ export const blogPosts: BlogPost[] = [
 <p>Si estás casado, puedes optar entre tributación individual o conjunta. No siempre es mejor una u otra; depende de los ingresos de ambos cónyuges. Nosotros simulamos ambas opciones para recomendarte la más favorable.</p>
 
 <h2>Confía en profesionales</h2>
-<p>En nuestra <strong>asesoría en Villaviciosa de Odón</strong> revisamos tu borrador a fondo y nos aseguramos de que aplicas todas las deducciones disponibles. Con 30 años de experiencia, sabemos dónde encontrar el ahorro fiscal.</p>`,
-    metaTitle: "Declaración Renta Villaviciosa de Odón | Consejos Fiscales",
-    metaDescription: "Consejos para tu declaración de la renta en Villaviciosa de Odón. Deducciones, plazos y trucos para pagar menos. Asesoría con 30 años de experiencia.",
+<p>En nuestra <strong>asesoría en Boadilla del Monte</strong> revisamos tu borrador a fondo y nos aseguramos de que aplicas todas las deducciones disponibles. Con 30 años de experiencia, sabemos dónde encontrar el ahorro fiscal.</p>`,
+    metaTitle: "Declaración Renta Boadilla del Monte | Consejos Fiscales",
+    metaDescription: "Consejos para tu declaración de la renta en Boadilla del Monte. Deducciones, plazos y trucos para pagar menos. Asesoría con 30 años de experiencia.",
     date: "2025-04-01",
     category: "Fiscal",
     readTime: "5 min",
   },
   {
     slug: "ventajas-gestoria-online-boadilla",
-    title: "Ventajas de contratar una asesoría online en Villaviciosa de Odón",
+    title: "Ventajas de contratar una asesoría online en Boadilla del Monte",
     excerpt: "Descubre por qué cada vez más autónomos y empresas eligen una asesoría 100% online. Comodidad, rapidez y la misma calidad profesional.",
     content: `<h2>¿Por qué una asesoría online?</h2>
-<p>El modelo de <strong>asesoría online</strong> ha experimentado un crecimiento enorme en los últimos años. En Salander Soluciones, llevamos más de 30 años ofreciendo servicios de asesoría fiscal, laboral y contable, y nuestro servicio es <strong>100% online</strong>. Esto nos permite atender a clientes de Villaviciosa de Odón y de toda España con la misma calidad y cercanía.</p>
+<p>El modelo de <strong>asesoría online</strong> ha experimentado un crecimiento enorme en los últimos años. En Salander Soluciones, llevamos más de 30 años ofreciendo servicios de asesoría fiscal, laboral y contable, y nuestro servicio es <strong>100% online</strong>. Esto nos permite atender a clientes de Boadilla del Monte y de toda España con la misma calidad y cercanía.</p>
 
 <h2>Principales ventajas de la asesoría online</h2>
 <ul>
@@ -228,10 +228,10 @@ export const blogPosts: BlogPost[] = [
 <li>Nosotros nos encargamos de todas las gestiones</li>
 </ul>
 
-<h2>Tu asesoría online en Villaviciosa de Odón</h2>
-<p>Tenemos nuestra base en Villaviciosa de Odón, pero nuestro servicio es 100% online. Esto significa que, vivas donde vivas, puedes contar con nuestra experiencia de más de 30 años en asesoría fiscal, laboral y contable, sin desplazamientos. Y si prefieres que nos veamos, hacemos una videollamada o quedamos en un coworking. Es así de sencillo.</p>`,
-    metaTitle: "Asesoría Online Villaviciosa de Odón | Ventajas",
-    metaDescription: "Ventajas de una asesoría online en Villaviciosa de Odón. Servicio 100% online con 30 años de experiencia. Comodidad y calidad profesional.",
+<h2>Tu asesoría online en Boadilla del Monte</h2>
+<p>Tenemos nuestra base en Boadilla del Monte, pero nuestro servicio es 100% online. Esto significa que, vivas donde vivas, puedes contar con nuestra experiencia de más de 30 años en asesoría fiscal, laboral y contable, sin desplazamientos. Y si prefieres que nos veamos, hacemos una videollamada o quedamos en un coworking. Es así de sencillo.</p>`,
+    metaTitle: "Asesoría Online Boadilla del Monte | Ventajas",
+    metaDescription: "Ventajas de una asesoría online en Boadilla del Monte. Servicio 100% online con 30 años de experiencia. Comodidad y calidad profesional.",
     date: "2024-11-20",
     category: "Empresas",
     readTime: "4 min",
@@ -241,7 +241,7 @@ export const blogPosts: BlogPost[] = [
     title: "Calendario fiscal del autónomo: todas las fechas clave del año",
     excerpt: "No te pierdas ningún plazo fiscal. Repasamos todas las declaraciones y modelos que un autónomo debe presentar a lo largo del año.",
     content: `<h2>Las obligaciones fiscales del autónomo mes a mes</h2>
-<p>Uno de los mayores quebraderos de cabeza para los autónomos es recordar todas las fechas de presentación de impuestos. En nuestra <strong>asesoría en Villaviciosa de Odón</strong> nos encargamos de que nunca se te pase un plazo, pero aquí te dejamos el calendario completo.</p>
+<p>Uno de los mayores quebraderos de cabeza para los autónomos es recordar todas las fechas de presentación de impuestos. En nuestra <strong>asesoría en Boadilla del Monte</strong> nos encargamos de que nunca se te pase un plazo, pero aquí te dejamos el calendario completo.</p>
 
 <h2>Enero</h2>
 <ul>
@@ -271,16 +271,16 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>No te la juegues con los plazos</h2>
-<p>Presentar una declaración fuera de plazo supone recargos del 1% por cada mes de retraso (sin requerimiento previo), más intereses de demora y posibles sanciones si media requerimiento de Hacienda. Nuestra <strong>asesoría en Villaviciosa de Odón</strong> se encarga de que todo esté presentado a tiempo.</p>`,
-    metaTitle: "Calendario Fiscal Autónomo | Asesoría Villaviciosa de Odón",
-    metaDescription: "Calendario con todas las fechas fiscales del autónomo. No te pierdas ningún plazo. Asesoría en Villaviciosa de Odón con 30 años de experiencia.",
+<p>Presentar una declaración fuera de plazo supone recargos del 1% por cada mes de retraso (sin requerimiento previo), más intereses de demora y posibles sanciones si media requerimiento de Hacienda. Nuestra <strong>asesoría en Boadilla del Monte</strong> se encarga de que todo esté presentado a tiempo.</p>`,
+    metaTitle: "Calendario Fiscal Autónomo | Asesoría Boadilla del Monte",
+    metaDescription: "Calendario con todas las fechas fiscales del autónomo. No te pierdas ningún plazo. Asesoría en Boadilla del Monte con 30 años de experiencia.",
     date: "2025-01-05",
     category: "Fiscal",
     readTime: "5 min",
   },
   {
     slug: "constituir-empresa-sociedad-limitada-boadilla",
-    title: "Cómo constituir una Sociedad Limitada en Villaviciosa de Odón",
+    title: "Cómo constituir una Sociedad Limitada en Boadilla del Monte",
     excerpt: "Pasos, documentación y costes para crear una SL. Te explicamos todo el proceso de constitución de empresas de forma clara y sencilla.",
     content: `<h2>¿Qué es una Sociedad Limitada (SL)?</h2>
 <p>La Sociedad Limitada (SL) es la forma jurídica más utilizada en España para crear una empresa. Se caracteriza por limitar la responsabilidad de los socios al capital aportado, lo que protege tu patrimonio personal.</p>
@@ -306,9 +306,9 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>Nuestra asesoría te ayuda</h2>
-<p>En nuestra <strong>asesoría en Villaviciosa de Odón</strong> nos encargamos de todo el proceso de constitución de tu sociedad. Con más de 30 años de experiencia, hacemos que sea sencillo y rápido. Y todo 100% online.</p>`,
-    metaTitle: "Constituir SL Villaviciosa de Odón | Asesoría",
-    metaDescription: "Guía para constituir una Sociedad Limitada en Villaviciosa de Odón. Pasos, costes y documentación. Asesoría con 30 años de experiencia.",
+<p>En nuestra <strong>asesoría en Boadilla del Monte</strong> nos encargamos de todo el proceso de constitución de tu sociedad. Con más de 30 años de experiencia, hacemos que sea sencillo y rápido. Y todo 100% online.</p>`,
+    metaTitle: "Constituir SL Boadilla del Monte | Asesoría",
+    metaDescription: "Guía para constituir una Sociedad Limitada en Boadilla del Monte. Pasos, costes y documentación. Asesoría con 30 años de experiencia.",
     date: "2024-12-10",
     category: "Empresas",
     readTime: "5 min",
@@ -318,7 +318,7 @@ export const blogPosts: BlogPost[] = [
     title: "Gastos deducibles para autónomos: guía completa",
     excerpt: "Conoce todos los gastos que puedes deducirte como autónomo para reducir tu factura fiscal. Incluye gastos de difícil justificación.",
     content: `<h2>¿Qué gastos puedo deducirme como autónomo?</h2>
-<p>Uno de los aspectos más importantes de la fiscalidad del autónomo es saber qué gastos son deducibles. Una correcta gestión de los gastos deducibles puede suponer un ahorro fiscal muy significativo. En nuestra <strong>asesoría en Villaviciosa de Odón</strong>, asesoramos a nuestros clientes para que aprovechen todas las deducciones legales.</p>
+<p>Uno de los aspectos más importantes de la fiscalidad del autónomo es saber qué gastos son deducibles. Una correcta gestión de los gastos deducibles puede suponer un ahorro fiscal muy significativo. En nuestra <strong>asesoría en Boadilla del Monte</strong>, asesoramos a nuestros clientes para que aprovechen todas las deducciones legales.</p>
 
 <h2>Gastos deducibles más habituales</h2>
 <ul>
@@ -339,9 +339,9 @@ export const blogPosts: BlogPost[] = [
 <p>El vehículo solo es deducible al 100% si se usa exclusivamente para la actividad (taxistas, transportistas, etc.). En IRPF, los gastos de manutención del autónomo son deducibles con ciertos límites: 26,67 euros/día en España y 48,08 euros/día en el extranjero, siempre que se paguen con tarjeta o medio electrónico.</p>
 
 <h2>Lleva tus gastos al día</h2>
-<p>Nuestra <strong>asesoría en Villaviciosa de Odón</strong> te ayuda a organizar y clasificar tus gastos para que no pierdas ninguna deducción. Un buen control de gastos es la base de una buena fiscalidad.</p>`,
-    metaTitle: "Gastos Deducibles Autónomos | Asesoría Villaviciosa de Odón",
-    metaDescription: "Guía completa de gastos deducibles para autónomos. Ahorra en impuestos con tu asesoría en Villaviciosa de Odón. 30 años de experiencia.",
+<p>Nuestra <strong>asesoría en Boadilla del Monte</strong> te ayuda a organizar y clasificar tus gastos para que no pierdas ninguna deducción. Un buen control de gastos es la base de una buena fiscalidad.</p>`,
+    metaTitle: "Gastos Deducibles Autónomos | Asesoría Boadilla del Monte",
+    metaDescription: "Guía completa de gastos deducibles para autónomos. Ahorra en impuestos con tu asesoría en Boadilla del Monte. 30 años de experiencia.",
     date: "2024-10-15",
     category: "Autónomos",
     readTime: "6 min",
@@ -358,7 +358,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
 <li>Presentar declaraciones de impuestos en la Agencia Tributaria</li>
 <li>Consultar y descargar tu vida laboral en la Seguridad Social</li>
-<li>Realizar trámites en el Ayuntamiento de Villaviciosa de Odón</li>
+<li>Realizar trámites en el Ayuntamiento de Boadilla del Monte</li>
 <li>Firmar documentos electrónicamente</li>
 <li>Acceder a tu historial clínico del sistema de salud</li>
 <li>Presentar recursos y reclamaciones ante organismos públicos</li>
@@ -376,9 +376,9 @@ export const blogPosts: BlogPost[] = [
 <p>El certificado digital para personas físicas emitido por la FNMT es <strong>gratuito</strong>. Para personas jurídicas (empresas), tiene un coste que varía según el tipo de certificado solicitado.</p>
 
 <h2>Te lo gestionamos desde nuestra asesoría</h2>
-<p>En nuestra <strong>asesoría en Villaviciosa de Odón</strong> tramitamos y renovamos certificados digitales para personas físicas y jurídicas. Nos encargamos de todo para que no tengas que preocuparte de nada.</p>`,
-    metaTitle: "Certificado Digital | Asesoría Villaviciosa de Odón Monte",
-    metaDescription: "Cómo obtener y renovar el certificado digital. Tramitación sencilla desde tu asesoría en Villaviciosa de Odón. Servicio 100% online.",
+<p>En nuestra <strong>asesoría en Boadilla del Monte</strong> tramitamos y renovamos certificados digitales para personas físicas y jurídicas. Nos encargamos de todo para que no tengas que preocuparte de nada.</p>`,
+    metaTitle: "Certificado Digital | Asesoría Boadilla del Monte",
+    metaDescription: "Cómo obtener y renovar el certificado digital. Tramitación sencilla desde tu asesoría en Boadilla del Monte. Servicio 100% online.",
     date: "2024-09-20",
     category: "Trámites",
     readTime: "4 min",
@@ -408,10 +408,10 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Cumplimiento legal:</strong> Evitas sanciones por incumplimiento de obligaciones mercantiles.</li>
 </ul>
 
-<h2>Tu asesoría contable en Villaviciosa de Odón</h2>
+<h2>Tu asesoría contable en Boadilla del Monte</h2>
 <p>En Salander Soluciones nos encargamos de la contabilidad de tu empresa de forma completa. Con más de 30 años de experiencia y servicio 100% online, hacemos que llevar la contabilidad sea sencillo y sin complicaciones.</p>`,
-    metaTitle: "Contabilidad Empresarial | Asesoría Villaviciosa de Odón",
-    metaDescription: "Importancia de la contabilidad empresarial. Servicio de asesoría contable en Villaviciosa de Odón. 30 años de experiencia, 100% online.",
+    metaTitle: "Contabilidad Empresarial | Asesoría Boadilla del Monte",
+    metaDescription: "Importancia de la contabilidad empresarial. Servicio de asesoría contable en Boadilla del Monte. 30 años de experiencia, 100% online.",
     date: "2024-08-12",
     category: "Contable",
     readTime: "4 min",
@@ -448,9 +448,9 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>Confía en nuestra experiencia</h2>
-<p>En nuestra <strong>asesoría en Villaviciosa de Odón</strong>, con más de 30 años de experiencia, hemos gestionado cientos de requerimientos e inspecciones. Nos encargamos de todo para proteger tus intereses.</p>`,
-    metaTitle: "Inspección Hacienda | Asesoría Villaviciosa de Odón Monte",
-    metaDescription: "Qué hacer ante una inspección de Hacienda. Asesoramiento profesional de tu asesoría en Villaviciosa de Odón. 30 años de experiencia.",
+<p>En nuestra <strong>asesoría en Boadilla del Monte</strong>, con más de 30 años de experiencia, hemos gestionado cientos de requerimientos e inspecciones. Nos encargamos de todo para proteger tus intereses.</p>`,
+    metaTitle: "Inspección Hacienda | Asesoría Boadilla del Monte",
+    metaDescription: "Qué hacer ante una inspección de Hacienda. Asesoramiento profesional de tu asesoría en Boadilla del Monte. 30 años de experiencia.",
     date: "2025-02-20",
     category: "Fiscal",
     readTime: "5 min",
@@ -460,7 +460,7 @@ export const blogPosts: BlogPost[] = [
     title: "Autónomo vs. Sociedad Limitada: ¿qué me conviene más?",
     excerpt: "Analizamos las ventajas e inconvenientes de ser autónomo persona física frente a constituir una SL. Factores clave para tomar la decisión.",
     content: `<h2>La decisión más importante al emprender</h2>
-<p>Una de las primeras preguntas que nos hacen los emprendedores en nuestra <strong>asesoría en Villaviciosa de Odón</strong> es: ¿me conviene más ser autónomo o crear una sociedad? La respuesta depende de varios factores.</p>
+<p>Una de las primeras preguntas que nos hacen los emprendedores en nuestra <strong>asesoría en Boadilla del Monte</strong> es: ¿me conviene más ser autónomo o crear una sociedad? La respuesta depende de varios factores.</p>
 
 <h2>Ventajas de ser autónomo</h2>
 <ul>
@@ -480,12 +480,12 @@ export const blogPosts: BlogPost[] = [
 
 <h2>¿Cuándo conviene pasar de autónomo a SL?</h2>
 <p>Como regla general, suele ser fiscalmente más ventajoso constituir una sociedad cuando los beneficios netos superan los <strong>40.000-50.000 euros anuales</strong>, ya que a partir de ese nivel el tipo marginal del IRPF supera al 25% del Impuesto de Sociedades.</p>
-<p>Sin embargo, cada caso es diferente. En nuestra <strong>asesoría en Villaviciosa de Odón</strong> analizamos tu situación particular para recomendarte la opción más favorable.</p>
+<p>Sin embargo, cada caso es diferente. En nuestra <strong>asesoría en Boadilla del Monte</strong> analizamos tu situación particular para recomendarte la opción más favorable.</p>
 
 <h2>Te ayudamos a decidir</h2>
 <p>Con más de 30 años de experiencia asesorando a autónomos y empresas, podemos analizar tu caso y darte una recomendación personalizada. Y recuerda: nuestro servicio es 100% online.</p>`,
-    metaTitle: "Autónomo vs SL | Asesoría Villaviciosa de Odón",
-    metaDescription: "¿Autónomo o Sociedad Limitada? Comparativa completa. Asesoramiento personalizado de tu asesoría en Villaviciosa de Odón.",
+    metaTitle: "Autónomo vs SL | Asesoría Boadilla del Monte",
+    metaDescription: "¿Autónomo o Sociedad Limitada? Comparativa completa. Asesoramiento personalizado de tu asesoría en Boadilla del Monte.",
     date: "2024-11-05",
     category: "Empresas",
     readTime: "5 min",
@@ -521,9 +521,9 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>¿Y si no aplico retención?</h2>
-<p>Si estás obligado a aplicar retención y no lo haces, puede haber sanciones. Nuestra <strong>asesoría en Villaviciosa de Odón</strong> te asesora sobre cuándo debes aplicarla y configura tus facturas correctamente.</p>`,
-    metaTitle: "Retenciones IRPF Autónomos | Asesoría Villaviciosa de Odón",
-    metaDescription: "Guía sobre retenciones de IRPF en facturas de autónomos. Cuándo aplicar y cómo calcular. Asesoría en Villaviciosa de Odón.",
+<p>Si estás obligado a aplicar retención y no lo haces, puede haber sanciones. Nuestra <strong>asesoría en Boadilla del Monte</strong> te asesora sobre cuándo debes aplicarla y configura tus facturas correctamente.</p>`,
+    metaTitle: "Retenciones IRPF Autónomos | Asesoría Boadilla del Monte",
+    metaDescription: "Guía sobre retenciones de IRPF en facturas de autónomos. Cuándo aplicar y cómo calcular. Asesoría en Boadilla del Monte.",
     date: "2024-10-01",
     category: "Autónomos",
     readTime: "4 min",
@@ -549,7 +549,7 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>Errores comunes</h2>
-<p>Los errores más frecuentes que detectamos en nuestra <strong>asesoría en Villaviciosa de Odón</strong> son:</p>
+<p>Los errores más frecuentes que detectamos en nuestra <strong>asesoría en Boadilla del Monte</strong> son:</p>
 <ul>
 <li>No incluir operaciones que sí superan el límite</li>
 <li>Discrepancias entre lo declarado por las dos partes (comprador y vendedor)</li>
@@ -558,8 +558,8 @@ export const blogPosts: BlogPost[] = [
 
 <h2>Te lo gestionamos</h2>
 <p>En nuestra asesoría nos encargamos de preparar y presentar el modelo 347, cruzando los datos con los de tus clientes y proveedores para evitar discrepancias. Todo 100% online.</p>`,
-    metaTitle: "Modelo 347 | Asesoría Villaviciosa de Odón",
-    metaDescription: "Guía sobre el modelo 347 de operaciones con terceros. Cuándo presentarlo y cómo. Asesoría en Villaviciosa de Odón, 30 años de experiencia.",
+    metaTitle: "Modelo 347 | Asesoría Boadilla del Monte",
+    metaDescription: "Guía sobre el modelo 347 de operaciones con terceros. Cuándo presentarlo y cómo. Asesoría en Boadilla del Monte, 30 años de experiencia.",
     date: "2025-01-20",
     category: "Fiscal",
     readTime: "4 min",
@@ -583,10 +583,10 @@ export const blogPosts: BlogPost[] = [
 <h2>¿Cómo solicitar las bonificaciones?</h2>
 <p>Las bonificaciones se aplican directamente en los boletines de cotización (seguros sociales) que la empresa presenta mensualmente. No es necesario solicitarlas previamente, pero sí verificar que se cumplen los requisitos.</p>
 
-<h2>Tu asesoría laboral en Villaviciosa de Odón</h2>
-<p>En nuestra <strong>asesoría en Villaviciosa de Odón</strong> nos aseguramos de que tu empresa aprovecha todas las bonificaciones a las que tiene derecho. Con más de 30 años de experiencia en gestión laboral, sabemos cómo optimizar tus costes de personal.</p>`,
-    metaTitle: "Bonificaciones Contratación | Asesoría Villaviciosa de Odón",
-    metaDescription: "Bonificaciones a la contratación para empresas. Ahorra en Seguridad Social. Asesoría laboral en Villaviciosa de Odón con 30 años de experiencia.",
+<h2>Tu asesoría laboral en Boadilla del Monte</h2>
+<p>En nuestra <strong>asesoría en Boadilla del Monte</strong> nos aseguramos de que tu empresa aprovecha todas las bonificaciones a las que tiene derecho. Con más de 30 años de experiencia en gestión laboral, sabemos cómo optimizar tus costes de personal.</p>`,
+    metaTitle: "Bonificaciones Contratación | Asesoría Boadilla del Monte",
+    metaDescription: "Bonificaciones a la contratación para empresas. Ahorra en Seguridad Social. Asesoría laboral en Boadilla del Monte con 30 años de experiencia.",
     date: "2024-12-18",
     category: "Laboral",
     readTime: "4 min",
@@ -596,7 +596,7 @@ export const blogPosts: BlogPost[] = [
     title: "Facturación electrónica obligatoria: todo lo que debes saber",
     excerpt: "La facturación electrónica será obligatoria para empresas y autónomos. Te contamos los plazos, requisitos y cómo prepararte.",
     content: `<h2>La factura electrónica en España</h2>
-<p>La Ley Crea y Crece establece la obligación de emitir <strong>factura electrónica</strong> en las relaciones comerciales entre empresas y profesionales (B2B). Esta normativa afectará a autónomos y empresas de toda España, incluidos los de Villaviciosa de Odón.</p>
+<p>La Ley Crea y Crece establece la obligación de emitir <strong>factura electrónica</strong> en las relaciones comerciales entre empresas y profesionales (B2B). Esta normativa afectará a autónomos y empresas de toda España, incluidos los de Boadilla del Monte.</p>
 
 <h2>¿Cuándo será obligatoria?</h2>
 <p>La implantación será progresiva:</p>
@@ -618,19 +618,19 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>Te acompañamos en la transición</h2>
-<p>Desde nuestra <strong>asesoría en Villaviciosa de Odón</strong>, te ayudamos a prepararte para la facturación electrónica obligatoria. Te asesoramos sobre las herramientas disponibles y nos aseguramos de que cumplas con todos los requisitos.</p>`,
-    metaTitle: "Facturación Electrónica | Asesoría Villaviciosa de Odón",
-    metaDescription: "Facturación electrónica obligatoria para empresas y autónomos. Plazos y preparación. Asesoría en Villaviciosa de Odón.",
+<p>Desde nuestra <strong>asesoría en Boadilla del Monte</strong>, te ayudamos a prepararte para la facturación electrónica obligatoria. Te asesoramos sobre las herramientas disponibles y nos aseguramos de que cumplas con todos los requisitos.</p>`,
+    metaTitle: "Facturación Electrónica | Asesoría Boadilla del Monte",
+    metaDescription: "Facturación electrónica obligatoria para empresas y autónomos. Plazos y preparación. Asesoría en Boadilla del Monte.",
     date: "2025-03-15",
     category: "Empresas",
     readTime: "5 min",
   },
   {
     slug: "como-elegir-gestoria-boadilla-del-monte",
-    title: "Cómo elegir la mejor asesoría en Villaviciosa de Odón",
+    title: "Cómo elegir la mejor asesoría en Boadilla del Monte",
     excerpt: "Criterios clave para elegir una asesoría de confianza: experiencia, servicios, accesibilidad, precios y especialización.",
     content: `<h2>La importancia de elegir bien</h2>
-<p>Elegir una <strong>asesoría en Villaviciosa de Odón</strong> es una decisión importante para tu negocio. Una buena asesoría no solo te ahorra tiempo y problemas con Hacienda, sino que puede ayudarte a optimizar tu fiscalidad y hacer crecer tu empresa.</p>
+<p>Elegir una <strong>asesoría en Boadilla del Monte</strong> es una decisión importante para tu negocio. Una buena asesoría no solo te ahorra tiempo y problemas con Hacienda, sino que puede ayudarte a optimizar tu fiscalidad y hacer crecer tu empresa.</p>
 
 <h2>Criterios para elegir asesoría</h2>
 <ul>
@@ -643,9 +643,9 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>¿Por qué Salander Soluciones?</h2>
-<p>En nuestra <strong>asesoría en Villaviciosa de Odón</strong> reunimos todas estas cualidades: más de 30 años de experiencia, servicio integral (fiscal, laboral y contable), 100% online, precios transparentes y una valoración de 5.0 en Google con 19 reseñas.</p>`,
-    metaTitle: "Elegir Asesoría Villaviciosa de Odón | Guía",
-    metaDescription: "Cómo elegir la mejor asesoría en Villaviciosa de Odón. Criterios clave: experiencia, servicios, precios. Salander Soluciones, 30 años de experiencia.",
+<p>En nuestra <strong>asesoría en Boadilla del Monte</strong> reunimos todas estas cualidades: más de 30 años de experiencia, servicio integral (fiscal, laboral y contable), 100% online, precios transparentes y una valoración de 5.0 en Google con 19 reseñas.</p>`,
+    metaTitle: "Elegir Asesoría Boadilla del Monte | Guía",
+    metaDescription: "Cómo elegir la mejor asesoría en Boadilla del Monte. Criterios clave: experiencia, servicios, precios. Salander Soluciones, 30 años de experiencia.",
     date: "2024-09-05",
     category: "Empresas",
     readTime: "4 min",
@@ -674,28 +674,28 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>¿Cómo solicitarlo?</h2>
-<p>La solicitud se realiza de forma telemática a través de la sede electrónica de la Agencia Tributaria. En nuestra <strong>asesoría en Villaviciosa de Odón</strong> te ayudamos con todo el proceso para que consigas las mejores condiciones posibles.</p>
+<p>La solicitud se realiza de forma telemática a través de la sede electrónica de la Agencia Tributaria. En nuestra <strong>asesoría en Boadilla del Monte</strong> te ayudamos con todo el proceso para que consigas las mejores condiciones posibles.</p>
 
 <h2>Intereses del aplazamiento</h2>
 <p>Las deudas aplazadas devengan intereses de demora, actualmente en torno al 4,0625% anual. Es importante tenerlo en cuenta, pero en muchos casos es mejor aplazar que incurrir en recargos por presentación fuera de plazo.</p>`,
-    metaTitle: "Aplazar Deudas Hacienda | Asesoría Villaviciosa de Odón",
-    metaDescription: "Cómo solicitar aplazamiento de deudas con Hacienda. Requisitos y procedimiento. Asesoría en Villaviciosa de Odón, 30 años de experiencia.",
+    metaTitle: "Aplazar Deudas Hacienda | Asesoría Boadilla del Monte",
+    metaDescription: "Cómo solicitar aplazamiento de deudas con Hacienda. Requisitos y procedimiento. Asesoría en Boadilla del Monte, 30 años de experiencia.",
     date: "2024-11-15",
     category: "Fiscal",
     readTime: "5 min",
   },
   {
     slug: "tramites-administrativos-boadilla-del-monte",
-    title: "Trámites administrativos en Villaviciosa de Odón: te los gestionamos",
+    title: "Trámites administrativos en Boadilla del Monte: te los gestionamos",
     excerpt: "Desde licencias de actividad hasta certificados y registros. Te gestionamos cualquier trámite ante organismos públicos.",
     content: `<h2>¿Necesitas gestionar un trámite?</h2>
-<p>Los trámites administrativos son una parte inevitable de cualquier actividad económica. En nuestra <strong>asesoría en Villaviciosa de Odón</strong> nos encargamos de gestionarlos por ti, para que no pierdas tiempo en papeleos y colas.</p>
+<p>Los trámites administrativos son una parte inevitable de cualquier actividad económica. En nuestra <strong>asesoría en Boadilla del Monte</strong> nos encargamos de gestionarlos por ti, para que no pierdas tiempo en papeleos y colas.</p>
 
 <h2>Trámites que gestionamos</h2>
 <ul>
 <li><strong>Ante Hacienda:</strong> Declaraciones censales, solicitud de NIF/CIF, certificados de estar al corriente, recursos y reclamaciones.</li>
 <li><strong>Ante la Seguridad Social:</strong> Altas y bajas de trabajadores, inscripción de empresas, solicitud de vida laboral, prestaciones.</li>
-<li><strong>Ante el Ayuntamiento de Villaviciosa de Odón:</strong> Licencias de actividad, comunicaciones previas, certificados urbanísticos.</li>
+<li><strong>Ante el Ayuntamiento de Boadilla del Monte:</strong> Licencias de actividad, comunicaciones previas, certificados urbanísticos.</li>
 <li><strong>Ante el Registro Mercantil:</strong> Inscripción de sociedades, legalización de libros, depósito de cuentas anuales.</li>
 </ul>
 
@@ -707,9 +707,9 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>30 años gestionando trámites</h2>
-<p>Con más de tres décadas de experiencia, nuestra <strong>asesoría en Villaviciosa de Odón</strong> ha gestionado miles de trámites ante todo tipo de organismos. Nos encargamos de todo, de forma 100% online.</p>`,
-    metaTitle: "Trámites Administrativos Villaviciosa de Odón | Asesoría",
-    metaDescription: "Gestión de trámites administrativos en Villaviciosa de Odón. Hacienda, Seguridad Social, Ayuntamiento. Asesoría con 30 años de experiencia.",
+<p>Con más de tres décadas de experiencia, nuestra <strong>asesoría en Boadilla del Monte</strong> ha gestionado miles de trámites ante todo tipo de organismos. Nos encargamos de todo, de forma 100% online.</p>`,
+    metaTitle: "Trámites Administrativos Boadilla del Monte | Asesoría",
+    metaDescription: "Gestión de trámites administrativos en Boadilla del Monte. Hacienda, Seguridad Social, Ayuntamiento. Asesoría con 30 años de experiencia.",
     date: "2024-08-25",
     category: "Trámites",
     readTime: "4 min",
@@ -720,7 +720,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "El nuevo sistema de cotización por ingresos reales ya está en vigor. Te explicamos los tramos, cuotas y cómo afecta a tu bolsillo.",
     content: `<h2>El sistema de cotización por ingresos reales</h2>
 <p>Desde 2023, el sistema de cotización de los autónomos se basa en los <strong>rendimientos netos reales</strong> de la actividad. En 2025, los tramos y cuotas se han actualizado, y es fundamental que conozcas cómo te afecta este cambio.</p>
-<p>En nuestra <strong>asesoría en Villaviciosa de Odón</strong>, hemos asesorado a cientos de autónomos para adaptarse al nuevo sistema y optimizar su cuota.</p>
+<p>En nuestra <strong>asesoría en Boadilla del Monte</strong>, hemos asesorado a cientos de autónomos para adaptarse al nuevo sistema y optimizar su cuota.</p>
 
 <h2>Tramos de cotización en 2025</h2>
 <p>El sistema establece diferentes tramos según los rendimientos netos mensuales. Los tramos para 2025 son los siguientes:</p>
@@ -740,9 +740,9 @@ export const blogPosts: BlogPost[] = [
 <p>Al finalizar el ejercicio, la Seguridad Social comparará lo que has cotizado con tus ingresos reales declarados en la renta. Si has cotizado de más, te devolverán la diferencia. Si has cotizado de menos, tendrás que abonar la diferencia.</p>
 
 <h2>Cómo te ayudamos</h2>
-<p>Desde nuestra <strong>asesoría en Villaviciosa de Odón</strong>, te ayudamos a elegir el tramo correcto de cotización y a hacer las previsiones de ingresos necesarias. Así evitas sorpresas en la regularización. Todo 100% online.</p>`,
-    metaTitle: "Cuota Autónomos 2025 | Asesoría Villaviciosa de Odón",
-    metaDescription: "Nueva cuota de autónomos 2025 por ingresos reales. Tramos, cuotas y regularización. Asesoría en Villaviciosa de Odón con 30 años de experiencia.",
+<p>Desde nuestra <strong>asesoría en Boadilla del Monte</strong>, te ayudamos a elegir el tramo correcto de cotización y a hacer las previsiones de ingresos necesarias. Así evitas sorpresas en la regularización. Todo 100% online.</p>`,
+    metaTitle: "Cuota Autónomos 2025 | Asesoría Boadilla del Monte",
+    metaDescription: "Nueva cuota de autónomos 2025 por ingresos reales. Tramos, cuotas y regularización. Asesoría en Boadilla del Monte con 30 años de experiencia.",
     date: "2025-05-10",
     category: "Autónomos",
     readTime: "5 min",
@@ -752,7 +752,7 @@ export const blogPosts: BlogPost[] = [
     title: "Novedades fiscales 2025: lo que deben saber autónomos y empresas",
     excerpt: "Repaso de las principales novedades fiscales y tributarias para el ejercicio 2025 que afectan a autónomos y empresas en España.",
     content: `<h2>Novedades fiscales para el ejercicio 2025</h2>
-<p>Cada año trae cambios en la normativa fiscal que pueden afectar a tu negocio. En nuestra <strong>asesoría en Villaviciosa de Odón</strong>, nos mantenemos al día de todas las novedades para que nuestros clientes estén siempre bien informados.</p>
+<p>Cada año trae cambios en la normativa fiscal que pueden afectar a tu negocio. En nuestra <strong>asesoría en Boadilla del Monte</strong>, nos mantenemos al día de todas las novedades para que nuestros clientes estén siempre bien informados.</p>
 
 <h2>Impuesto de Sociedades: tipo reducido para microempresas</h2>
 <p>Las empresas con una cifra de negocios inferior a 1 millón de euros pueden beneficiarse de un <strong>tipo reducido del 23%</strong> en el Impuesto de Sociedades. Esta medida se ha consolidado para apoyar a las microempresas.</p>
@@ -769,10 +769,10 @@ export const blogPosts: BlogPost[] = [
 <h2>Cambios en el IVA</h2>
 <p>Se han producido ajustes en los tipos de IVA aplicables a determinados productos de primera necesidad, como parte de las medidas para combatir la inflación.</p>
 
-<h2>Tu asesoría al día en Villaviciosa de Odón</h2>
+<h2>Tu asesoría al día en Boadilla del Monte</h2>
 <p>En Salander Soluciones nos aseguramos de que nuestros clientes se beneficien de todas las ventajas fiscales disponibles. Con más de 30 años de experiencia y servicio 100% online, somos tu mejor aliado fiscal.</p>`,
-    metaTitle: "Novedades Fiscales 2025 | Asesoría Villaviciosa de Odón Monte",
-    metaDescription: "Principales novedades fiscales 2025 para autónomos y empresas. Cambios en Sociedades, IVA, módulos. Asesoría en Villaviciosa de Odón.",
+    metaTitle: "Novedades Fiscales 2025 | Asesoría Boadilla del Monte",
+    metaDescription: "Principales novedades fiscales 2025 para autónomos y empresas. Cambios en Sociedades, IVA, módulos. Asesoría en Boadilla del Monte.",
     date: "2025-06-20",
     category: "Fiscal",
     readTime: "6 min",
@@ -815,9 +815,9 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>Te ayudamos con la solicitud</h2>
-<p>Desde nuestra <strong>asesoría en Villaviciosa de Odón</strong>, te ayudamos a tramitar la solicitud del Kit Digital. Nos encargamos de verificar que cumples los requisitos y de gestionar toda la documentación necesaria.</p>`,
-    metaTitle: "Kit Digital Pymes y Autónomos | Asesoría Villaviciosa de Odón",
-    metaDescription: "Ayudas Kit Digital para pymes y autónomos. Hasta 12.000 euros para digitalización. Te ayudamos desde nuestra asesoría en Villaviciosa de Odón.",
+<p>Desde nuestra <strong>asesoría en Boadilla del Monte</strong>, te ayudamos a tramitar la solicitud del Kit Digital. Nos encargamos de verificar que cumples los requisitos y de gestionar toda la documentación necesaria.</p>`,
+    metaTitle: "Kit Digital Pymes y Autónomos | Asesoría Boadilla del Monte",
+    metaDescription: "Ayudas Kit Digital para pymes y autónomos. Hasta 12.000 euros para digitalización. Te ayudamos desde nuestra asesoría en Boadilla del Monte.",
     date: "2025-07-05",
     category: "Empresas",
     readTime: "5 min",
@@ -852,10 +852,10 @@ export const blogPosts: BlogPost[] = [
 <h2>Reducción de jornada laboral</h2>
 <p>Se está debatiendo una posible <strong>reducción de la jornada laboral máxima a 37,5 horas semanales</strong>. Si se aprueba, será aún más importante contar con un sistema de registro fiable.</p>
 
-<h2>Te asesoramos desde Villaviciosa de Odón</h2>
-<p>En nuestra <strong>asesoría laboral en Villaviciosa de Odón</strong>, te ayudamos a implantar un sistema de registro de jornada que cumpla con la normativa. También nos encargamos de las nóminas y la gestión laboral de tu empresa.</p>`,
-    metaTitle: "Registro Jornada Laboral 2025 | Asesoría Villaviciosa de Odón",
-    metaDescription: "Obligaciones del registro de jornada laboral en 2025. Normativa, sanciones y sistemas. Asesoría laboral en Villaviciosa de Odón.",
+<h2>Te asesoramos desde Boadilla del Monte</h2>
+<p>En nuestra <strong>asesoría laboral en Boadilla del Monte</strong>, te ayudamos a implantar un sistema de registro de jornada que cumpla con la normativa. También nos encargamos de las nóminas y la gestión laboral de tu empresa.</p>`,
+    metaTitle: "Registro Jornada Laboral 2025 | Asesoría Boadilla del Monte",
+    metaDescription: "Obligaciones del registro de jornada laboral en 2025. Normativa, sanciones y sistemas. Asesoría laboral en Boadilla del Monte.",
     date: "2025-08-12",
     category: "Laboral",
     readTime: "5 min",
@@ -865,7 +865,7 @@ export const blogPosts: BlogPost[] = [
     title: "Declaración de la renta 2025: novedades de la campaña",
     excerpt: "La campaña de la renta 2025 trae novedades importantes. Te contamos los cambios, plazos y consejos para optimizar tu declaración.",
     content: `<h2>Campaña de la renta 2025</h2>
-<p>La campaña para la declaración del IRPF del ejercicio 2024 se desarrolla entre abril y junio de 2025. En nuestra <strong>asesoría en Villaviciosa de Odón</strong>, preparamos tu declaración para que pagues lo justo y aproveches todas las deducciones disponibles.</p>
+<p>La campaña para la declaración del IRPF del ejercicio 2024 se desarrolla entre abril y junio de 2025. En nuestra <strong>asesoría en Boadilla del Monte</strong>, preparamos tu declaración para que pagues lo justo y aproveches todas las deducciones disponibles.</p>
 
 <h2>Principales novedades</h2>
 <ul>
@@ -894,9 +894,9 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>Confía en tu asesoría</h2>
-<p>En nuestra <strong>asesoría en Villaviciosa de Odón</strong>, revisamos cada declaración a fondo. Con más de 30 años de experiencia, sabemos dónde encontrar el ahorro. Servicio 100% online, sin necesidad de desplazarte.</p>`,
-    metaTitle: "Declaración Renta 2025 | Asesoría Villaviciosa de Odón Monte",
-    metaDescription: "Novedades de la campaña de la renta 2025. Plazos, deducciones y consejos. Asesoría en Villaviciosa de Odón, 30 años de experiencia.",
+<p>En nuestra <strong>asesoría en Boadilla del Monte</strong>, revisamos cada declaración a fondo. Con más de 30 años de experiencia, sabemos dónde encontrar el ahorro. Servicio 100% online, sin necesidad de desplazarte.</p>`,
+    metaTitle: "Declaración Renta 2025 | Asesoría Boadilla del Monte",
+    metaDescription: "Novedades de la campaña de la renta 2025. Plazos, deducciones y consejos. Asesoría en Boadilla del Monte, 30 años de experiencia.",
     date: "2025-04-15",
     category: "Fiscal",
     readTime: "6 min",

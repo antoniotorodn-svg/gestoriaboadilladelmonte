@@ -14,7 +14,7 @@ const { slug } = Astro.params;
 const content = serviceContent.find(sc => sc.slug === slug)!;
 const service = services.find(s => s.slug === slug)!;
 const otherServices = services.filter(s => s.slug !== slug);
-const siteUrl = 'https://gestoriaboadilladelmonte.com';
+const siteUrl = 'https://asesoriaboadilladelmonte.com';
 ---
 <Layout
   title={service.metaTitle}
@@ -99,7 +99,7 @@ const siteUrl = 'https://gestoriaboadilladelmonte.com';
 
   <section class="cta-section">
     <div class="container">
-      <h2>¿Necesitas {service.name.toLowerCase()} en Villaviciosa de Odón?</h2>
+      <h2>¿Necesitas {service.name.toLowerCase()} en Boadilla del Monte?</h2>
       <p>Contacta con nosotros y cuéntanos tu situación. 30 años de experiencia nos avalan.</p>
       <a href="/contacto/" class="btn btn--secondary btn--lg">Contactar Ahora</a>
     </div>
