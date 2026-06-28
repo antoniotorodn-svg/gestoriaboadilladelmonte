@@ -1,0 +1,75 @@
+---
+---
+<div class="topbar" id="topbar">
+  <div class="container topbar__inner">
+    <span class="topbar__icon" aria-hidden="true">💻</span>
+    <p class="topbar__text">
+      <strong>Trabajamos 100% online:</strong> no tienes que desplazarte ni pedir cita, lo hacemos todo desde donde estés. Y si prefieres que nos veamos, hacemos una <strong>videollamada</strong> o quedamos en un <strong>coworking</strong> de Villaviciosa de Odón.
+    </p>
+  </div>
+</div>
+
+<style>
+  .topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1100;
+    background-color: var(--color-primary-dark);
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .topbar__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    padding: 0.55rem 1rem;
+    text-align: center;
+  }
+
+  .topbar__icon {
+    font-size: 1rem;
+    flex-shrink: 0;
+    line-height: 1.4;
+  }
+
+  .topbar__text {
+    margin: 0;
+    font-size: 0.86rem;
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.88);
+  }
+
+  .topbar__text strong {
+    color: var(--color-secondary-light);
+    font-weight: 700;
+  }
+
+  @media (max-width: 768px) {
+    .topbar__text {
+      font-size: 0.76rem;
+    }
+
+    .topbar__inner {
+      gap: 0.4rem;
+      padding: 0.5rem 0.9rem;
+    }
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    function setTopbarHeight() {
+      var el = document.getElementById('topbar');
+      if (el) {
+        document.documentElement.style.setProperty('--topbar-height', el.offsetHeight + 'px');
+      }
+    }
+    setTopbarHeight();
+    window.addEventListener('resize', setTopbarHeight);
+    window.addEventListener('load', setTopbarHeight);
+  })();
+</script>
