@@ -15,7 +15,6 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
   <section class="hero">
     <div class="container hero__inner">
       <div class="hero__content">
-        <span class="hero__label">Asesoría en Villaviciosa de Odón</span>
         <h1>Tu asesoría de confianza en <em>Villaviciosa de Odón</em></h1>
         <p class="hero__text">
           Somos Salander Soluciones, tu asesoría fiscal, laboral y contable para autónomos y pymes.
@@ -488,19 +487,6 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
     z-index: 1;
   }
 
-  .hero__label {
-    display: inline-block;
-    background-color: rgba(26, 60, 52, 0.08);
-    color: var(--color-primary);
-    padding: var(--space-xs) var(--space-lg);
-    border-radius: var(--radius-full);
-    font-size: 0.82rem;
-    font-weight: 600;
-    margin-bottom: var(--space-lg);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-
   .hero h1 {
     font-size: clamp(2.4rem, 5vw, 3.4rem);
     color: var(--color-primary-dark);
@@ -807,7 +793,9 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
     }
 
     .hero__visual {
-      max-width: 400px;
+      max-width: 420px;
+      margin: 0 auto;
+      width: 100%;
     }
 
     .trust-bar__divider {
@@ -820,6 +808,39 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
   }
 
   @media (max-width: 768px) {
+    .hero {
+      padding: calc(var(--topbar-height) + var(--header-height) + var(--space-xl)) 0 var(--space-2xl);
+    }
+
+    .hero__content {
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.9rem, 8vw, 2.4rem);
+    }
+
+    .hero__text {
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero__actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .hero__actions .btn {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .hero__trust {
+      justify-content: center;
+    }
+
     .trust-bar__inner {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -828,6 +849,36 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
 
     .trust-bar__divider {
       display: none;
+    }
+
+    .pain-banner__actions {
+      width: 100%;
+    }
+
+    .pain-banner__actions .btn {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .cta-section__actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .cta-section__actions .btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .trust-bar__inner {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-md);
+    }
+
+    .trust-bar__item strong {
+      font-size: 1.35rem;
     }
   }
 </style>
