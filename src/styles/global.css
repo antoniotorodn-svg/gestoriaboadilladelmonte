@@ -26,8 +26,8 @@
   --color-border: #e8e5de;
 
   /* Typography */
-  --font-heading: 'Playfair Display', 'Georgia', serif;
-  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-heading: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 
   /* Spacing */
   --space-xs: 0.25rem;
