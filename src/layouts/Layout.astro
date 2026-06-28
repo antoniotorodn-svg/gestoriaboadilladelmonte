@@ -46,7 +46,7 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString(
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonicalUrl} />
   <meta property="og:locale" content="es_ES" />
-  <meta property="og:site_name" content="Gestoría Boadilla del Monte" />
+  <meta property="og:site_name" content="Asesoría Villaviciosa de Odón" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
@@ -55,7 +55,7 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString(
 
   <!-- Geo -->
   <meta name="geo.region" content="ES-MD" />
-  <meta name="geo.placename" content="Boadilla del Monte" />
+  <meta name="geo.placename" content="Villaviciosa de Odón" />
 
   <title>{title}</title>
 
@@ -63,32 +63,33 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString(
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "AccountingService",
-    "name": "Gestoría Boadilla del Monte - Salander Soluciones",
-    "alternateName": "Gestoría Boadilla",
-    "description": "Gestoría fiscal, laboral y contable en Boadilla del Monte. Más de 30 años de experiencia. Servicio 100% online para autónomos, pymes y particulares.",
+    "name": "Asesoría Villaviciosa de Odón - Salander Soluciones",
+    "alternateName": "Asesoría Villaviciosa de Odón",
+    "description": "Asesoría fiscal, laboral y contable en Villaviciosa de Odón. Más de 30 años de experiencia. Servicio 100% online (con videollamada o reunión en coworking si lo prefieres) para autónomos, pymes y particulares.",
     "url": siteUrl,
     "telephone": "+34 916 324 013",
     "email": "clientes@salandersoluciones.es",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Calle Geranio, 11",
-      "postalCode": "28660",
-      "addressLocality": "Boadilla del Monte",
+      "postalCode": "28670",
+      "addressLocality": "Villaviciosa de Odón",
       "addressRegion": "Madrid",
       "addressCountry": "ES"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "40.4058",
-      "longitude": "-3.8769"
+      "latitude": "40.3573",
+      "longitude": "-3.9012"
     },
     "areaServed": [
-      { "@type": "City", "name": "Boadilla del Monte", "sameAs": "https://es.wikipedia.org/wiki/Boadilla_del_Monte" },
-      { "@type": "City", "name": "Pozuelo de Alarcón" },
-      { "@type": "City", "name": "Majadahonda" },
-      { "@type": "City", "name": "Villaviciosa de Odón" },
+      { "@type": "City", "name": "Villaviciosa de Odón", "sameAs": "https://es.wikipedia.org/wiki/Villaviciosa_de_Odón" },
       { "@type": "City", "name": "Alcorcón" },
-      { "@type": "AdministrativeArea", "name": "Madrid" }
+      { "@type": "City", "name": "Móstoles" },
+      { "@type": "City", "name": "Boadilla del Monte" },
+      { "@type": "City", "name": "Pozuelo de Alarcón" },
+      { "@type": "City", "name": "Brunete" },
+      { "@type": "AdministrativeArea", "name": "Comunidad de Madrid" },
+      { "@type": "Country", "name": "España" }
     ],
     "priceRange": "€€",
     "openingHours": "Mo-Fr 10:00-20:00",
@@ -98,8 +99,9 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString(
       "opens": "10:00",
       "closes": "20:00"
     },
+    "availableLanguage": "es",
     "foundingDate": "1996",
-    "hasMap": "https://maps.google.com/?q=Calle+Geranio+11+28660+Boadilla+del+Monte+Madrid",
+    "hasMap": "https://maps.google.com/?q=Villaviciosa+de+Odón+Madrid",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
@@ -118,12 +120,12 @@ const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString(
       "dateModified": articleSchema.datePublished,
       "author": {
         "@type": "Organization",
-        "name": "Gestoría Boadilla del Monte - Salander Soluciones",
+        "name": "Asesoría Villaviciosa de Odón - Salander Soluciones",
         "url": siteUrl
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Gestoría Boadilla del Monte - Salander Soluciones",
+        "name": "Asesoría Villaviciosa de Odón - Salander Soluciones",
         "url": siteUrl
       },
       "mainEntityOfPage": {
