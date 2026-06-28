@@ -3,11 +3,11 @@ import Layout from '../../layouts/Layout.astro';
 import { blogPosts } from '../../data/blogPosts';
 
 const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-const siteUrl = 'https://gestoriaboadilladelmonte.com';
+const siteUrl = 'https://asesoriaboadilladelmonte.com';
 ---
 <Layout
-  title="Blog | Asesoría Villaviciosa de Odón - Consejos Fiscales y Laborales"
-  description="Blog de asesoría en Villaviciosa de Odón. Artículos sobre fiscalidad, impuestos, autónomos, empresas y trámites administrativos. Consejos de tu asesoría de confianza."
+  title="Blog | Asesoría Boadilla del Monte - Consejos Fiscales y Laborales"
+  description="Blog de asesoría en Boadilla del Monte. Artículos sobre fiscalidad, impuestos, autónomos, empresas y trámites administrativos. Consejos de tu asesoría de confianza."
   breadcrumbs={[
     { name: "Inicio", url: siteUrl + "/" },
     { name: "Blog", url: siteUrl + "/blog/" }
@@ -18,7 +18,7 @@ const siteUrl = 'https://gestoriaboadilladelmonte.com';
       <div class="breadcrumbs">
         <a href="/">Inicio</a> <span>›</span> Blog
       </div>
-      <h1>Blog de Asesoría en Villaviciosa de Odón</h1>
+      <h1>Blog de Asesoría en Boadilla del Monte</h1>
       <p>Artículos, guías y consejos sobre fiscalidad, laboral y gestión empresarial para autónomos, pymes y particulares.</p>
     </div>
   </section>
@@ -46,7 +46,7 @@ const siteUrl = 'https://gestoriaboadilladelmonte.com';
 
   <section class="cta-section">
     <div class="container">
-      <h2>¿Necesitas una asesoría en Villaviciosa de Odón?</h2>
+      <h2>¿Necesitas una asesoría en Boadilla del Monte?</h2>
       <p>Contacta con nosotros y cuéntanos tu situación. 30 años de experiencia nos avalan. Servicio 100% online.</p>
       <a href="/contacto/" class="btn btn--secondary btn--lg">Contactar Ahora</a>
     </div>

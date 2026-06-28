@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://gestoriaboadilladelmonte.com',
+  site: 'https://asesoriaboadilladelmonte.com',
   integrations: [sitemap()],
   compressHTML: true,
 });
