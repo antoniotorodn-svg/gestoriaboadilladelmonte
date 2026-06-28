@@ -10,11 +10,11 @@ export interface ServiceContent {
 export const serviceContent: ServiceContent[] = [
   {
     slug: "gestoria-fiscal",
-    h1: "Gestoría Fiscal en Boadilla del Monte",
-    intro: "Nuestra gestoría fiscal en Boadilla del Monte ofrece un servicio integral de asesoramiento tributario para autónomos, pymes y particulares. Una gestión fiscal eficiente es clave para evitar sanciones y optimizar el pago de impuestos.",
+    h1: "Asesoría Fiscal en Villaviciosa de Odón",
+    intro: "Nuestra asesoría fiscal en Villaviciosa de Odón ofrece un servicio integral de asesoramiento tributario para autónomos, pymes y particulares. Una gestión fiscal eficiente es clave para evitar sanciones y optimizar el pago de impuestos.",
     sections: [
       {
-        title: "Servicios de gestoría fiscal",
+        title: "Servicios de asesoría fiscal",
         text: "Nos encargamos de todas tus obligaciones tributarias: declaraciones trimestrales y anuales de IVA, retenciones de IRPF, pagos fraccionados, Impuesto de Sociedades, declaraciones informativas y cualquier otro trámite fiscal que necesites. Nuestro equipo de asesores fiscales se mantiene actualizado con la legislación vigente para ofrecerte el mejor servicio."
       },
       {
@@ -49,8 +49,8 @@ export const serviceContent: ServiceContent[] = [
   },
   {
     slug: "gestoria-laboral",
-    h1: "Gestoría Laboral en Boadilla del Monte",
-    intro: "Nuestra gestoría laboral en Boadilla del Monte se encarga de toda la gestión de nóminas, contratos, seguros sociales y relaciones con la Seguridad Social. Nos ocupamos de todo para que puedas concentrarte en tu negocio.",
+    h1: "Asesoría Laboral en Villaviciosa de Odón",
+    intro: "Nuestra asesoría laboral en Villaviciosa de Odón se encarga de toda la gestión de nóminas, contratos, seguros sociales y relaciones con la Seguridad Social. Nos ocupamos de todo para que puedas concentrarte en tu negocio.",
     sections: [
       {
         title: "Gestión de nóminas y contratos",
@@ -88,8 +88,8 @@ export const serviceContent: ServiceContent[] = [
   },
   {
     slug: "gestoria-contable",
-    h1: "Gestoría Contable en Boadilla del Monte",
-    intro: "Nuestra gestoría contable en Boadilla del Monte lleva la contabilidad de tu empresa al día: control de ingresos y gastos, balances, cuentas anuales y libros contables. Un registro contable riguroso es fundamental para la toma de decisiones empresariales.",
+    h1: "Asesoría Contable en Villaviciosa de Odón",
+    intro: "Nuestra asesoría contable en Villaviciosa de Odón lleva la contabilidad de tu empresa al día: control de ingresos y gastos, balances, cuentas anuales y libros contables. Un registro contable riguroso es fundamental para la toma de decisiones empresariales.",
     sections: [
       {
         title: "Contabilidad empresarial",
@@ -127,8 +127,8 @@ export const serviceContent: ServiceContent[] = [
   },
   {
     slug: "asesoria-legal",
-    h1: "Asesoría Legal en Boadilla del Monte",
-    intro: "Nuestro servicio de asesoría legal en Boadilla del Monte te ofrece respaldo experto en la redacción y revisión de contratos, constitución de sociedades, reclamaciones legales y todo tipo de consultas jurídicas relacionadas con tu actividad profesional o empresarial.",
+    h1: "Asesoría Legal en Villaviciosa de Odón",
+    intro: "Nuestro servicio de asesoría legal en Villaviciosa de Odón te ofrece respaldo experto en la redacción y revisión de contratos, constitución de sociedades, reclamaciones legales y todo tipo de consultas jurídicas relacionadas con tu actividad profesional o empresarial.",
     sections: [
       {
         title: "Contratos y acuerdos",
@@ -156,7 +156,7 @@ export const serviceContent: ServiceContent[] = [
     faq: [
       {
         q: "¿Necesito un abogado para constituir una sociedad?",
-        a: "No es obligatorio, pero es muy recomendable. En nuestra gestoría te asesoramos sobre el tipo de sociedad más adecuado, redactamos los estatutos y nos encargamos de todo el proceso hasta la inscripción en el Registro Mercantil."
+        a: "No es obligatorio, pero es muy recomendable. En nuestra asesoría te asesoramos sobre el tipo de sociedad más adecuado, redactamos los estatutos y nos encargamos de todo el proceso hasta la inscripción en el Registro Mercantil."
       },
       {
         q: "¿Qué hago si un cliente no me paga?",
@@ -166,8 +166,8 @@ export const serviceContent: ServiceContent[] = [
   },
   {
     slug: "alta-autonomos",
-    h1: "Alta de Autónomos en Boadilla del Monte",
-    intro: "¿Quieres darte de alta como autónomo en Boadilla del Monte? Nuestra gestoría se encarga de todo el proceso: alta en Hacienda y en la Seguridad Social, elección del epígrafe adecuado y gestión de bonificaciones disponibles.",
+    h1: "Alta de Autónomos en Villaviciosa de Odón",
+    intro: "¿Quieres darte de alta como autónomo en Villaviciosa de Odón? Nuestra asesoría se encarga de todo el proceso: alta en Hacienda y en la Seguridad Social, elección del epígrafe adecuado y gestión de bonificaciones disponibles.",
     sections: [
       {
         title: "Proceso de alta de autónomos",
@@ -205,8 +205,8 @@ export const serviceContent: ServiceContent[] = [
   },
   {
     slug: "constitucion-empresas",
-    h1: "Constitución de Empresas en Boadilla del Monte",
-    intro: "¿Quieres crear una empresa en Boadilla del Monte? Nuestra gestoría te acompaña en todo el proceso de constitución: desde la elección del tipo de sociedad hasta la inscripción en el Registro Mercantil y el alta en Hacienda.",
+    h1: "Constitución de Empresas en Villaviciosa de Odón",
+    intro: "¿Quieres crear una empresa en Villaviciosa de Odón? Nuestra asesoría te acompaña en todo el proceso de constitución: desde la elección del tipo de sociedad hasta la inscripción en el Registro Mercantil y el alta en Hacienda.",
     sections: [
       {
         title: "Tipos de sociedades",
@@ -244,8 +244,8 @@ export const serviceContent: ServiceContent[] = [
   },
   {
     slug: "certificado-digital",
-    h1: "Certificado Digital en Boadilla del Monte",
-    intro: "Tramitamos y renovamos tu certificado digital en Boadilla del Monte. El certificado digital es imprescindible para realizar trámites online con la Administración Pública: Hacienda, Seguridad Social, Ayuntamiento y otros organismos.",
+    h1: "Certificado Digital en Villaviciosa de Odón",
+    intro: "Tramitamos y renovamos tu certificado digital en Villaviciosa de Odón. El certificado digital es imprescindible para realizar trámites online con la Administración Pública: Hacienda, Seguridad Social, Ayuntamiento y otros organismos.",
     sections: [
       {
         title: "¿Qué es el certificado digital?",
@@ -273,7 +273,7 @@ export const serviceContent: ServiceContent[] = [
     faq: [
       {
         q: "¿Cuánto cuesta obtener el certificado digital?",
-        a: "El certificado digital de la FNMT para personas físicas es gratuito. Para personas jurídicas tiene un coste que varía según el tipo de certificado. En nuestra gestoría te gestionamos todo el proceso y te asesoramos sobre el certificado más adecuado."
+        a: "El certificado digital de la FNMT para personas físicas es gratuito. Para personas jurídicas tiene un coste que varía según el tipo de certificado. En nuestra asesoría te gestionamos todo el proceso y te asesoramos sobre el certificado más adecuado."
       },
       {
         q: "¿Cuánto dura un certificado digital?",
@@ -283,8 +283,8 @@ export const serviceContent: ServiceContent[] = [
   },
   {
     slug: "declaracion-renta",
-    h1: "Declaración de la Renta en Boadilla del Monte",
-    intro: "¿Necesitas hacer la declaración de la renta en Boadilla del Monte? Nuestros asesores fiscales preparan y presentan tu declaración de IRPF, maximizando tus deducciones y beneficios fiscales para que pagues lo justo.",
+    h1: "Declaración de la Renta en Villaviciosa de Odón",
+    intro: "¿Necesitas hacer la declaración de la renta en Villaviciosa de Odón? Nuestros asesores fiscales preparan y presentan tu declaración de IRPF, maximizando tus deducciones y beneficios fiscales para que pagues lo justo.",
     sections: [
       {
         title: "Preparación de la declaración de la renta",
@@ -322,8 +322,8 @@ export const serviceContent: ServiceContent[] = [
   },
   {
     slug: "impuesto-sociedades",
-    h1: "Impuesto de Sociedades en Boadilla del Monte",
-    intro: "Nuestra gestoría en Boadilla del Monte se encarga de la liquidación y presentación del Impuesto de Sociedades de tu empresa, optimizando la carga fiscal con una planificación tributaria adecuada.",
+    h1: "Impuesto de Sociedades en Villaviciosa de Odón",
+    intro: "Nuestra asesoría en Villaviciosa de Odón se encarga de la liquidación y presentación del Impuesto de Sociedades de tu empresa, optimizando la carga fiscal con una planificación tributaria adecuada.",
     sections: [
       {
         title: "Liquidación del Impuesto de Sociedades",
@@ -361,8 +361,8 @@ export const serviceContent: ServiceContent[] = [
   },
   {
     slug: "tramites-administrativos",
-    h1: "Trámites Administrativos en Boadilla del Monte",
-    intro: "Nuestra gestoría en Boadilla del Monte te facilita la realización de todo tipo de trámites administrativos ante organismos públicos: Hacienda, Seguridad Social, Ayuntamiento, Registro Mercantil y más.",
+    h1: "Trámites Administrativos en Villaviciosa de Odón",
+    intro: "Nuestra asesoría en Villaviciosa de Odón te facilita la realización de todo tipo de trámites administrativos ante organismos públicos: Hacienda, Seguridad Social, Ayuntamiento, Registro Mercantil y más.",
     sections: [
       {
         title: "Trámites ante Hacienda",
@@ -374,7 +374,7 @@ export const serviceContent: ServiceContent[] = [
       },
       {
         title: "Otros trámites administrativos",
-        text: "También gestionamos trámites ante el Ayuntamiento de Boadilla del Monte (licencias, permisos), el Registro Mercantil (inscripciones, legalizaciones de libros, depósito de cuentas), el Registro de la Propiedad y cualquier otro organismo público."
+        text: "También gestionamos trámites ante el Ayuntamiento de Villaviciosa de Odón (licencias, permisos), el Registro Mercantil (inscripciones, legalizaciones de libros, depósito de cuentas), el Registro de la Propiedad y cualquier otro organismo público."
       }
     ],
     benefits: [
@@ -389,8 +389,8 @@ export const serviceContent: ServiceContent[] = [
     ],
     faq: [
       {
-        q: "¿Puedo delegar mis trámites en una gestoría?",
-        a: "Sí, puedes autorizar a nuestra gestoría para que actúe en tu representación ante los organismos públicos. Con el correspondiente poder de representación o autorización, nos encargamos de todos tus trámites sin que tengas que desplazarte."
+        q: "¿Puedo delegar mis trámites en una asesoría?",
+        a: "Sí, puedes autorizar a nuestra asesoría para que actúe en tu representación ante los organismos públicos. Con el correspondiente poder de representación o autorización, nos encargamos de todos tus trámites sin que tengas que desplazarte."
       },
       {
         q: "¿Qué necesito para que gestionen mis trámites?",

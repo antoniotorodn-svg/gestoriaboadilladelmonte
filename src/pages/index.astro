@@ -7,19 +7,20 @@ import { blogPosts } from '../data/blogPosts';
 const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 3);
 ---
 <Layout
-  title="Gestoría Boadilla del Monte | Asesoría Fiscal, Laboral y Contable"
-  description="Gestoría en Boadilla del Monte. Servicios 100% online de asesoría fiscal, laboral y contable para autónomos, pymes y particulares. 30 años de experiencia. ¡Llámanos!"
+  title="Asesoría Villaviciosa de Odón | Asesoría Fiscal, Laboral y Contable"
+  description="Asesoría en Villaviciosa de Odón. Servicios 100% online de asesoría fiscal, laboral y contable para autónomos, pymes y particulares. 30 años de experiencia. ¡Llámanos!"
 >
 
   <!-- HERO -->
   <section class="hero">
     <div class="container hero__inner">
       <div class="hero__content">
-        <span class="hero__label">Gestoría en Boadilla del Monte</span>
-        <h1>Tu gestoría de confianza en <em>Boadilla del Monte</em></h1>
+        <span class="hero__label">Asesoría en Villaviciosa de Odón</span>
+        <h1>Tu asesoría de confianza en <em>Villaviciosa de Odón</em></h1>
         <p class="hero__text">
-          Somos Salander Soluciones, una gestoría fiscal, laboral y contable especializada en autónomos y pymes.
-          Te ayudamos con tus obligaciones fiscales sin complicaciones.
+          Somos Salander Soluciones, tu asesoría fiscal, laboral y contable para autónomos y pymes.
+          Trabajamos <strong>100% online</strong>: no tienes que desplazarte ni pedir cita, lo hacemos todo desde donde estés.
+          Y si prefieres que nos veamos, hacemos una videollamada o quedamos en un coworking de Villaviciosa de Odón.
         </p>
         <div class="hero__actions">
           <a href="/contacto/" class="btn btn--secondary btn--lg">Contactar Ahora</a>
@@ -39,8 +40,8 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
           <div class="hero__card-top">
             <span class="hero__card-badge">100% Online</span>
           </div>
-          <h3>¿Necesitas una gestoría?</h3>
-          <p>30 años de experiencia. Gestión 100% online, sencilla y sin complicaciones.</p>
+          <h3>¿Necesitas una asesoría?</h3>
+          <p>30 años de experiencia. Todo online, sin desplazarte. Y si quieres, videollamada o coworking.</p>
           <a href="tel:+34916324013" class="btn btn--secondary">Llámanos: 916 32 40 13</a>
         </div>
       </div>
@@ -72,12 +73,72 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
     </div>
   </section>
 
+  <!-- PAIN POINTS -->
+  <section class="section section--alt" id="te-ayudamos">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__subtitle">¿Te suena alguna de estas situaciones?</span>
+        <h2>Si tienes un problema con Hacienda o con tus impuestos, lo resolvemos</h2>
+        <p>No tienes que pasarlo solo ni perder noches de sueño. Llevamos más de 30 años solucionando justo esto. Una llamada y empezamos a quitártelo de encima.</p>
+      </div>
+      <div class="grid grid--3 pain-grid">
+        <div class="pain-card">
+          <span class="pain-card__icon">📩</span>
+          <h3>Te ha llegado una carta de Hacienda</h3>
+          <p>Una notificación, un requerimiento o una "paralela" y no sabes qué significa ni qué plazo tienes para contestar. La revisamos contigo y respondemos por ti antes de que se complique.</p>
+          <a href="tel:+34916324013" class="pain-card__cta">Llámanos y lo vemos →</a>
+        </div>
+        <div class="pain-card">
+          <span class="pain-card__icon">⚠️</span>
+          <h3>Temes una sanción o una inspección</h3>
+          <p>Crees que algo no se presentó bien y te da miedo la multa. Analizamos tu caso, regularizamos tu situación y minimizamos el daño. Cuanto antes lo veamos, mejor.</p>
+          <a href="tel:+34916324013" class="pain-card__cta">Cuéntanoslo ahora →</a>
+        </div>
+        <div class="pain-card">
+          <span class="pain-card__icon">⏰</span>
+          <h3>Vas tarde con tus impuestos</h3>
+          <p>IVA, IRPF o modelos sin presentar y los plazos encima. Nos ponemos al día contigo, presentamos lo pendiente y te organizamos para que no vuelva a pasar.</p>
+          <a href="tel:+34916324013" class="pain-card__cta">Ponte al día con nosotros →</a>
+        </div>
+        <div class="pain-card">
+          <span class="pain-card__icon">💸</span>
+          <h3>Sospechas que pagas de más</h3>
+          <p>No sabes si te estás deduciendo todo lo que podrías y cada trimestre te llevas un susto. Revisamos tu fiscalidad y optimizamos lo que pagas, dentro de la ley.</p>
+          <a href="tel:+34916324013" class="pain-card__cta">Pide que revisemos tu caso →</a>
+        </div>
+        <div class="pain-card">
+          <span class="pain-card__icon">🚀</span>
+          <h3>Quieres empezar como autónomo</h3>
+          <p>El papeleo del alta, la cuota, los modelos… te abruma y no sabes por dónde empezar. Te damos de alta, te explicamos todo en cristiano y te acompañamos paso a paso.</p>
+          <a href="tel:+34916324013" class="pain-card__cta">Empieza con buen pie →</a>
+        </div>
+        <div class="pain-card">
+          <span class="pain-card__icon">😤</span>
+          <h3>Tu gestor no te responde</h3>
+          <p>No te coge el teléfono, no te explica nada y nunca sabes cómo va lo tuyo. Con nosotros hablas con personas, respondemos rápido y siempre sabes en qué punto estás.</p>
+          <a href="tel:+34916324013" class="pain-card__cta">Cámbiate sin líos →</a>
+        </div>
+      </div>
+
+      <div class="pain-banner">
+        <div>
+          <h3>Cuéntanos qué te preocupa. La primera llamada es sin compromiso.</h3>
+          <p>Te decimos qué tienes que hacer y cómo te podemos ayudar. Todo online, sin que tengas que desplazarte.</p>
+        </div>
+        <div class="pain-banner__actions">
+          <a href="tel:+34916324013" class="btn btn--secondary btn--lg">Llamar: 916 32 40 13</a>
+          <a href="/contacto/" class="btn btn--outline btn--lg">Escríbenos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- SERVICES -->
   <section class="section" id="servicios">
     <div class="container">
       <div class="section__header">
         <span class="section__subtitle">Nuestros servicios</span>
-        <h2>Servicios de gestoría en Boadilla del Monte</h2>
+        <h2>Servicios de asesoría en Villaviciosa de Odón</h2>
         <p>Ofrecemos un servicio integral para que puedas centrarte en lo que realmente importa: tu negocio.</p>
       </div>
       <div class="grid grid--3">
@@ -98,7 +159,7 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
     <div class="container">
       <div class="section__header">
         <span class="section__subtitle">¿Por qué elegirnos?</span>
-        <h2>Una gestoría cercana, profesional y eficiente</h2>
+        <h2>Una asesoría cercana, profesional y eficiente</h2>
       </div>
       <div class="grid grid--4 why-grid">
         <div class="why-item">
@@ -113,14 +174,14 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
           </div>
           <h3>Experiencia contrastada</h3>
-          <p>Más de 30 años asesorando a autónomos y empresas en Boadilla del Monte.</p>
+          <p>Más de 30 años asesorando a autónomos y empresas en Villaviciosa de Odón.</p>
         </div>
         <div class="why-item">
           <div class="why-item__icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
           </div>
-          <h3>Online o presencial</h3>
-          <p>Trabaja con nosotros como prefieras, con la misma calidad de servicio.</p>
+          <h3>Sin desplazamientos</h3>
+          <p>No pierdes tiempo ni te mueves de casa. Y si prefieres vernos, hacemos videollamada o quedamos en un coworking.</p>
         </div>
         <div class="why-item">
           <div class="why-item__icon">
@@ -183,7 +244,7 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
           <div class="review-card__stars">
             <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
           </div>
-          <p class="review-card__text">"Me dieron de alta como autónoma y se encargan de todas mis declaraciones. Muy atentos y siempre disponibles. La mejor gestoría de la zona."</p>
+          <p class="review-card__text">"Me dieron de alta como autónoma y se encargan de todas mis declaraciones. Muy atentos y siempre disponibles. La mejor asesoría de la zona."</p>
         </div>
       </div>
     </div>
@@ -199,7 +260,7 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
       </div>
       <div class="content">
         <details class="faq-item">
-          <summary>¿Por qué debería contratar vuestra gestoría en lugar de hacer los trámites por mi cuenta?</summary>
+          <summary>¿Por qué debería contratar vuestra asesoría en lugar de hacer los trámites por mi cuenta?</summary>
           <p>Hacerlo por tu cuenta puede llevarte mucho tiempo y, si no dominas la normativa, podrías cometer errores que terminen costándote dinero en sanciones o impuestos mal gestionados. Nosotros nos encargamos de todo para que tú puedas centrarte en hacer crecer tu negocio con la tranquilidad de que todo está en orden.</p>
         </details>
         <details class="faq-item">
@@ -227,8 +288,12 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
           <p>Sí, nos ocupamos de todo lo necesario para que puedas darte de alta, hacer cambios en tu actividad o gestionar una baja sin complicaciones. Lo hacemos de forma ágil para que tú no pierdas tiempo en papeleos.</p>
         </details>
         <details class="faq-item">
-          <summary>¿Trabajáis solo en Boadilla del Monte o también en otras zonas?</summary>
-          <p>Ofrecemos nuestros servicios 100% online, así que podemos ayudarte estés donde estés. Aunque estamos ubicados en Boadilla del Monte, trabajamos con clientes de toda España. Es muy sencillo: nos envías la documentación por email y nosotros nos encargamos de todo.</p>
+          <summary>¿Trabajáis solo en Villaviciosa de Odón o también en otras zonas?</summary>
+          <p>Estamos en Villaviciosa de Odón, pero trabajamos 100% online, así que podemos ayudarte estés donde estés, en Villaviciosa o en cualquier punto de España. Nos envías la documentación por email y nosotros nos encargamos de todo. Si en algún momento prefieres que nos veamos, hacemos una videollamada o quedamos en un coworking de la zona.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Si todo es online, ¿pierdo el trato cercano? ¿Y si quiero veros en persona?</summary>
+          <p>Al contrario: ser online es lo que nos permite responderte rápido y sin que pierdas tiempo en desplazamientos ni esperas. No tienes que ir a ninguna oficina ni pedir cita. Y si en algún momento te viene mejor vernos las caras, organizamos una videollamada o una reunión en un coworking de Villaviciosa de Odón. Tú eliges cómo prefieres trabajar.</p>
         </details>
         <details class="faq-item">
           <summary>¿Qué pasa si me retraso en un trámite fiscal o laboral? ¿Podéis solucionarlo?</summary>
@@ -247,7 +312,7 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
     <div class="container">
       <div class="section__header">
         <span class="section__subtitle">Nuestro blog</span>
-        <h2>Artículos y consejos de tu gestoría</h2>
+        <h2>Artículos y consejos de tu asesoría</h2>
         <p>Publicamos guías y artículos sobre fiscalidad, laboral y gestión empresarial para ayudarte a tomar mejores decisiones.</p>
       </div>
       <div class="grid grid--3">
@@ -271,13 +336,13 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
     <div class="container">
       <div class="section__header">
         <span class="section__subtitle">Cobertura local</span>
-        <h2>Gestoría en todas las zonas de Boadilla del Monte</h2>
-        <p>Prestamos servicios de gestoría en todas las urbanizaciones y barrios de Boadilla del Monte.</p>
+        <h2>Asesoría en todas las zonas de Villaviciosa de Odón</h2>
+        <p>Prestamos servicios de asesoría en todas las urbanizaciones y barrios de Villaviciosa de Odón.</p>
       </div>
       <div class="zone-links">
         {zones.map(zone => (
           <a href={`/zonas/${zone.slug}/`} class="zone-link">
-            Gestoría en {zone.name}
+            Asesoría en {zone.name}
           </a>
         ))}
       </div>
@@ -288,8 +353,8 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
   <section class="cta-section">
     <div class="container cta-section__inner">
       <span class="section__subtitle" style="color: var(--color-secondary-light);">Contacto</span>
-      <h2>¿Necesitas una gestoría en Boadilla del Monte?</h2>
-      <p>Contacta con nosotros y cuéntanos tu situación. 30 años de experiencia nos avalan.</p>
+      <h2>¿Tienes un lío con Hacienda o con tus impuestos?</h2>
+      <p>No esperes a que se complique. Llámanos, cuéntanos tu situación y te decimos cómo lo solucionamos. La primera llamada es sin compromiso y todo es online.</p>
       <div class="cta-section__actions">
         <a href="/contacto/" class="btn btn--secondary btn--lg">Contactar Ahora</a>
         <a href="tel:+34916324013" class="btn btn--outline btn--lg" style="border-color: rgba(255,255,255,0.4); color: white;">Llamar: 916 32 40 13</a>
@@ -300,6 +365,102 @@ const latestPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - n
 </Layout>
 
 <style>
+  /* PAIN POINTS */
+  .pain-grid {
+    margin-bottom: var(--space-2xl);
+  }
+
+  .pain-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-secondary);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    transition: all var(--transition);
+  }
+
+  .pain-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+  }
+
+  .pain-card__icon {
+    font-size: 1.8rem;
+    line-height: 1;
+    margin-bottom: var(--space-md);
+  }
+
+  .pain-card h3 {
+    font-size: 1.12rem;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--space-sm);
+    line-height: 1.35;
+  }
+
+  .pain-card p {
+    font-size: 0.94rem;
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin-bottom: var(--space-lg);
+    flex-grow: 1;
+  }
+
+  .pain-card__cta {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-top: auto;
+  }
+
+  .pain-card__cta:hover {
+    color: var(--color-secondary-dark);
+  }
+
+  .pain-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-xl);
+    flex-wrap: wrap;
+    background-color: var(--color-primary-dark);
+    border-radius: var(--radius-xl);
+    padding: var(--space-2xl);
+  }
+
+  .pain-banner h3 {
+    color: var(--color-white);
+    font-size: 1.25rem;
+    margin-bottom: var(--space-xs);
+    line-height: 1.35;
+  }
+
+  .pain-banner p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.98rem;
+    margin-bottom: 0;
+  }
+
+  .pain-banner__actions {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
+
+  .pain-banner__actions .btn--outline {
+    border-color: rgba(255, 255, 255, 0.4);
+    color: var(--color-white);
+  }
+
+  @media (max-width: 768px) {
+    .pain-banner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
   /* HERO */
   .hero {
     background-color: var(--color-bg);
